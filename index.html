@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#a50b1c">
-  <meta name="description" content="Ció Balbino: rock, canções autorais e a energia do palco. Ouça os EPs, conheça a trajetória, acompanhe os shows e fale sobre contratações.">
+  <meta name="description" content="Ció Balbino: 10 anos de estrada, banda Tutu Marambah, shows de rock, EPs e vídeos ao vivo. Contratações via WhatsApp.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Ció Balbino | A música acontece ao vivo">
   <meta property="og:description" content="Canções, trajetória e a energia de Ció Balbino no palco.">
@@ -25,13 +25,13 @@
         <img src="assets/logo-cio-balbino.png" alt="Ció Balbino" width="216" height="72">
       </a>
       <nav class="desktop-nav" aria-label="Menu principal">
-        <a href="#musicas">Músicas</a><a href="#historia">História</a><a href="#banda">A banda</a><a href="#aovivo">Ao vivo</a>
+        <a href="#musicas">Músicas</a><a href="#historia">História</a><a href="#banda">A banda</a><a href="#aovivo">Ao vivo</a><a href="#shows">Shows</a><a href="#redes">Redes</a>
       </nav>
       <a class="header-cta" href="#contratacao">Contratar show <span aria-hidden="true">↗</span></a>
       <button class="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu" id="menu-toggle"><span></span><span></span><span></span></button>
     </div>
     <nav class="mobile-nav" id="mobile-nav" aria-label="Menu para celular" hidden>
-      <a href="#inicio">Início</a><a href="#musicas">Músicas</a><a href="#historia">História</a><a href="#banda">A banda</a><a href="#aovivo">Ao vivo</a><a href="#contratacao">Contratação</a>
+      <a href="#inicio">Início</a><a href="#musicas">Músicas</a><a href="#historia">História</a><a href="#banda">A banda</a><a href="#aovivo">Ao vivo</a><a href="#shows">Shows</a><a href="#redes">Redes</a><a href="#contratacao">Contratação</a>
     </nav>
   </header>
 
@@ -43,19 +43,33 @@
         <div class="hero-copy reveal">
           <p class="eyebrow"><span class="eyebrow-line"></span> Ció Balbino <span class="point">/</span> Rock & música autoral</p>
           <h1 id="hero-title">A MÚSICA<br>ACONTECE<br><em>AO VIVO.</em></h1>
-          <div class="hero-intro"><span class="hero-intro-index">01 / 06</span><p>Canções que contam histórias. Um palco que transforma tudo em encontro.</p></div>
+          <div class="hero-intro"><span class="hero-intro-index">01 / 06</span><p>Dez anos de estrada, rock na veia e o público sempre no centro da história.</p></div>
           <div class="hero-actions"><a class="btn btn-red" href="#musicas">Ouvir agora <span aria-hidden="true">↗</span></a><a class="link-line" href="#aovivo">Sentir o show <span aria-hidden="true">↗</span></a></div>
-          <div class="hero-location"><span class="signal-dot"></span> De Ouro Branco, Minas Gerais, para onde a música levar.</div>
+
+          <nav class="hero-social" aria-label="Acesso rápido às redes e músicas">
+            <span class="hero-social-label">ENCONTRE O CIÓ</span>
+            <a href="https://www.instagram.com/ciobalbino_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial (nova aba)">INSTAGRAM <span aria-hidden="true">↗</span></a>
+            <a href="https://www.youtube.com/@Ciobalbino" target="_blank" rel="noopener noreferrer" aria-label="YouTube oficial (nova aba)">YOUTUBE <span aria-hidden="true">↗</span></a>
+            <a href="https://open.spotify.com/artist/0qLfLXr3c70X8A34epkyy7" target="_blank" rel="noopener noreferrer" aria-label="Spotify oficial (nova aba)">SPOTIFY <span aria-hidden="true">↗</span></a>
+          </nav>
+          <div class="hero-location"><span class="signal-dot"></span> De Minas Gerais para os palcos que fazem a história continuar.</div>
         </div>
         <div class="hero-visual reveal">
-          <div class="hero-video-meta"><span>Em destaque</span><span>Vídeo vertical / 9:16</span></div>
-          <button class="video-poster hero-video" type="button" data-youtube="eB-coJVHQRg" data-title="Ció Balbino — vídeo em destaque" aria-label="Assistir vídeo em destaque de Ció Balbino">
-            <img src="assets/hero-cio.webp" alt="Ció Balbino em retrato artístico" loading="eager">
-            <span class="video-poster-shade" aria-hidden="true"></span>
-            <span class="video-cover-top" aria-hidden="true">CIÓ / EM MOVIMENTO</span>
-            <span class="play-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 10 6-10 6z"/></svg></span>
-            <span class="video-cover-bottom">APERTE O PLAY <span aria-hidden="true">↗</span></span>
-          </button>
+          <div class="hero-video-meta"><span>Em destaque</span><span>VÍDEO / VERSÃO VERTICAL</span></div>
+          <div class="hero-video-shell" id="hero-video-shell">
+            <button class="video-poster hero-video" type="button" id="hero-video-start" data-youtube="Nay-JKsupvg" aria-label="Reproduzir o vídeo principal de Ció Balbino em enquadramento vertical">
+              <img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio4.jpg" onerror="this.onerror=null;this.src='assets/hero-cio.webp'" alt="Ció Balbino cantando no palco" loading="eager" fetchpriority="high">
+              <span class="video-poster-shade" aria-hidden="true"></span>
+              <span class="video-cover-top" aria-hidden="true">CIÓ / EM MOVIMENTO</span>
+              <span class="play-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 10 6-10 6z"/></svg></span>
+              <span class="video-cover-bottom">APERTE O PLAY <span aria-hidden="true">↗</span></span>
+            </button>
+            <div class="hero-inline-player" id="hero-inline-player" hidden aria-label="Vídeo principal em formato vertical">
+              <div class="hero-iframe-crop" id="hero-iframe-crop"></div>
+              <button type="button" class="hero-close-player" id="hero-close-player" aria-label="Fechar vídeo principal">✕</button>
+            </div>
+          </div>
+          <p class="hero-video-tip">ENQUADRAMENTO VERTICAL <span aria-hidden="true">/</span> <a href="https://www.youtube.com/watch?v=Nay-JKsupvg" target="_blank" rel="noopener noreferrer">VER VÍDEO INTEGRAL ↗</a></p>
           <div class="hero-image-foot"><span>O som tem rosto.</span><span>O palco tem voz.</span></div>
           <span class="hero-ghost" aria-hidden="true">C</span>
         </div>
@@ -98,7 +112,12 @@
     <!-- 03. BIOGRAFIA + VIDEOTECA -->
     <section class="story-section section-space" id="historia" aria-labelledby="story-heading">
       <div class="container-wide story-grid">
-        <div class="story-copy reveal"><p class="section-kicker"><span class="square"></span> 03 / A HISTÓRIA</p><h2 id="story-heading">ANTES DO<br>REFRÃO,<br><i>UMA VIDA.</i></h2><div class="story-rule"></div><p class="story-highlight">De Ouro Branco (MG), Ció Balbino encontrou na música uma maneira de transformar vivências em canções.</p><p>Cantor, compositor e multi-instrumentista, começou a se aproximar da música ainda na adolescência. Das primeiras bandas e apresentações aos projetos autorais, construiu uma trajetória marcada pelo pop rock, pela experimentação e pela conexão direta com o público.</p><p>Passou por formações como Jokers e Fulltime antes de aprofundar o trabalho solo. Em 2020, lançou <strong>Ponto de Luz</strong>, reunindo composições próprias e a vontade de dizer algo que permanecesse depois da última nota.</p><a class="link-line story-link" href="#banda">Conheça o momento atual <span aria-hidden="true">↗</span></a></div>
+        <div class="story-copy reveal"><p class="section-kicker"><span class="square"></span> 03 / A TRAJETÓRIA</p><h2 id="story-heading">10 ANOS<br>DE PALCO.<br><i>E HISTÓRIA.</i></h2><div class="story-rule"></div>
+          <p class="story-highlight">Com dez anos de estrada na cena mineira, Ció Balbino traduz a energia do rock e a sensibilidade do pop rock em apresentações marcantes.</p>
+          <p>À frente da banda <strong>Tutu Marambah</strong> e de seus projetos solo, o artista entrega uma performance versátil: do peso do rock n' roll ao aconchego do formato voz e violão.</p>
+          <p>Sua trajetória reúne shows, festivais e produção autoral, incluindo um single viabilizado pela <strong>Lei Aldir Blanc</strong>. Com CNPJ regularizado e estrutura profissional, Ció constrói uma identidade própria e uma conexão imediata com o público em qualquer palco.</p>
+          <a class="link-line story-link" href="#banda">Conheça a banda atual <span aria-hidden="true">↗</span></a>
+        </div>
         <div class="videotheque reveal"><div class="videotheque-head"><div><span>O ARTISTA EM VÍDEO</span><h3>VEJA. OUÇA. <i>SINTA.</i></h3></div><span class="video-count">04 VÍDEOS</span></div>
           <div class="feature-video" id="feature-video">
             <button class="feature-video-button" id="feature-video-button" type="button" aria-label="Reproduzir vídeo selecionado">
@@ -113,23 +132,85 @@
     </section>
 
     <!-- 04. BANDA ATUAL E CARROSSEL -->
-    <section class="band-section" id="banda" aria-labelledby="band-heading"><div class="band-feature"><div class="band-feature-image" role="img" aria-label="Ció Balbino e músicos juntos em fotografia promocional"></div><div class="band-feature-content"><p class="section-kicker light"><span class="square"></span> 04 / O AGORA</p><h2 id="band-heading">UMA VOZ.<br>MUITAS<br><i>PRESENÇAS.</i></h2><p>A força de uma composição ganha outro tamanho quando encontra uma banda. O projeto atual leva essa troca para o centro do palco.</p><span class="band-small">ROCK • CONEXÃO • ENERGIA AO VIVO</span></div></div>
+    <section class="band-section" id="banda" aria-labelledby="band-heading"><div class="band-feature"><div class="band-feature-image"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/42cf0e4974d51cce4f99f530626e180ca92a3c86/1%20-%20tutu.jpeg" onerror="this.onerror=null;this.src='assets/banda-mahaba.webp'" alt="Ció Balbino com a banda Tutu Marambah em fotografia promocional" loading="lazy" decoding="async"></div><div class="band-feature-content"><p class="section-kicker light"><span class="square"></span> 04 / O AGORA</p><h2 id="band-heading">UMA BANDA.<br>UM SOM<br><i>SEM FREIO.</i></h2><p>Com a <strong>Tutu Marambah</strong>, Ció leva ao palco um repertório de rock e pop rock marcado por energia, presença e conexão com o público. Em paralelo, mantém seus projetos solo e apresentações em voz e violão.</p><span class="band-small">TUTU MARAMBAH / POP ROCK / AO VIVO</span></div></div>
       <div class="band-gallery container-wide"><div class="gallery-heading"><div><span>ÁLBUM DE ESTRADA</span><h3>A BANDA <i>EM CENA.</i></h3></div><div class="carousel-controls"><button id="gallery-prev" type="button" aria-label="Fotografia anterior">←</button><button id="gallery-next" type="button" aria-label="Próxima fotografia">→</button></div></div>
-        <div class="gallery-track" id="gallery-track" aria-label="Galeria de fotos de Ció Balbino e banda"><figure class="gallery-item"><img src="assets/palco-crowd.webp" alt="Banda e equipe diante do público em um show" loading="lazy"><figcaption>01 / O público é parte da banda</figcaption></figure><figure class="gallery-item"><img src="assets/banda-mahaba.webp" alt="Fotografia promocional da banda" loading="lazy"><figcaption>02 / A energia é coletiva</figcaption></figure><figure class="gallery-item"><img src="assets/palco-noite.webp" alt="Banda reunida na frente do palco" loading="lazy"><figcaption>03 / Noites que ficam</figcaption></figure><figure class="gallery-item"><img src="assets/cantando.webp" alt="Ció Balbino cantando ao microfone" loading="lazy"><figcaption>04 / Perto de cada verso</figcaption></figure><figure class="gallery-item"><img src="assets/cio-roxo.webp" alt="Ció Balbino em apresentação com luz roxa" loading="lazy"><figcaption>05 / Voz e presença</figcaption></figure></div>
-        <p class="gallery-note">Fotos temporárias recuperadas da página atual. As imagens originais em alta resolução substituirão estes recortes.</p>
+        <div class="gallery-track" id="gallery-track" aria-label="Galeria de seis fotos de Ció Balbino e banda"><figure class="gallery-item"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio1.jpg" onerror="this.onerror=null;this.src='assets/palco-noite.webp'" alt="Ció Balbino de costas para o público durante show" loading="lazy" decoding="async"><figcaption>01 / O palco visto por dentro</figcaption></figure><figure class="gallery-item"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio2.jpg" onerror="this.onerror=null;this.src='assets/cio-roxo.webp'" alt="Ció Balbino cantando diante de um público com luzes rosa" loading="lazy" decoding="async"><figcaption>02 / Luzes acesas, show em movimento</figcaption></figure><figure class="gallery-item"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio3.jpg" onerror="this.onerror=null;this.src='assets/cantando.webp'" alt="Ció Balbino tocando violão e cantando ao microfone" loading="lazy" decoding="async"><figcaption>03 / A força do voz e violão</figcaption></figure><figure class="gallery-item"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio4.jpg" onerror="this.onerror=null;this.src='assets/cio-roxo.webp'" alt="Ció Balbino cantando com microfone durante apresentação" loading="lazy" decoding="async"><figcaption>04 / De frente para o palco</figcaption></figure><figure class="gallery-item"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio5.jpg" onerror="this.onerror=null;this.src='assets/palco-crowd.webp'" alt="Músicos no palco e plateia reunida para uma fotografia" loading="lazy" decoding="async"><figcaption>05 / Palco e público, lado a lado</figcaption></figure><figure class="gallery-item"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio6.jpg" onerror="this.onerror=null;this.src='assets/palco-crowd.webp'" alt="Músicos e público reunidos em um evento de rock" loading="lazy" decoding="async"><figcaption>06 / A estrada reúne pessoas</figcaption></figure></div>
+        <p class="gallery-note">Seis registros de apresentações e encontros com o público. Deslize a galeria ou use as setas para explorar.</p>
       </div>
     </section>
 
-    <!-- 05. TRECHOS DE SHOWS: slots preparados para vídeos reais -->
-    <section class="live-section section-space" id="aovivo" aria-labelledby="live-heading"><div class="container-wide"><div class="section-lead live-lead"><div><p class="section-kicker"><span class="square"></span> 05 / NO PALCO</p><h2 id="live-heading">HISTÓRIAS<br>QUE ACONTECEM<br><i>AO VIVO.</i></h2></div><p class="lead-aside">Cada show tem um instante impossível de repetir. Esta será a coleção desses momentos: refrões, encontros e a intensidade da estrada.</p></div>
-      <div class="live-grid"><article class="live-card"><div class="live-photo"><img src="assets/palco-noite.webp" alt="Show noturno com a banda diante do público" loading="lazy"><span class="live-index">01 / PALCO</span></div><div class="live-caption"><h3>O primeiro acorde.</h3><p>Trecho de show em preparação</p></div></article><article class="live-card"><div class="live-photo"><img src="assets/show-luzes.webp" alt="Palco iluminado durante show" loading="lazy"><span class="live-index">02 / ESTRADA</span></div><div class="live-caption"><h3>Quando a luz acende.</h3><p>Trecho de show em preparação</p></div></article><article class="live-card"><div class="live-photo"><img src="assets/palco-crowd.webp" alt="Banda e público fotografados juntos" loading="lazy"><span class="live-index">03 / ENCONTRO</span></div><div class="live-caption"><h3>Todo mundo canta.</h3><p>Trecho de show em preparação</p></div></article></div>
-      <div class="live-bottom"><p>EM BREVE: TRECHOS REAIS, REGISTROS DE FESTIVAIS E BASTIDORES.</p><span>ROCK É PRESENÇA. <span aria-hidden="true">✳</span></span></div>
-      </div></section>
+    <!-- 05. TRECHOS REAIS DE SHOW + LINHA DO TEMPO DE APRESENTAÇÕES -->
+    <section class="live-section section-space" id="aovivo" aria-labelledby="live-heading">
+      <div class="container-wide">
+        <div class="section-lead live-lead"><div><p class="section-kicker"><span class="square"></span> 05 / NO PALCO</p><h2 id="live-heading">O ROCK<br>NÃO CABE<br><i>NUMA FOTO.</i></h2></div><p class="lead-aside">Quatro momentos em vídeo. Porque é no encontro entre palco e público que a música ganha sua verdadeira dimensão.</p></div>
+        <div class="live-grid">          <article class="live-card reveal"><div class="live-photo"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio1.jpg" onerror="this.onerror=null;this.src='assets/palco-noite.webp'" alt="Ció Balbino se apresentando diante de uma plateia" loading="lazy"><span class="live-index">01 / SHORT</span><button type="button" class="live-play-button" data-live-video="NmB6MWJaHL0" data-live-title="A ENERGIA" aria-label="Assistir vídeo curto de show: a energia"><span class="live-play-icon" aria-hidden="true">▶</span></button></div><div class="live-caption"><h3>A ENERGIA.</h3><p>ASSISTIR TRECHO DO SHOW ↗</p></div></article>
+          <article class="live-card reveal"><div class="live-photo"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio2.jpg" onerror="this.onerror=null;this.src='assets/cio-roxo.webp'" alt="Ció Balbino e plateia sob iluminação de show" loading="lazy"><span class="live-index">02 / SHORT</span><button type="button" class="live-play-button" data-live-video="d_DBWETpuSM" data-live-title="O ENCONTRO" aria-label="Assistir vídeo curto de show: o encontro"><span class="live-play-icon" aria-hidden="true">▶</span></button></div><div class="live-caption"><h3>O ENCONTRO.</h3><p>ASSISTIR TRECHO DO SHOW ↗</p></div></article>
+          <article class="live-card reveal"><div class="live-photo"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio4.jpg" onerror="this.onerror=null;this.src='assets/cio-roxo.webp'" alt="Ció Balbino cantando ao microfone" loading="lazy"><span class="live-index">03 / SHORT</span><button type="button" class="live-play-button" data-live-video="4Acr3ZLBUcM" data-live-title="A VOZ" aria-label="Assistir vídeo curto de show: a voz"><span class="live-play-icon" aria-hidden="true">▶</span></button></div><div class="live-caption"><h3>A VOZ.</h3><p>ASSISTIR TRECHO DO SHOW ↗</p></div></article>
+          <article class="live-card reveal"><div class="live-photo"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio5.jpg" onerror="this.onerror=null;this.src='assets/palco-crowd.webp'" alt="Ció Balbino e banda diante do público" loading="lazy"><span class="live-index">04 / SHORT</span><button type="button" class="live-play-button" data-live-video="0-2QeFGoD6s" data-live-title="O PALCO" aria-label="Assistir vídeo curto de show: o palco"><span class="live-play-icon" aria-hidden="true">▶</span></button></div><div class="live-caption"><h3>O PALCO.</h3><p>ASSISTIR TRECHO DO SHOW ↗</p></div></article></div>
+        <div class="live-bottom"><p>QUATRO REGISTROS REAIS / ASSISTA SEM SAIR DO SITE.</p><span>VIVA O AO VIVO <span aria-hidden="true">✳</span></span></div>
+        <div class="tour-archive" id="shows" aria-labelledby="tour-heading">
+          <div class="tour-head"><p class="section-kicker"><span class="square"></span> A ESTRADA / 2018–2026</p><h3 id="tour-heading">PALCOS QUE<br><i>VIRARAM HISTÓRIA.</i></h3><p>Uma seleção de festivais, encontros e apresentações que fazem parte da caminhada do Ció.</p></div>
+          <ol class="tour-timeline"><li class="timeline-row"><span class="timeline-year">2026</span><div class="timeline-events"><span>CarnaRock · Ouro Branco</span></div></li>
+<li class="timeline-row"><span class="timeline-year">2025</span><div class="timeline-events"><span>MotoFest · Congonhas</span><span>Encontro de Motociclistas · Espírito Santo</span><span>Festival Rock dos Guerreiros</span><span>CarnaRock · Ouro Branco</span><span>FACAP · Lobo Leite</span></div></li>
+<li class="timeline-row"><span class="timeline-year">2024</span><div class="timeline-events"><span>Inauguração do Mercado Central · Ouro Branco</span><span>Show Casarão · Ouro Branco</span></div></li>
+<li class="timeline-row"><span class="timeline-year">2023</span><div class="timeline-events"><span>Festival Estrada Real / Avelar Sports</span><span>Feira de Comida de Boteco e Cerveja Artesanal · Itatiaia</span></div></li>
+<li class="timeline-row"><span class="timeline-year">2022</span><div class="timeline-events"><span>Festival da Batata · Ouro Branco</span><span>Festival Wine Gastro · Conselheiro Lafaiete</span></div></li>
+<li class="timeline-row"><span class="timeline-year">2020</span><div class="timeline-events"><span>Festival Cultural · Miguel Burnier</span></div></li>
+<li class="timeline-row"><span class="timeline-year">2018</span><div class="timeline-events"><span>Festa de Santo Antônio</span></div></li></ol>
+        </div>
+      </div>
+    </section>
 
     <!-- 06. CONTATO -->
-    <section class="contact-section" id="contratacao" aria-labelledby="contact-heading"><div class="contact-glow" aria-hidden="true"></div><div class="container-wide contact-grid"><div class="contact-top"><p class="section-kicker light"><span class="square"></span> 06 / CONTRATAÇÕES</p><h2 id="contact-heading">O PRÓXIMO<br>PALCO PODE<br><i>SER O SEU.</i></h2><p>Shows, festivais, eventos e encontros que pedem música ao vivo. Vamos conversar sobre a próxima apresentação?</p><div class="contact-actions"><a class="btn btn-cream" id="booking-whatsapp" href="https://wa.me/5531994828741?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20sobre%20a%20contrata%C3%A7%C3%A3o%20de%20um%20show%20do%20Ci%C3%B3%20Balbino." target="_blank" rel="noopener noreferrer">Falar sobre um show <span aria-hidden="true">↗</span></a><a class="contact-email" href="mailto:viniciobalbino10@hotmail.com?subject=Contrata%C3%A7%C3%A3o%20de%20show%20-%20Ci%C3%B3%20Balbino">Ou enviar por e-mail <span aria-hidden="true">↗</span></a></div></div><div class="contact-poster"><div class="contact-poster-inner"><span class="poster-top">CIÓ BALBINO / AO VIVO</span><span class="poster-star">✳</span><span class="poster-title">FAÇA<br>BARULHO.</span><span class="poster-bottom">MAIS QUE UM SHOW. UM ACONTECIMENTO.</span></div></div></div></section>
+    <section class="contact-section" id="contratacao" aria-labelledby="contact-heading"><div class="contact-glow" aria-hidden="true"></div><div class="container-wide contact-grid"><div class="contact-top"><p class="section-kicker light"><span class="square"></span> 06 / CONTRATAÇÕES</p><h2 id="contact-heading">O PRÓXIMO<br>PALCO PODE<br><i>SER O SEU.</i></h2><p>Rock em banda, repertório pop rock ou formato voz e violão. Fale diretamente pelo WhatsApp e leve Ció Balbino para seu evento.</p><div class="contact-actions"><a class="btn btn-cream" id="booking-whatsapp" href="https://wa.me/5531994828741?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20sobre%20a%20contrata%C3%A7%C3%A3o%20de%20um%20show%20do%20Ci%C3%B3%20Balbino." target="_blank" rel="noopener noreferrer">Falar sobre um show <span aria-hidden="true">↗</span></a><span class="contact-phone">WHATSAPP · (31) 99482-8741</span></div></div><div class="contact-poster"><div class="contact-poster-inner"><span class="poster-top">CIÓ BALBINO / AO VIVO</span><span class="poster-star">✳</span><span class="poster-title">FAÇA<br>BARULHO.</span><span class="poster-bottom">MAIS QUE UM SHOW. UM ACONTECIMENTO.</span></div></div></div></section>
+
+    <!-- 07. REDES E PLATAFORMAS OFICIAIS -->
+    <section class="social-section section-space" id="redes" aria-labelledby="social-heading">
+      <div class="container-wide">
+        <div class="social-section-top reveal">
+          <div><p class="section-kicker"><span class="square"></span> 07 / CONEXÕES</p><h2 id="social-heading">SIGA O SOM.<br><i>FICA POR PERTO.</i></h2></div>
+          <p>O palco continua nas redes. Vídeos, bastidores, agenda e canções nas plataformas oficiais do Ció Balbino.</p>
+        </div>
+        <div class="social-grid">
+          <a class="social-card social-youtube" href="https://www.youtube.com/@Ciobalbino" target="_blank" rel="noopener noreferrer" aria-label="Abrir YouTube oficial de Ció Balbino (nova aba)">
+          <span class="social-card-top"><span class="social-icon"><svg viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.4" y="5.6" width="19.2" height="12.8" rx="4.3"/><path d="m10 8.9 5.8 3.1-5.8 3.1V8.9Z" fill="currentColor" stroke="none"/></svg></span><span class="social-index">01 / 06</span></span>
+          <span class="social-card-title">YouTube<span class="social-arrow" aria-hidden="true">↗</span></span>
+          <span class="social-card-tag">VÍDEOS & SHOWS</span>
+        </a>
+          <a class="social-card social-instagram" href="https://www.instagram.com/ciobalbino_/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram oficial de Ció Balbino (nova aba)">
+          <span class="social-card-top"><span class="social-icon"><svg viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17.6" cy="6.7" r=".9" fill="currentColor" stroke="none"/></svg></span><span class="social-index">02 / 06</span></span>
+          <span class="social-card-title">Instagram<span class="social-arrow" aria-hidden="true">↗</span></span>
+          <span class="social-card-tag">FOTOS & BASTIDORES</span>
+        </a>
+          <a class="social-card social-spotify" href="https://open.spotify.com/artist/0qLfLXr3c70X8A34epkyy7" target="_blank" rel="noopener noreferrer" aria-label="Abrir Spotify oficial de Ció Balbino (nova aba)">
+          <span class="social-card-top"><span class="social-icon"><svg viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.8"/><path d="M5.8 9.6c4.5-1.35 9.1-.95 13.4 1.4M6.9 13c4.1-1 8.2-.58 11.5 1.4M8.1 16.2c3.1-.7 6.1-.35 8.7 1.2"/></svg></span><span class="social-index">03 / 06</span></span>
+          <span class="social-card-title">Spotify<span class="social-arrow" aria-hidden="true">↗</span></span>
+          <span class="social-card-tag">OUÇA AS MÚSICAS</span>
+        </a>
+          <a class="social-card social-facebook" href="https://www.facebook.com/ciosongs/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Facebook oficial de Ció Balbino (nova aba)">
+          <span class="social-card-top"><span class="social-icon"><svg viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.1 20.6v-7.5h2.6l.4-3.2h-3V8.1c0-.95.27-1.6 1.7-1.6h1.6V3.7c-.75-.12-1.73-.2-2.6-.2-2.8 0-4.5 1.7-4.5 4.7v1.7H7.9v3.2h2.4v7.5"/></svg></span><span class="social-index">04 / 06</span></span>
+          <span class="social-card-title">Facebook<span class="social-arrow" aria-hidden="true">↗</span></span>
+          <span class="social-card-tag">NOTÍCIAS & EVENTOS</span>
+        </a>
+          <a class="social-card social-deezer" href="https://www.deezer.com/br/artist/14830775" target="_blank" rel="noopener noreferrer" aria-label="Abrir Deezer oficial de Ció Balbino (nova aba)">
+          <span class="social-card-top"><span class="social-icon"><svg viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18.5h4M3 15.7h4M3 12.9h4M9 18.5h4M9 15.7h4M9 12.9h4M9 10.1h4M15 18.5h5M15 15.7h5M15 12.9h5M15 10.1h5M15 7.3h5M15 4.5h5"/></svg></span><span class="social-index">05 / 06</span></span>
+          <span class="social-card-title">Deezer<span class="social-arrow" aria-hidden="true">↗</span></span>
+          <span class="social-card-tag">STREAMING</span>
+        </a>
+          <a class="social-card social-soundcloud" href="https://soundcloud.com/cio-balbino" target="_blank" rel="noopener noreferrer" aria-label="Abrir SoundCloud oficial de Ció Balbino (nova aba)">
+          <span class="social-card-top"><span class="social-icon"><svg viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 14.8v3.4M4.8 12.3v5.9M7.1 10.9v7.3M9.4 9.8v8.4M11.7 9.9a4.9 4.9 0 0 1 9.25 1.5 3.35 3.35 0 0 1-.8 6.6h-8.45V9.9Z"/></svg></span><span class="social-index">06 / 06</span></span>
+          <span class="social-card-title">SoundCloud<span class="social-arrow" aria-hidden="true">↗</span></span>
+          <span class="social-card-tag">MAIS FAIXAS</span>
+        </a>
+        </div>
+        <div class="social-closing" aria-hidden="true"><span>CIÓ BALBINO / CANAIS OFICIAIS</span><span>ROCK EM TODAS AS FREQUÊNCIAS ✳</span></div>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="container-wide footer-inner"><a class="footer-brand" href="#inicio"><img src="assets/logo-cio-balbino.png" alt="Ció Balbino" width="182" height="61"></a><p>ROCK, AUTORALIDADE & PRESENÇA.<br>OURO BRANCO — MG</p><div class="footer-links"><a href="#musicas">Ouvir</a><a href="#historia">História</a><a href="#aovivo">Ao vivo</a><a href="#contratacao">Contratar</a></div><span class="copyright">© <span id="current-year">2026</span> CIÓ BALBINO.</span></div></footer>
+  <footer class="site-footer"><div class="container-wide footer-inner"><a class="footer-brand" href="#inicio"><img src="assets/logo-cio-balbino.png" alt="Ció Balbino" width="182" height="61"></a><p>ROCK, AUTORALIDADE & PRESENÇA.<br>OURO BRANCO — MG</p><div class="footer-links"><a href="#musicas">Ouvir</a><a href="#historia">História</a><a href="#aovivo">Ao vivo</a><a href="#shows">Shows marcantes</a><a href="#redes">Redes</a><a href="#contratacao">Contratar</a></div><span class="copyright">© <span id="current-year">2026</span> CIÓ BALBINO.</span></div></footer>
+
+  <!-- WhatsApp flutuante: desaparece durante a rolagem, volta ao parar. -->
+  <a class="whatsapp-float" id="whatsapp-float" href="https://wa.me/5531994828741" target="_blank" rel="noopener noreferrer" aria-label="Conversar sobre a contratação de Ció Balbino pelo WhatsApp" title="Contratar pelo WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.83 11.83 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0c3.181.001 6.167 1.24 8.413 3.488a11.814 11.814 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807a9.83 9.83 0 0 0 5.392 1.592c5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884 0 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg><span class="whatsapp-tooltip" aria-hidden="true">CONTRATAR SHOW</span></a>
 
   <!-- Modal reutilizado para os vídeos; carrega o YouTube apenas após o clique. -->
   <div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden><div class="video-modal-box"><div class="modal-head"><span id="modal-title">Ció Balbino / Vídeo</span><button type="button" id="close-modal" aria-label="Fechar vídeo">FECHAR ✕</button></div><div class="modal-frame" id="modal-frame"></div></div></div>
