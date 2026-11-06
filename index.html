@@ -1,219 +1,806 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#a50b1c">
-  <meta name="description" content="Ció Balbino: 10 anos de estrada, banda Tutu Marambah, shows de rock, EPs e vídeos ao vivo. Contratações via WhatsApp.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Ció Balbino | Energia autêntica que conecta">
-  <meta property="og:description" content="Canções, trajetória e a energia de Ció Balbino no palco.">
-  <title>Ció Balbino | Energia autêntica que conecta</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#a50b1c" name="theme-color"/>
+<meta content="Ció Balbino: 10 anos de estrada, banda Tutu Marambah, shows de rock, EPs e vídeos ao vivo. Contratações via WhatsApp." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="Ció Balbino | Energia autêntica que conecta" property="og:title"/>
+<meta content="Canções, trajetória e a energia de Ció Balbino no palco." property="og:description"/>
+<title>Ció Balbino | Energia autêntica que conecta</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&amp;family=DM+Sans:wght@400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+
+<style id="site-styles-final">:root{--black:#090809;--black2:#111011;--ink:#171113;--red:#b90f25;--red2:#e11f30;--redDark:#690512;--cream:#f4eee5;--muted:#aaa2a0;--border:rgba(255,255,255,.15);--display:'Barlow Condensed',Impact,sans-serif;--body:'DM Sans',Arial,sans-serif;--serif:'Instrument Serif',Georgia,serif}
+*,*:before,*:after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--black);color:var(--cream);font-family:var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}button,a{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}::selection{background:var(--red2);color:white}[hidden]{display:none!important}.container-wide{width:min(1320px,calc(100% - 9vw));margin-inline:auto}.skip-link{position:absolute;top:-60px;left:20px;z-index:999;background:white;color:black;padding:12px}.skip-link:focus{top:10px}.site-progress{position:fixed;left:0;top:0;height:3px;width:100%;z-index:150;background:transparent}.site-progress span{display:block;width:0;height:100%;background:var(--cream)}
+/* Header: red, logo original white */
+.site-header{height:86px;background:#a50b1c;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(255,255,255,.16)}.header-inner{height:100%;display:flex;align-items:center;gap:4vw}.brand-link{display:block;flex-shrink:0;width:210px}.brand-link img{width:100%;height:auto;filter:drop-shadow(0 1px 0 rgba(0,0,0,.1))}.desktop-nav{display:flex;align-items:center;gap:clamp(20px,3vw,48px);margin-left:auto}.desktop-nav a{font-size:12px;text-transform:uppercase;font-weight:700;letter-spacing:.11em;transition:color .2s}.desktop-nav a:hover{color:#ffd9d7}.header-cta{background:var(--cream);color:var(--black);text-transform:uppercase;letter-spacing:.09em;font-size:11px;font-weight:800;padding:16px 19px;display:inline-flex;gap:20px;transition:background .2s,transform .2s}.header-cta:hover{background:white;transform:translateY(-2px)}.mobile-menu-btn{display:none;background:none;border:0;width:44px;height:44px;padding:10px;margin-left:auto}.mobile-menu-btn span{display:block;width:100%;height:2px;background:white;margin:5px 0}.mobile-nav{position:absolute;top:86px;left:0;right:0;background:#870a17;padding:16px 5vw 28px;border-bottom:1px solid #d7737e;box-shadow:0 20px 30px #0008}.mobile-nav a{display:block;font-family:var(--display);font-weight:800;font-size:30px;text-transform:uppercase;padding:8px 0;border-bottom:1px solid #ffffff25}
+/* Shared typography & graphic language */
+h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:var(--display);text-transform:uppercase}h1 em,h2 i,h3 i,.music-card h3 i{font-family:var(--serif);font-weight:400;text-transform:none}section{position:relative}.section-space{padding:clamp(90px,9vw,150px) 0}.section-kicker{font-family:var(--body);font-size:11px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--red2);display:flex;align-items:center;gap:12px;margin-bottom:23px}.section-kicker .square{display:block;width:9px;height:9px;background:var(--red2);transform:rotate(45deg)}.section-kicker.light{color:#ffe7df}.section-kicker.light .square{background:#ffe7df}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.19em;text-transform:uppercase;display:flex;align-items:center;gap:12px}.eyebrow-line{width:30px;height:1px;background:var(--red2)}.point{color:var(--red2)}.btn{display:inline-flex;align-items:center;justify-content:space-between;gap:45px;padding:21px 24px;font-size:12px;text-transform:uppercase;letter-spacing:.13em;font-weight:800;transition:background .2s,transform .2s}.btn:hover{transform:translateY(-2px)}.btn-red{background:var(--red);color:white}.btn-red:hover{background:#e41d32}.btn-cream{background:var(--cream);color:var(--black)}.btn-cream:hover{background:white}.link-line{display:inline-flex;gap:45px;align-items:center;padding:13px 0;border-bottom:1px solid currentColor;text-transform:uppercase;letter-spacing:.13em;font-size:12px;font-weight:800;transition:gap .2s,color .2s}.link-line:hover{gap:55px;color:#f76c7d}.reveal{opacity:1;transform:none}.reveal.is-visible{animation:reveal-entrance .65s ease both}@keyframes reveal-entrance{from{opacity:.8;transform:translateY(10px)}to{opacity:1;transform:none}}
+/* Hero: striking editorial 2-column composition; 9:16 media */
+.hero{min-height:calc(100svh - 86px);display:flex;align-items:center;padding:65px 0 75px;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse at 77% 38%,#5c091b 0,transparent 31%),linear-gradient(125deg,#090809 15%,#1b0b0d 68%,#090809 100%)}.hero:before{content:"";position:absolute;inset:0;z-index:-2;background-image:linear-gradient(90deg,rgba(7,6,7,.96),rgba(12,5,8,.68) 51%,rgba(7,7,7,.57)),url('assets/palco-crowd.webp');background-position:center,center 56%;background-size:cover;opacity:.5;filter:grayscale(1)}.hero:after,.stage-bg:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.17;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");mix-blend-mode:screen}.hero-signal{position:absolute;top:0;right:19%;height:100%;width:1px;background:linear-gradient(transparent,#b31a3380,transparent);transform:rotate(13deg);pointer-events:none}.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);gap:clamp(30px,5vw,80px);align-items:center;position:relative;z-index:2}.hero-copy{padding-top:22px}.hero h1{font-size:clamp(72px,9.6vw,154px);font-weight:900;letter-spacing:-.029em;line-height:.77;margin:35px 0 37px}.hero h1 em{font-size:.85em;color:#e23b49;letter-spacing:-.045em;line-height:1.03;display:inline-block;transform:translateY(3px);white-space:nowrap}.hero-intro{display:flex;max-width:510px;align-items:flex-start;gap:22px;border-top:1px solid #ffffff53;padding-top:20px}.hero-intro-index{flex-shrink:0;color:#fb727c;letter-spacing:.18em;font-size:11px;font-weight:800}.hero-intro p{color:#dbd3d2;font-size:16px;line-height:1.6;max-width:390px;margin-bottom:0}.hero-actions{display:flex;align-items:center;gap:29px;margin-top:34px}.hero-location{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#b4a8a7;font-weight:700;display:flex;align-items:center;gap:10px;margin-top:55px}.signal-dot{width:6px;height:6px;background:#e1394c;border-radius:50%;box-shadow:0 0 18px #e1394c}.hero-visual{width:min(100%,405px);justify-self:center;position:relative}.hero-video-meta,.hero-image-foot{display:flex;justify-content:space-between;text-transform:uppercase;font-size:10px;font-weight:800;letter-spacing:.13em;color:#d8ccca;padding:0 0 12px}.hero-image-foot{padding:13px 0 0;color:#b5a9a5}.video-poster{display:block;position:relative;overflow:hidden;padding:0;width:100%;border:1px solid #ffffff45;text-align:left;color:white;background:#2b1117}.hero-video{aspect-ratio:9/14.5;box-shadow:29px 30px 0 -10px #a20a20,0 18px 80px #000a}.video-poster img{width:100%;height:100%;object-fit:cover;object-position:center 17%;transition:transform .6s,filter .6s;filter:grayscale(.65) contrast(1.15)}.video-poster:hover img{transform:scale(1.045);filter:grayscale(.2) contrast(1.2)}.video-poster-shade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,2,5,.92),transparent 43%,#16050958),linear-gradient(90deg,#780e2640,transparent)}.video-cover-top,.video-cover-bottom{position:absolute;font-size:10px;font-weight:900;letter-spacing:.2em;top:20px;left:22px}.video-cover-bottom{top:auto;bottom:24px;left:22px;right:22px;display:flex;justify-content:space-between}.play-circle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:83px;height:83px;background:#b90f25e6;border:1px solid #ffffff88;border-radius:50%;display:grid;place-items:center;box-shadow:0 0 0 12px #ffffff18;transition:background .2s,box-shadow .3s}.play-circle svg{width:33px;height:33px;fill:white;margin-left:3px}.video-poster:hover .play-circle{background:#e61b32;box-shadow:0 0 0 20px #ffffff20}.hero-ghost{font-family:var(--serif);font-style:italic;position:absolute;bottom:-108px;right:-77px;color:#ffffff16;font-size:230px;line-height:1;pointer-events:none}.hero-corner{position:absolute;right:2vw;bottom:25px;font-size:8px;text-align:right;letter-spacing:.18em;line-height:1.8;color:#afa19e}
+.marquee-band{height:60px;background:#b90f25;color:#fff;overflow:hidden;display:flex;align-items:center}.marquee-inner{display:flex;gap:38px;align-items:center;white-space:nowrap;min-width:max-content;animation:marquee 35s linear infinite;font-family:var(--display);font-weight:800;font-size:23px;letter-spacing:.1em}.marquee-inner b{font-family:var(--serif);font-size:20px;font-weight:400}@keyframes marquee{to{transform:translateX(-50%)}}
+/* Three-column music triptych */
+.music-section{background:#100c0d;background-image:radial-gradient(ellipse at 86% 7%,#6b102130,transparent 43%),repeating-linear-gradient(90deg,transparent 0,transparent calc(25% - 1px),#ffffff05 25%)}.section-lead{display:flex;align-items:end;justify-content:space-between;gap:50px;margin-bottom:54px}.section-lead h2{font-size:clamp(62px,8vw,120px);line-height:.83;letter-spacing:-.025em;font-weight:900;margin-bottom:0}.section-lead h2 span{color:#ed283f}.section-lead h2 i{font-size:.8em;color:var(--cream)}.lead-aside{width:260px;max-width:100%;color:#b6acab;line-height:1.8;font-size:14px;margin-bottom:4px}.music-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}.music-card{background:#1b1517;border:1px solid #ffffff20;min-width:0;overflow:hidden;position:relative;display:flex;flex-direction:column}.music-card:hover{border-color:#c34450}.card-head{display:flex;justify-content:space-between;align-items:center;color:#cfc4c2;text-transform:uppercase;font-size:10px;font-weight:800;letter-spacing:.17em;border-bottom:1px solid #ffffff20;padding:19px 21px}.playlist-card{background:linear-gradient(140deg,#650a19,#1c0e11 65%)}.playlist-art{height:350px;position:relative;display:grid;place-items:center;overflow:hidden;background:radial-gradient(circle at 50% 60%,#b5223540,transparent 65%),repeating-radial-gradient(circle at 50% 50%,transparent 0,transparent 18px,#ffffff0b 19px,transparent 20px)}.playlist-art:after{content:"";position:absolute;left:50%;top:50%;width:260px;height:260px;border-radius:50%;transform:translate(-50%,-50%);border:35px solid #03030460;box-shadow:0 0 0 2px #ffffff27,inset 0 0 0 3px #ffffff30,0 25px 35px #0008}.playlist-arc{position:absolute;border:1px solid #fa49584d;border-radius:50%;width:330px;height:330px;transform:translate(-1px,-5px)}.arc-2{width:450px;height:450px}.arc-3{width:550px;height:550px}.playlist-center{z-index:2;text-align:center;display:grid;gap:12px}.playlist-center>span{font-family:var(--display);font-size:60px;font-weight:900;line-height:.75}.playlist-center small{font-size:8px;letter-spacing:.2em;font-weight:800}.music-card-bottom{padding:0 25px 30px;margin-top:auto}.music-card-bottom h3{font-size:37px;line-height:.91;letter-spacing:-.01em;margin:12px 0 17px}.music-card-bottom h3 i{font-size:1.05em;color:#fb6573}.music-card-bottom p{font-size:13px;line-height:1.6;color:#d2bfc0;max-width:270px}.pending-label{display:block;margin-top:28px;padding:16px 0 0;border-top:1px solid #ffffff4d;color:#efb7bb;font-size:10px;font-weight:800;letter-spacing:.12em}.pending-label span{float:right}.ep-card{background:#1c1718}.ep-second{background:#221318}.ep-head{padding:36px 23px 26px;min-height:218px;background:radial-gradient(ellipse at right top,#65132388,transparent 65%)}.ep-head p{font-family:var(--serif);font-style:italic;text-transform:none;font-size:20px;color:#dcbab8;margin:0 0 11px}.ep-head h3{font-size:clamp(53px,5vw,79px);font-weight:900;line-height:.82;letter-spacing:-.015em;margin:0}.ep-period{color:#ff344b}.ep-card iframe{width:calc(100% - 30px);margin:0 15px 22px;border:0;border-radius:5px;display:block;max-height:352px}.spotify-link{margin:auto 19px 22px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid #ffffff30;padding-top:18px;font-size:11px;text-transform:uppercase;letter-spacing:.15em;font-weight:800}.spotify-link:hover{color:#ff4f60}.music-footnote{font-size:10px;color:#847b7b;text-align:right;margin:19px 0 0;letter-spacing:.05em}.playlist-embed{margin:20px 18px 0}.playlist-embed iframe{width:100%;border:0;border-radius:5px;height:352px}.playlist-card.has-playlist .playlist-art{display:none}.playlist-card.has-playlist .music-card-bottom{padding-top:20px}
+/* Biography + working video playlist */
+.story-section{background:#e8e2da;color:#171012;overflow:hidden}.story-section:before{content:"";width:35vw;height:35vw;min-width:300px;min-height:300px;position:absolute;left:-9%;bottom:-15%;background:radial-gradient(circle,#c8b7af 0,transparent 65%);opacity:.4}.story-grid{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:clamp(40px,8vw,125px);align-items:start}.story-copy h2{font-size:clamp(80px,7.5vw,125px);font-weight:900;letter-spacing:-.027em;line-height:.78;margin:0 0 44px}.story-copy h2 i{color:#ae1830;font-size:.8em}.story-rule{height:3px;width:100px;background:var(--red);margin-bottom:32px}.story-copy .story-highlight{font-size:clamp(18px,1.75vw,23px);line-height:1.5;font-weight:700;color:#21181a}.story-copy>p:not(.section-kicker){color:#4f4142;font-size:15px;line-height:1.85}.story-copy>p.story-highlight{color:#24191d}.story-link{margin-top:24px;color:#9f162c}.videotheque{background:#171214;color:#f4eee5;padding:30px;box-shadow:25px 29px 0 #b71c30}.videotheque-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:19px}.videotheque-head>div>span,.video-count{font-size:10px;letter-spacing:.16em;font-weight:800;color:#fb7f89}.videotheque-head h3{font-size:37px;font-weight:900;letter-spacing:-.01em;line-height:1;margin:10px 0 0}.videotheque-head h3 i{font-size:.95em;color:#fb7f89}.feature-video{width:100%;aspect-ratio:16/9;background:#100c0e}.feature-video-button{display:block;width:100%;height:100%;position:relative;border:0;padding:0;background:#251719;color:white;text-align:left}.feature-video-button img{width:100%;height:100%;object-fit:cover;filter:grayscale(.5)}.feature-video-dark{position:absolute;inset:0;background:linear-gradient(transparent 25%,#000c)}.feature-play{width:65px;height:65px;border-radius:50%;background:var(--red);border:1px solid #ffb5bd;display:grid;place-items:center;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:20px;padding-left:4px;transition:transform .2s}.feature-video-button:hover .feature-play{transform:translate(-50%,-50%) scale(1.12)}.feature-video-title{position:absolute;bottom:20px;left:19px;font-family:var(--display);font-size:31px;font-weight:900;letter-spacing:.02em}.video-selector{margin-top:10px}.video-choice{background:transparent;border:0;border-bottom:1px solid #ffffff28;display:grid;grid-template-columns:38px 1fr 15px;gap:6px;align-items:center;text-align:left;color:#f0e8e5;width:100%;min-height:55px;padding:10px 6px;transition:background .2s}.video-choice>span{color:#a79a9b;font-size:11px}.video-choice strong{font-size:13px;font-weight:700}.video-choice:hover,.video-choice.active{background:#b20b21}.video-choice.active span{color:white}.video-note{font-size:10px;color:#a29395;line-height:1.6;margin:18px 0 0}
+/* Band: bold full-bleed image with asymmetric gallery */
+.band-section{background:#0b0a0a;overflow:hidden}.band-feature{min-height:640px;display:grid;grid-template-columns:1fr 1fr;background:#8f0a1e}.band-feature-image{background-image:linear-gradient(90deg,transparent 0,#35081080 85%),linear-gradient(0deg,#12080a70,transparent 38%),url('assets/banda-mahaba.webp');background-size:cover;background-position:center 43%;filter:contrast(1.12) saturate(.7)}.band-feature-content{padding:clamp(70px,7vw,120px) clamp(32px,7vw,130px) 70px;align-self:center;background:radial-gradient(circle at 100% 10%,#ed344038,transparent 55%);position:relative}.band-feature-content h2{font-size:clamp(77px,7.4vw,135px);line-height:.78;font-weight:900;letter-spacing:-.025em;margin-bottom:30px}.band-feature-content h2 i{font-size:.82em;color:#ffd1ce}.band-feature-content p:not(.section-kicker){max-width:390px;font-size:16px;line-height:1.8;color:#f4d9d8}.band-small{display:inline-block;margin-top:36px;border-top:1px solid #ffffff70;padding-top:20px;font-size:10px;font-weight:800;letter-spacing:.18em}.band-gallery{padding-top:75px;padding-bottom:85px}.gallery-heading{display:flex;align-items:end;justify-content:space-between;margin-bottom:30px}.gallery-heading span{font-size:10px;color:#f66b7b;letter-spacing:.2em;font-weight:800}.gallery-heading h3{font-size:clamp(40px,4.2vw,67px);font-weight:900;margin:7px 0 0;line-height:.9}.gallery-heading h3 i{color:#ec3d50}.carousel-controls{display:flex;gap:9px}.carousel-controls button{width:48px;height:48px;border:1px solid #7a6c6c;background:transparent;color:white;font-size:24px;transition:background .2s}.carousel-controls button:hover{background:var(--red)}.gallery-track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;scroll-behavior:smooth}.gallery-track::-webkit-scrollbar{display:none}.gallery-item{flex:0 0 clamp(285px,36vw,470px);scroll-snap-align:start;margin:0;position:relative}.gallery-item img{width:100%;height:310px;object-fit:cover;filter:grayscale(.45) contrast(1.14);transition:filter .2s}.gallery-item:hover img{filter:grayscale(0) contrast(1.07)}.gallery-item figcaption{text-transform:uppercase;letter-spacing:.13em;font-size:10px;font-weight:800;padding:17px 0;color:#c7b3b4}.gallery-note{font-size:10px;color:#746d6d;margin:10px 0 0;line-height:1.7}
+/* Live archive */
+.live-section{background:#e8e2da;color:#171011;overflow:hidden}.live-section:before{content:"AO VIVO";font-family:var(--display);font-weight:900;font-size:30vw;color:#a22b3712;position:absolute;top:0;left:-4%;line-height:1;white-space:nowrap;pointer-events:none}.live-lead{position:relative;z-index:1}.live-lead h2{font-size:clamp(61px,7vw,113px)}.live-lead h2 i{color:#ba1530}.live-lead .lead-aside{color:#63585a}.live-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;position:relative}.live-photo{aspect-ratio:4/3;overflow:hidden;position:relative;background:#270b13}.live-photo img{height:100%;width:100%;object-fit:cover;filter:grayscale(1) contrast(1.25);transition:transform .5s,filter .4s}.live-card:hover .live-photo img{filter:grayscale(.2) contrast(1.12);transform:scale(1.04)}.live-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#37091680,transparent 58%);pointer-events:none}.live-index{position:absolute;top:19px;left:19px;z-index:2;background:#b90f25;padding:10px 13px;font-size:10px;letter-spacing:.12em;font-weight:800;color:white}.live-caption{padding:21px 0;border-top:4px solid #ba152c}.live-caption h3{font-size:32px;line-height:1;font-weight:900;margin:3px 0 7px}.live-caption p{color:#675e5d;font-size:12px;margin:0}.live-bottom{margin-top:40px;padding-top:19px;border-top:1px solid #282020;display:flex;justify-content:space-between;gap:20px;align-items:center;color:#746a69;font-size:10px;letter-spacing:.1em;font-weight:800}.live-bottom p{margin:0}.live-bottom>span{color:#a7192c}
+/* Booking, high-conversion contact */
+.contact-section{background:linear-gradient(110deg,#a60b1d 0,#8c0717 65%,#6b0715);padding:clamp(90px,9vw,150px) 0;isolation:isolate;overflow:hidden}.contact-glow{position:absolute;z-index:-1;width:750px;height:750px;border-radius:50%;right:-100px;top:-330px;border:1px solid #ffffff38;box-shadow:0 0 0 60px #ffffff06,0 0 0 120px #ffffff08,0 0 0 190px #ffffff04}.contact-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:6vw}.contact-top h2{font-weight:900;font-size:clamp(75px,8.6vw,146px);line-height:.77;letter-spacing:-.025em;margin-bottom:35px}.contact-top h2 i{font-size:.85em;color:#f6ded5}.contact-top>p:not(.section-kicker){font-size:16px;line-height:1.8;max-width:470px;color:#f0d4d3}.contact-actions{display:flex;align-items:center;flex-wrap:wrap;gap:23px;margin-top:36px}.contact-email{border-bottom:1px solid #ffffffac;padding-bottom:8px;font-size:12px;font-weight:800;letter-spacing:.07em}.contact-email:hover{color:#fff5f2}.contact-poster{border:1px solid #ffe4d080;padding:15px;transform:rotate(4deg);box-shadow:25px 25px 0 #40061059}.contact-poster-inner{min-height:480px;padding:30px;border:1px solid #ffffff45;background:radial-gradient(circle at 50% 45%,#ba1d31,#5d0715 66%);display:flex;flex-direction:column;justify-content:space-between;text-align:center}.poster-top,.poster-bottom{font-size:11px;font-weight:900;letter-spacing:.24em}.poster-star{font-size:135px;font-weight:300;color:#ffe1d1;line-height:1}.poster-title{font-family:var(--display);font-weight:900;font-size:clamp(70px,8vw,128px);line-height:.75;letter-spacing:-.025em}.site-footer{background:#090809;padding:34px 0}.footer-inner{display:flex;align-items:center;gap:45px}.footer-brand{flex-shrink:0}.footer-brand img{width:150px;height:auto}.footer-inner>p{margin:0;font-size:9px;line-height:1.8;color:#a89a97;letter-spacing:.1em;font-weight:700}.footer-links{display:flex;gap:20px;margin-left:auto}.footer-links a{font-size:10px;text-transform:uppercase;letter-spacing:.12em;font-weight:800}.footer-links a:hover{color:#ed3246}.copyright{font-size:9px;color:#786f6c;font-weight:700;letter-spacing:.08em;white-space:nowrap}
+/* Modal / accessibility */
+.video-modal{position:fixed;inset:0;background:#080505eb;z-index:500;display:grid;place-items:center;padding:20px;backdrop-filter:blur(12px)}.video-modal-box{width:min(960px,100%);border:1px solid #ffffff46;background:#0d090a}.modal-head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid #ffffff24;color:#ddd;font-size:11px;text-transform:uppercase;letter-spacing:.13em;font-weight:800}.modal-head button{border:1px solid #ffffff70;padding:9px 12px;background:var(--red);color:white;font-size:10px;letter-spacing:.12em;font-weight:800}.modal-frame{aspect-ratio:16/9;background:black}.modal-frame iframe{display:block;width:100%;height:100%;border:0}body.modal-open{overflow:hidden}:focus-visible{outline:3px solid #ff9096;outline-offset:4px}
+@media(max-width:1200px){.hero h1{font-size:clamp(70px,9vw,125px)}.brand-link{width:180px}.desktop-nav{gap:22px}.header-cta{padding:16px 12px;gap:10px}.music-grid{gap:11px}.ep-head h3{font-size:58px}.band-feature-content{padding:65px 5vw}.band-feature-content h2{font-size:90px}.contact-poster-inner{min-height:430px}}
+@media(max-width:960px){.container-wide{width:min(100% - 42px,760px)}.desktop-nav,.header-cta{display:none}.site-header{height:76px}.mobile-nav{top:76px}.mobile-menu-btn{display:block}.brand-link{width:190px}.hero{min-height:auto}.hero-grid{grid-template-columns:1fr 340px;gap:15px}.hero h1{font-size:clamp(60px,9.2vw,100px)}.hero-intro{gap:13px}.hero-intro p{font-size:13px}.hero-location{line-height:1.6}.hero-actions{flex-wrap:wrap;gap:16px}.btn{padding:18px 20px;gap:20px}.hero-visual{width:290px}.music-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.playlist-card{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;align-items:stretch}.playlist-card .card-head{grid-column:1/-1}.playlist-art{height:100%}.music-card-bottom{padding:25px}.music-card-bottom h3{font-size:48px}.ep-head h3{font-size:65px}.story-grid{grid-template-columns:1fr;gap:55px}.story-copy h2{font-size:110px}.story-copy>p:not(.section-kicker){max-width:680px}.videotheque{max-width:640px;width:100%;margin:0 auto}.band-feature{grid-template-columns:.8fr 1.2fr;min-height:520px}.band-feature-content h2{font-size:75px}.contact-grid{grid-template-columns:1fr .7fr}.contact-top h2{font-size:95px}.contact-poster-inner{min-height:400px}.poster-title{font-size:74px}.footer-inner{flex-wrap:wrap;gap:20px}.footer-links{margin-left:auto}.copyright{width:100%;text-align:right}}
+@media(max-width:650px){.container-wide{width:calc(100% - 36px)}.section-space{padding:78px 0}.hero{padding:48px 0 70px}.hero-grid{grid-template-columns:1fr;gap:47px}.hero-copy{padding-top:0}.eyebrow{font-size:9px;letter-spacing:.14em}.hero h1{font-size:clamp(67px,14.2vw,108px);margin:29px 0 24px}.hero h1 em{font-size:.91em}.hero-intro p{font-size:14px}.hero-actions{margin-top:28px}.hero-actions .link-line{font-size:10px;gap:14px}.hero-location{margin-top:34px;font-size:9px}.hero-visual{width:min(84vw,350px);justify-self:center}.hero-video{aspect-ratio:9/13.1}.hero-video-meta{font-size:9px}.hero-image-foot{font-size:9px}.hero-ghost{font-size:180px;bottom:-74px;right:-45px}.hero-corner{display:none}.marquee-band{height:48px}.marquee-inner{font-size:18px}.section-lead{display:block;margin-bottom:37px}.section-lead h2{font-size:clamp(62px,14vw,91px)}.lead-aside{width:100%;margin:28px 0 0;max-width:350px;font-size:14px}.music-grid{grid-template-columns:1fr;gap:18px}.playlist-card{grid-column:auto;display:flex}.playlist-art{height:300px}.playlist-center>span{font-size:56px}.music-card-bottom{padding:14px 24px 28px}.music-card-bottom h3{font-size:42px}.ep-head{min-height:198px;padding:30px 22px 20px}.ep-head h3{font-size:72px}.story-copy h2{font-size:clamp(78px,17vw,119px)}.story-copy>p:not(.section-kicker){font-size:14px}.story-copy .story-highlight{font-size:18px}.story-grid{gap:45px}.videotheque{padding:19px;box-shadow:13px 16px 0 #b71c30}.videotheque-head h3{font-size:29px}.video-count{font-size:8px}.feature-video-title{font-size:23px}.band-feature{grid-template-columns:1fr;min-height:auto}.band-feature-image{min-height:390px;background-position:center 30%}.band-feature-content{padding:68px 22px 65px}.band-feature-content h2{font-size:clamp(79px,16vw,117px)}.band-feature-content p:not(.section-kicker){font-size:14px}.band-gallery{padding-top:55px;padding-bottom:60px}.gallery-heading h3{font-size:40px}.gallery-item{flex-basis:78vw}.gallery-item img{height:260px}.carousel-controls button{width:40px;height:40px}.live-lead h2{font-size:clamp(62px,13vw,87px)}.live-grid{grid-template-columns:1fr;gap:20px}.live-photo{aspect-ratio:4/2.4}.live-caption{padding:15px 0}.live-caption h3{font-size:30px}.live-bottom{display:block}.live-bottom>span{display:inline-block;margin-top:18px}.contact-section{padding:85px 0}.contact-grid{grid-template-columns:1fr;gap:58px}.contact-top h2{font-size:clamp(80px,15vw,112px)}.contact-poster{width:min(80%,360px);margin:0 auto;transform:rotate(3deg)}.contact-poster-inner{min-height:330px}.poster-star{font-size:80px}.poster-title{font-size:78px}.poster-top,.poster-bottom{font-size:9px}.footer-inner{display:grid;grid-template-columns:1fr 1fr;gap:20px}.footer-brand{grid-column:1}.footer-brand img{width:130px}.footer-inner>p{grid-column:2;text-align:right}.footer-links{grid-column:1/-1;margin:0;justify-content:space-between;flex-wrap:wrap}.copyright{grid-column:1/-1;text-align:left}}
+@media(max-width:375px){.hero h1{font-size:65px}.hero-visual{width:92%}.hero-actions{align-items:flex-start;flex-direction:column}.ep-head h3{font-size:63px}.story-copy h2{font-size:75px}.contact-top h2{font-size:70px}.band-feature-content h2{font-size:72px}.video-count{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.marquee-inner{animation:none}.reveal,.js .reveal:not(.is-visible),.video-poster img,.gallery-item img,.btn,.feature-play{transition:none;opacity:1;transform:none}.feature-play{transform:translate(-50%,-50%)}.hero-ghost{display:none}.gallery-track{scroll-behavior:auto}}
+
+/* Links reais de shows ativam o controle automaticamente. */
+.live-play-button{position:absolute;z-index:5;inset:0;display:grid;place-items:center;width:100%;height:100%;border:0;background:#0002;color:white}.live-play-icon{width:72px;height:72px;display:grid;place-items:center;border:1px solid #fff9;background:#b90f25e8;border-radius:50%;font-size:19px;padding-left:3px;transition:transform .2s}.live-play-button:hover .live-play-icon{transform:scale(1.12)}
+
+
+/* ============================================================
+   V2 / FOTOS OFICIAIS, STORIES, TRAJETÓRIA E CONTRATAÇÃO
+   ============================================================ */
+.hero-video-shell{position:relative;aspect-ratio:9/16;width:100%;box-shadow:29px 30px 0 -10px #a20a20,0 18px 80px #000a;background:#080408}
+.hero-video-shell .hero-video{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;box-shadow:none}
+.hero-video-shell .hero-video img{object-position:center 25%;filter:grayscale(.32) contrast(1.18)}
+.hero-inline-player{position:absolute;inset:0;z-index:6;overflow:hidden;background:black}
+.hero-iframe-crop{position:absolute;inset:0;overflow:hidden}
+/* Um vídeo 16:9 dentro de 9:16 precisa de 3,1605× da largura do painel.
+   A região central do vídeo é preservada: barras laterais saem de cena. */
+.hero-iframe-crop iframe{position:absolute;left:50%;top:0;width:316.05%;height:100%;transform:translateX(-50%);border:0;max-width:none}
+.hero-close-player{position:absolute;right:11px;top:11px;z-index:8;width:38px;height:38px;border-radius:50%;background:#a50b1c;color:#fff;border:1px solid #fff9;font-size:18px;box-shadow:0 4px 22px #0009}
+.hero-video-tip{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:12px 0 0;color:#b6a9a9;font-size:9px;letter-spacing:.075em;font-weight:800}
+.hero-video-tip a{color:#fff1eb;border-bottom:1px solid #dd7682;padding-bottom:3px;white-space:nowrap}
+.hero-video-tip a:hover{color:#fc6379}
+.hero-visual .hero-image-foot{margin-top:15px}
+/* A capa da banda é vertical, por isso exibimos a imagem inteira sobre preto. */
+.band-feature-image{background-image:linear-gradient(90deg,#0c080820,#2b061036),url('https://raw.githubusercontent.com/dellsoares/ciobalbino/42cf0e4974d51cce4f99f530626e180ca92a3c86/1%20-%20tutu.jpeg');background-color:#100c0f;background-size:cover,contain;background-position:center,center;background-repeat:no-repeat;filter:none}
+.band-feature-content p strong{color:#fff;font-weight:800}
+.gallery-item img{filter:grayscale(.15) contrast(1.09)}
+.gallery-item:hover img{filter:grayscale(0) contrast(1.05)}
+/* Shorts: posters verticais recortados das fotos autorizadas enviadas. */
+.live-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.live-photo{aspect-ratio:9/15}
+.live-photo img{filter:grayscale(.3) contrast(1.13);object-position:center 30%}
+.live-card:hover .live-photo img{filter:grayscale(0) contrast(1.04)}
+.live-play-button{z-index:3;background:transparent}
+.live-play-icon{width:65px;height:65px;box-shadow:0 10px 30px #0008}
+.live-caption h3{font-size:clamp(25px,2.7vw,34px)}
+.live-caption p{font-size:10px;font-weight:800;letter-spacing:.05em}
+.video-modal.is-portrait .video-modal-box{width:min(410px,100%)}
+.video-modal.is-portrait .modal-frame{aspect-ratio:9/16;max-height:calc(100dvh - 110px)}
+.video-modal.is-portrait .modal-frame iframe{width:100%;height:100%}
+/* Histórico de apresentações, uma linha editorial para cada ano. */
+.tour-archive{position:relative;margin-top:clamp(85px,10vw,155px);padding-top:40px;border-top:2px solid #a50b1c}
+.tour-head{display:grid;grid-template-columns:1.1fr .9fr;gap:16px 6vw;align-items:end;margin-bottom:35px}
+.tour-head>.section-kicker{grid-column:1/-1;margin-bottom:0}
+.tour-head h3{font-family:var(--display);font-size:clamp(63px,7vw,112px);font-weight:900;line-height:.82;letter-spacing:-.015em;margin:0}
+.tour-head h3 i{font-family:var(--serif);font-weight:400;color:#b90f25;font-size:.72em;line-height:1}
+.tour-head>p:not(.section-kicker){font-size:15px;line-height:1.7;color:#615457;max-width:350px;justify-self:end}
+.tour-timeline{list-style:none;padding:0;margin:0;border-top:1px solid #342d2c}
+.timeline-row{display:grid;grid-template-columns:170px 1fr;gap:24px;align-items:start;padding:24px 12px;border-bottom:1px solid #c7bdb6}
+.timeline-row:nth-child(odd){background:#ffffff22}
+.timeline-year{font-family:var(--display);font-size:clamp(43px,5vw,68px);line-height:.8;font-weight:900;color:#9e0c22}
+.timeline-events{display:flex;flex-wrap:wrap;gap:9px 10px;align-items:flex-start;padding-top:2px}
+.timeline-events span{display:inline-block;border:1px solid #b8a9a4;color:#342a29;background:#f3eae1;padding:9px 12px;font-size:11px;font-weight:700;line-height:1.4}
+.contact-phone{font-size:12px;font-weight:800;letter-spacing:.08em;color:#ffdedc}
+/* Botão flutuante: vermelho paleta + ocultação temporária ao rolar. */
+.whatsapp-float{position:fixed;right:24px;bottom:24px;z-index:190;width:59px;height:59px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#bd1027;color:#fff;border:1px solid #ffffff6b;box-shadow:0 7px 0 #690411,0 10px 36px #0008;transition:opacity .24s ease,transform .24s ease,background .24s ease;opacity:1;transform:translateY(0);pointer-events:auto}
+.whatsapp-float svg{width:29px;height:29px}
+.whatsapp-float:hover{background:#e51d38;transform:translateY(-4px)}
+.whatsapp-float.is-scrolling{opacity:0;transform:translateY(22px);pointer-events:none}
+.whatsapp-tooltip{position:absolute;right:68px;top:50%;transform:translateY(-50%);background:#160a0b;color:#f7eeee;border:1px solid #bd2b3c;padding:10px 12px;white-space:nowrap;font-size:10px;font-weight:900;letter-spacing:.09em;opacity:0;visibility:hidden;transition:opacity .18s,visibility .18s}
+.whatsapp-float:hover .whatsapp-tooltip,.whatsapp-float:focus-visible .whatsapp-tooltip{opacity:1;visibility:visible}
+@media(max-width:960px){.live-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}.live-photo{aspect-ratio:9/12.5}}
+@media(max-width:650px){
+  .hero-video-shell{aspect-ratio:9/16}
+  .hero-video-tip{font-size:8px}
+  .hero-video-meta{font-size:8px}
+  .band-feature-image{min-height:515px;background-position:center,center}
+  .live-grid{gap:12px}
+  .live-photo{aspect-ratio:9/14}
+  .live-index{top:10px;left:10px;font-size:8px;padding:7px 8px}
+  .live-play-icon{width:52px;height:52px;font-size:15px}
+  .live-caption{padding:12px 0}
+  .live-caption h3{font-size:24px}
+  .live-caption p{font-size:9px;line-height:1.5}
+  .tour-archive{margin-top:75px}
+  .tour-head{grid-template-columns:1fr;gap:18px}
+  .tour-head>.section-kicker{grid-column:auto}
+  .tour-head h3{font-size:clamp(61px,13vw,86px)}
+  .tour-head>p:not(.section-kicker){justify-self:start;margin:0;font-size:13px}
+  .timeline-row{grid-template-columns:74px 1fr;gap:12px;padding:19px 0}
+  .timeline-year{font-size:38px}
+  .timeline-events span{font-size:10px;padding:8px}
+  .whatsapp-float{width:54px;height:54px;right:15px;bottom:15px}
+  .whatsapp-float svg{width:26px;height:26px}
+  .whatsapp-tooltip{display:none}
+}
+@media(max-width:360px){.timeline-row{grid-template-columns:1fr;gap:12px}.live-caption h3{font-size:21px}.live-grid{gap:9px}}
+@media(prefers-reduced-motion:reduce){.whatsapp-float{transition:none}.hero-video-shell .hero-video img{transition:none}}
+
+.band-feature-image{position:relative;display:flex;align-items:stretch;justify-content:center;overflow:hidden;background:#110c10}
+.band-feature-image img{display:block;width:100%;height:100%;max-width:none;object-fit:contain;object-position:center;position:absolute;inset:0}
+.band-feature-image:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,transparent 65%,#3a07101c),linear-gradient(0deg,#0e070a3c,transparent 37%)}
+
+
+/* V3 / CANAIS OFICIAIS: cards com ícones próprios e navegação direta. */
+.hero-social{display:flex;align-items:center;flex-wrap:wrap;column-gap:19px;row-gap:13px;margin-top:37px}
+.hero-social-label{color:#f0a2ac;font-size:9px;font-weight:900;letter-spacing:.18em;white-space:nowrap}
+.hero-social a{display:inline-flex;align-items:center;gap:6px;font-size:10px;letter-spacing:.06em;font-weight:900;line-height:1.7;border-bottom:1px solid #88434b;padding-bottom:4px;color:#e8d8d8;transition:color .2s,border-color .2s}
+.hero-social a span{color:#f44960;transition:transform .2s}
+.hero-social a:hover{color:white;border-color:#ee4e5e}
+.hero-social a:hover span{transform:translate(2px,-2px)}
+.hero-location{margin-top:29px}
+.social-section{isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 100% 0%,#4a091b8a,transparent 43%),linear-gradient(148deg,#0a090a,#170d11 70%,#0b0809);border-top:1px solid #521824;border-bottom:1px solid #521824}
+.social-section:before{position:absolute;content:'FOLLOW';font-family:var(--display);font-weight:900;font-size:clamp(150px,24vw,365px);line-height:1;letter-spacing:-.04em;color:#ffffff04;top:-30px;right:-2vw;pointer-events:none;z-index:-1}
+.social-section-top{display:flex;align-items:end;justify-content:space-between;gap:36px;margin-bottom:45px}
+.social-section-top h2{font-size:clamp(67px,8.4vw,127px);line-height:.8;letter-spacing:-.025em;font-weight:900;margin-bottom:0}
+.social-section-top h2 i{font-size:.79em;color:#e34050}
+.social-section-top>p{width:290px;max-width:100%;color:#c2b5b3;font-size:14px;line-height:1.8;margin-bottom:4px}
+.social-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.social-card{display:flex;flex-direction:column;justify-content:space-between;gap:25px;min-height:214px;padding:24px;position:relative;background:linear-gradient(155deg,#26161b,#190f12);border:1px solid #ffffff22;overflow:hidden;transition:background .25s,border-color .25s,transform .25s,box-shadow .25s}
+.social-card:before{content:'';position:absolute;left:0;bottom:0;width:100%;height:3px;background:#d3233a;transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.social-card:hover,.social-card:focus-visible{background:linear-gradient(155deg,#5a1321,#200e14);border-color:#df4053;transform:translateY(-3px);box-shadow:0 20px 35px #0006}
+.social-card:hover:before,.social-card:focus-visible:before{transform:scaleX(1)}
+.social-card:focus-visible{outline:2px solid #ffa9b4;outline-offset:3px}
+.social-card-top,.social-card-title{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.social-icon{height:48px;width:48px;display:grid;place-items:center;color:#f8e8e8;background:#b50f27;border:1px solid #f7b6bc38;border-radius:50%;flex:0 0 auto}
+.social-index{font-size:10px;letter-spacing:.13em;font-weight:800;color:#b7a6a5}
+.social-card-title{font-family:var(--display);text-transform:uppercase;font-weight:800;letter-spacing:.015em;font-size:clamp(34px,3.4vw,50px);line-height:.95}
+.social-arrow{font-family:var(--body);font-size:20px;font-weight:500;transition:transform .25s;align-self:flex-start}
+.social-card:hover .social-arrow{transform:translate(4px,-4px)}
+.social-card-tag{color:#c1aeaf;font-size:10px;letter-spacing:.15em;font-weight:800}
+.social-closing{margin-top:36px;border-top:1px solid #ffffff27;padding-top:18px;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:10px;letter-spacing:.16em;font-weight:800;color:#b8a5a4}
+@media(max-width:960px){.social-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.social-card{min-height:185px}.social-card-title{font-size:38px}.hero-social{margin-top:28px}}
+@media(max-width:650px){.social-section-top{display:block;margin-bottom:32px}.social-section-top h2{font-size:clamp(65px,13.4vw,92px)}.social-section-top>p{margin-top:28px;font-size:13px}.social-grid{grid-template-columns:1fr;gap:10px}.social-card{min-height:130px;padding:16px 22px;gap:10px}.social-icon{height:39px;width:39px}.social-icon svg{width:23px;height:23px}.social-card-title{font-size:clamp(35px,8.5vw,44px)}.social-arrow{font-size:16px}.social-card-tag,.social-index{font-size:8px}.social-closing{align-items:flex-start;flex-direction:column;gap:8px;font-size:9px}.hero-social{gap:12px 15px}.hero-social-label{width:100%;font-size:9px}}
+@media(max-width:375px){.social-grid{grid-template-columns:1fr}.social-card{padding:15px 18px;min-height:125px}.social-card-title{font-size:34px}.social-card-title .social-arrow{font-size:17px}.social-card-tag{letter-spacing:.09em}}
+@media(prefers-reduced-motion:reduce){.social-card,.social-card:before,.social-arrow,.hero-social a,.hero-social a span{transition:none}}
+
+/* V4 / Título oficial do Ció: manter a composição de três linhas sem cortes. */
+.hero h1{font-size:clamp(68px,7.75vw,126px)}
+.hero h1 em{font-size:.79em;letter-spacing:-.05em}
+@media(max-width:1200px){.hero h1{font-size:clamp(65px,7.9vw,112px)}}
+@media(max-width:960px){.hero h1{font-size:clamp(58px,8.35vw,93px)}}
+@media(max-width:650px){.hero h1{font-size:clamp(62px,14.2vw,108px)}.hero h1 em{font-size:.82em}}
+@media(max-width:375px){.hero h1{font-size:62px}.hero h1 em{font-size:.82em}}
+
+
+/* === V5 FINAL: FUNDO APROVADO / COMPONENTES REVISADOS === */
+:root{--red:#ba1028;--red2:#ec344a;--cream:#f5ede6}
+html{scroll-padding-top:94px}
+body{background:#090809}
+.hero{background-image:linear-gradient(90deg,rgba(8,7,9,.84) 0%,rgba(8,7,9,.65) 43%,rgba(8,7,9,.18) 100%),url('assets/fundo-palco.webp');background-size:cover;background-position:center center}
+.hero:after{content:'';position:absolute;z-index:-1;inset:0;background:linear-gradient(0deg,#090809,transparent 24%,transparent 85%,#09080922);pointer-events:none}
+.music-section{background:#0e0b0d url('assets/fundo-discografia.webp') center center / cover no-repeat}
+.music-grid{align-items:stretch}
+.playlist-card{display:flex;flex-direction:column;min-width:0}
+.playlist-content-heading{padding:35px 28px 27px;background:radial-gradient(ellipse at 100% 0,#80132662,transparent 68%)}
+.playlist-mini-label{display:block;font-size:10px;letter-spacing:.16em;color:#f2a8ad;font-weight:800;margin-bottom:14px}
+.playlist-content-heading h3{font-size:clamp(40px,3.7vw,56px);margin:0;line-height:.91}
+.playlist-content-heading h3 i{color:#e43f50}
+.playlist-embed{display:block!important;min-height:352px;padding:0 12px;background:#0d0b0d}
+.playlist-embed iframe{display:block;width:100%;height:352px;border:0;border-radius:12px;position:relative;z-index:1}
+.playlist-card .music-card-bottom{margin-top:auto;padding-top:23px}
+.playlist-card .music-card-bottom p{font-size:13px;line-height:1.65}
+.playlist-card .spotify-link{display:flex;font-size:11px;line-height:1.4;margin-top:16px}
+/* Infinite belt: two identical sequences; animation distance equals precisely one sequence. */
+.marquee-band{height:60px;background:#ba0c25;overflow:hidden;display:flex;align-items:center}
+.marquee-track{display:flex;flex:0 0 auto;width:max-content;gap:0;animation:marquee-seamless 25s linear infinite;will-change:transform}
+.marquee-set{display:flex;flex:0 0 auto;gap:34px;align-items:center;padding-right:34px;white-space:nowrap;min-width:max-content;font-family:var(--display);font-weight:900;font-size:23px;letter-spacing:.11em}
+.marquee-set b{font-family:var(--serif);font-weight:400;font-size:22px}
+@keyframes marquee-seamless{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+/* Keep gallery photography original 4:5 and fully visible. */
+.gallery-track{align-items:start}
+.gallery-item{flex:0 0 clamp(225px,27vw,350px);min-width:0}
+.gallery-item img{display:block;width:100%;height:auto;aspect-ratio:4 / 5;object-fit:contain;object-position:center center;background:#171015;border:1px solid #ffffff21}
+.gallery-item figcaption{max-width:100%;font-size:10px;line-height:1.6}
+.gallery-heading h3 i{color:#f2e6e2}
+/* Shorts are embeds in their own 9:16 frames, never in a full-screen modal. */
+.live-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,2.2vw,28px);max-width:1100px;margin-inline:auto;align-items:start}
+.live-card{min-width:0;max-width:260px;width:100%;justify-self:center}
+.live-photo,.short-shell{width:100%;height:auto;aspect-ratio:9 / 16;position:relative;overflow:hidden;background:#140b0f;border:1px solid #9a727549}
+.live-photo:after{display:none}
+.short-play{position:absolute;inset:0;display:block;width:100%;height:100%;border:0;padding:0;color:white;background:#120b0e;cursor:pointer;text-align:center;overflow:hidden}
+.short-play img{display:block;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center center;filter:grayscale(.25) contrast(1.15);transition:transform .35s,filter .35s}
+.short-play:hover img{filter:grayscale(0) contrast(1.04);transform:scale(1.045)}
+.short-shade{position:absolute;inset:0;background:linear-gradient(0deg,#15080dc9,transparent 45%,#15080d4d)}
+.short-play .live-index{z-index:2;position:absolute;top:14px;left:13px;font-size:10px;letter-spacing:.13em;font-weight:900}
+.short-play .live-play-icon{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:#af1024e8;border:1px solid #f4d5d1a1;font-size:23px;box-shadow:0 10px 22px #0009}
+.short-play:hover .live-play-icon{transform:translate(-50%,-50%) scale(1.09)}
+.short-play-caption{position:absolute;bottom:20px;left:8px;right:8px;font-size:10px;font-weight:900;letter-spacing:.11em}
+.short-shell iframe{display:block;position:absolute;inset:0;border:0;width:100%;height:100%;background:#000}
+.live-caption{padding:18px 0 0}
+.live-caption h3{font-size:clamp(27px,3.5vw,38px);line-height:.92;margin-bottom:12px}
+.live-caption a{font-size:10px;letter-spacing:.06em;font-weight:900;line-height:1.5;color:#a51024;text-decoration:underline;text-underline-offset:4px}
+.live-caption a:hover{color:#e13b50}
+.live-bottom{margin-top:32px}
+/* Timeline: moving years and reveal panel. */
+.tour-archive{margin-top:clamp(88px,10vw,156px);border-top:2px solid #a40d24;padding-top:clamp(38px,5vw,65px)}
+.tour-head h3{letter-spacing:-.025em}
+.timeline-interactive{margin-top:35px;border:1px solid #281b20;background:radial-gradient(ellipse at 70% 55%,#4b0e1b22,transparent 60%),#0b090b;color:#f5eee8;box-shadow:0 18px 60px #1b020f24;padding:clamp(20px,3vw,42px);overflow:hidden}
+.timeline-topline{display:flex;justify-content:space-between;gap:15px;font-size:10px;font-weight:900;letter-spacing:.16em;color:#c7a9aa;margin-bottom:28px}
+.timeline-years{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:0;position:relative;overflow:visible}
+.timeline-years:before{content:'';position:absolute;top:14px;left:7.14%;right:7.14%;height:1px;background:linear-gradient(90deg,#5c1b27,#d13249,#5c1b27);pointer-events:none}
+.timeline-year-button{position:relative;z-index:1;background:none;border:0;color:#9e8388;display:flex;flex-direction:column;align-items:center;gap:13px;padding:0 0 20px;font:800 clamp(14px,1.7vw,20px) var(--display);letter-spacing:.04em;transition:color .2s;cursor:pointer}
+.year-dot{width:14px;height:14px;background:#1b1015;border:2px solid #83535e;border-radius:50%;margin-top:7px;box-shadow:0 0 0 4px #0b090b;transition:background .2s,box-shadow .2s,transform .2s}
+.timeline-year-button.is-active{color:#fff}
+.timeline-year-button.is-active .year-dot{background:#ed2d45;border-color:#ed2d45;transform:scale(1.15);box-shadow:0 0 0 4px #0b090b,0 0 22px #e63750b0}
+.timeline-year-button:hover{color:#fff}
+.timeline-year-button:focus-visible{outline:2px solid #ffccd3;outline-offset:3px}
+.timeline-panel{display:grid;grid-template-columns:minmax(0,.43fr) minmax(0,.57fr);min-height:255px;border-top:1px solid #753241;padding-top:31px;gap:20px 36px;animation:timeline-arrive .42s ease both}
+@keyframes timeline-arrive{from{opacity:.5;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+.timeline-panel-year{font:900 clamp(100px,17vw,245px)/.8 var(--display);letter-spacing:-.065em;color:#e92c45;white-space:nowrap}
+.timeline-panel-content{padding-top:8px}
+.timeline-panel-kicker{font:900 10px var(--body);letter-spacing:.2em;color:#d17b89}
+.timeline-panel-content h4{font:800 clamp(29px,3.7vw,55px)/1 var(--display);margin:12px 0 20px;letter-spacing:.015em}
+.timeline-panel-content ul{list-style:none;padding:0;margin:0;display:grid;gap:11px}
+.timeline-panel-content li{font:500 14px/1.5 var(--body);display:flex;align-items:flex-start;gap:13px}
+.timeline-mark{flex:0 0 15px;color:#e72c46;font-size:12px;line-height:1.8}
+.timeline-controls{border-top:1px solid #3e2930;margin-top:26px;padding-top:18px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.timeline-controls>span{font:800 10px/1.6 var(--body);letter-spacing:.13em;color:#b9a4a6}
+.timeline-controls>div{display:flex;gap:8px;flex:0 0 auto}
+.timeline-controls button{width:45px;height:45px;background:#9d0f25;border:1px solid #d63950;color:#fff;font-size:22px;transition:background .2s}
+.timeline-controls button:hover{background:#d12340}
+.timeline-controls button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+/* Real photograph in booking area */
+.contact-section{background:linear-gradient(112deg,#ab0921,#6b0518);isolation:isolate}
+.contact-grid{gap:clamp(35px,7vw,105px);grid-template-columns:minmax(0,1.13fr) minmax(0,.87fr)}
+.contact-photo-panel{width:100%;min-width:0;position:relative;max-width:480px;justify-self:center}
+.contact-photo-frame{position:relative;aspect-ratio:1/1;width:100%;border:1px solid #ffe8e96b;background:#8a1321;overflow:hidden;box-shadow:25px 25px 0 #36051070,0 30px 70px #20000d55}
+.contact-photo-frame img{height:100%;width:100%;object-fit:contain;object-position:center center;background:#741321}
+.contact-photo-frame:after{content:'';position:absolute;inset:73% 0 0;background:linear-gradient(0deg,#18060d83,transparent);pointer-events:none}
+.contact-photo-badge{position:absolute;left:20px;top:20px;z-index:2;border:1px solid #ffd2d4c4;background:#590315ad;padding:9px 12px;color:white;font-size:9px;letter-spacing:.15em;font-weight:900}
+.contact-photo-caption{margin:17px 0 0;font:900 clamp(53px,6vw,88px)/.85 var(--display);letter-spacing:-.005em;white-space:nowrap;color:#fff}
+.contact-photo-caption i{font-family:var(--serif);font-weight:400}
+.contact-top{min-width:0}
+/* Redes: guarantee cards survive stylesheet/cache differences. */
+.social-section{background:radial-gradient(ellipse at 90% 0,#4d0b1f85,transparent 45%),#0b090b}
+.social-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.social-card{min-width:0;display:flex;flex-direction:column;gap:22px;border:1px solid #b12a3a71;padding:25px;min-height:205px;background:linear-gradient(135deg,#231016,#100a0d);text-decoration:none;color:#fff}
+.social-card-title{min-width:0;word-break:normal;overflow-wrap:anywhere}
+/* Footer rebuilt in two structured bands. */
+.site-footer{background:#060607;border-top:1px solid #4b1c26;padding:0;color:#ede1df}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:30px;padding-top:44px;padding-bottom:42px}
+.footer-main{display:flex;align-items:center;gap:25px;min-width:0}
+.footer-main .footer-brand{display:block;flex:0 0 165px}
+.footer-main .footer-brand img{width:165px;height:auto}
+.footer-main p{font:700 10px/1.8 var(--body);letter-spacing:.09em;margin:0;color:#998e91}
+.footer-links{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:12px 22px;margin:0}
+.footer-links a{font:800 10px var(--body);text-transform:uppercase;letter-spacing:.1em;white-space:nowrap}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid #3b242a;padding:20px 0 26px}
+.footer-bottom>span{font:700 9px var(--body);letter-spacing:.08em;color:#8c8184}
+.footer-bottom>a{font:500 12px var(--body);color:#aaa0a2;text-decoration:none}
+.footer-bottom>a strong{color:#f5eeeb;font-weight:800;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#be253a}
+.footer-bottom>a:hover,.footer-bottom>a:focus-visible{color:#fff}
+.footer-bottom>a span{color:#e1384f}
+/* Fixed floating WhatsApp size independent of SVG inherited browser rules. */
+.whatsapp-float{position:fixed!important;right:22px!important;bottom:22px!important;z-index:490!important;width:60px!important;height:60px!important;min-width:60px;min-height:60px;display:flex!important;align-items:center!important;justify-content:center!important;border-radius:50%!important;background:#bb102a!important;border:1px solid #f5c3c9a3!important;box-shadow:0 12px 28px #0008!important;text-decoration:none!important;transition:opacity .23s,transform .23s;opacity:1}
+.whatsapp-float svg{display:block!important;flex:0 0 29px!important;max-width:29px!important;max-height:29px!important;width:29px!important;height:29px!important;fill:currentColor}
+.whatsapp-float.is-scrolling{opacity:0!important;transform:translateY(28px)!important;pointer-events:none!important}
+.whatsapp-tooltip{font:800 10px var(--body);letter-spacing:.08em}
+@media(max-width:1080px){.contact-grid{grid-template-columns:1fr 1fr}.footer-inner{align-items:flex-start;flex-wrap:wrap}.footer-links{margin-left:0;justify-content:flex-start}.footer-main{width:100%}}
+@media(max-width:960px){.live-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.gallery-item{flex-basis:clamp(200px,45vw,300px)}.social-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.timeline-panel-year{font-size:clamp(88px,18vw,160px)}.contact-photo-caption{font-size:clamp(45px,5vw,70px)}}
+@media(max-width:650px){
+.hero{background-position:63% center}
+.marquee-set{font-size:20px;gap:25px;padding-right:25px}
+.playlist-content-heading{padding:28px 19px 22px}
+.playlist-content-heading h3{font-size:46px}
+.playlist-embed{padding:0 6px}
+.gallery-item{flex:0 0 min(72vw,290px)}
+.gallery-item img{height:auto;aspect-ratio:4/5;object-fit:contain}
+.live-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 12px}
+.live-card{max-width:240px}
+.live-caption h3{font-size:clamp(24px,7vw,35px)}
+.live-caption a{font-size:9px}
+.short-play .live-play-icon{width:50px;height:50px;font-size:18px}
+.tour-head h3{font-size:clamp(66px,13.5vw,88px)}
+.timeline-interactive{padding:20px 14px}
+.timeline-topline{font-size:8px;letter-spacing:.09em}
+.timeline-years:before{top:11px}
+.timeline-year-button{font-size:clamp(12px,3.25vw,16px);gap:10px;padding-bottom:20px}
+.year-dot{height:11px;width:11px;margin-top:6px}
+.timeline-panel{grid-template-columns:1fr;gap:15px;min-height:240px}
+.timeline-panel-year{font-size:110px}
+.timeline-panel-content{padding:0}
+.timeline-panel-content h4{font-size:35px;margin-bottom:17px}
+.timeline-panel-content li{font-size:13px}
+.timeline-controls>span{font-size:8px;max-width:185px}
+.contact-grid{grid-template-columns:1fr;gap:40px}
+.contact-photo-panel{width:min(100%,380px)}
+.contact-photo-caption{font-size:clamp(53px,12vw,75px)}
+.social-grid{grid-template-columns:1fr;gap:12px}
+.social-card{min-height:134px;gap:13px;padding:18px 22px}
+.footer-inner{padding:40px 0 32px;gap:27px}
+.footer-main{gap:18px;flex-wrap:wrap}
+.footer-main .footer-brand{flex-basis:140px}
+.footer-main .footer-brand img{width:140px}
+.footer-main p{font-size:9px}
+.footer-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;gap:16px 8px}
+.footer-links a{font-size:9px;line-height:1.5}
+.footer-bottom{align-items:flex-start;flex-direction:column;gap:13px}
+.whatsapp-float{width:55px!important;height:55px!important;min-width:55px;min-height:55px;right:15px!important;bottom:15px!important}
+.whatsapp-float svg{width:26px!important;height:26px!important;flex-basis:26px!important}
+}
+@media(max-width:365px){.live-grid{gap:10px}.live-caption h3{font-size:23px}.timeline-year-button{font-size:11px}.footer-links{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}.timeline-panel{animation:none}.short-play img{transition:none}}
+
+/* Final polish: avoid text overflow and hide booking float over footer credit */
+.social-soundcloud .social-card-title{font-size:clamp(30px,2.8vw,40px);letter-spacing:-.015em;white-space:nowrap;overflow-wrap:normal}
+.contact-photo-panel{transform:none!important;box-shadow:none!important;border:0!important;padding:0!important;margin:0 auto!important;width:100%!important;max-width:480px!important}
+.contact-photo-caption{font-size:clamp(41px,4.25vw,62px)!important;line-height:1!important;white-space:normal!important;overflow-wrap:normal!important;word-break:normal!important;margin:18px 0 0!important;}
+.contact-photo-caption i{font-size:.9em}
+.whatsapp-float.is-footer-visible{opacity:0!important;transform:translateY(30px)!important;pointer-events:none!important}
+.footer-bottom>a{margin-right:84px}
+@media(max-width:650px){.footer-bottom>a{margin-right:0}.social-soundcloud .social-card-title{font-size:35px}.contact-photo-panel{width:min(100%,380px)!important}.contact-photo-caption{font-size:clamp(38px,10vw,55px)!important}}
+@media(max-width:340px){.social-soundcloud .social-card-title{font-size:31px}}
+</style><meta content="https://raw.githubusercontent.com/dellsoares/ciobalbino/8b803150dc10e948c656b7002e93fb43d176e7df/ciored.jpg" property="og:image"/></head>
 <body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-  <div class="site-progress" aria-hidden="true"><span id="scroll-progress"></span></div>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<div aria-hidden="true" class="site-progress"><span id="scroll-progress"></span></div>
+<!-- O logo original enviado está aplicado no cabeçalho vermelho. -->
+<header class="site-header" id="topo">
+<div class="header-inner container-wide">
+<a aria-label="Ció Balbino, início" class="brand-link" href="#inicio">
+<img alt="Ció Balbino" height="72" src="assets/logo-cio-balbino.png" width="216"/>
+</a>
+<nav aria-label="Menu principal" class="desktop-nav">
+<a href="#musicas">Músicas</a><a href="#historia">História</a><a href="#banda">A banda</a><a href="#aovivo">Ao vivo</a><a href="#shows">Shows</a><a href="#redes">Redes</a>
+</nav>
+<a class="header-cta" href="#contratacao">Contratar show <span aria-hidden="true">↗</span></a>
+<button aria-controls="mobile-nav" aria-expanded="false" aria-label="Abrir menu" class="mobile-menu-btn" id="menu-toggle" type="button"><span></span><span></span><span></span></button>
+</div>
+<nav aria-label="Menu para celular" class="mobile-nav" hidden="" id="mobile-nav">
+<a href="#inicio">Início</a><a href="#musicas">Músicas</a><a href="#historia">História</a><a href="#banda">A banda</a><a href="#aovivo">Ao vivo</a><a href="#shows">Shows</a><a href="#redes">Redes</a><a href="#contratacao">Contratação</a>
+</nav>
+</header>
+<main id="conteudo">
+<!-- 01. HERO -->
+<section aria-labelledby="hero-title" class="hero stage-bg" id="inicio">
+<div aria-hidden="true" class="hero-signal"></div>
+<div class="hero-grid container-wide">
+<div class="hero-copy reveal">
+<p class="eyebrow"><span class="eyebrow-line"></span> Ció Balbino <span class="point">/</span> Rock &amp; música autoral</p>
+<h1 id="hero-title">ENERGIA<br/>AUTÊNTICA<br/><em>QUE CONECTA</em></h1>
+<div class="hero-intro"><span class="hero-intro-index">01 / 06</span><p>Dez anos de estrada, rock na veia e o público sempre no centro da história.</p></div>
+<div class="hero-actions"><a class="btn btn-red" href="#musicas">Ouvir agora <span aria-hidden="true">↗</span></a><a class="link-line" href="#aovivo">Sentir o show <span aria-hidden="true">↗</span></a></div>
+<nav aria-label="Acesso rápido às redes e músicas" class="hero-social">
+<span class="hero-social-label">ENCONTRE O CIÓ</span>
+<a aria-label="Instagram oficial (nova aba)" href="https://www.instagram.com/ciobalbino_/" rel="noopener noreferrer" target="_blank">INSTAGRAM <span aria-hidden="true">↗</span></a>
+<a aria-label="YouTube oficial (nova aba)" href="https://www.youtube.com/@Ciobalbino" rel="noopener noreferrer" target="_blank">YOUTUBE <span aria-hidden="true">↗</span></a>
+<a aria-label="Spotify oficial (nova aba)" href="https://open.spotify.com/artist/0qLfLXr3c70X8A34epkyy7" rel="noopener noreferrer" target="_blank">SPOTIFY <span aria-hidden="true">↗</span></a>
+</nav>
+<div class="hero-location"><span class="signal-dot"></span> De Minas Gerais para os palcos que fazem a história continuar.</div>
+</div>
+<div class="hero-visual reveal">
+<div class="hero-video-meta"><span>Em destaque</span><span>VÍDEO / VERSÃO VERTICAL</span></div>
+<div class="hero-video-shell" id="hero-video-shell">
+<button aria-label="Reproduzir o vídeo principal de Ció Balbino em enquadramento vertical" class="video-poster hero-video" data-youtube="Nay-JKsupvg" id="hero-video-start" type="button">
+<img alt="Ció Balbino cantando no palco" fetchpriority="high" loading="eager" onerror="this.onerror=null;this.src='assets/hero-cio.webp'" src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio4.jpg"/>
+<span aria-hidden="true" class="video-poster-shade"></span>
+<span aria-hidden="true" class="video-cover-top">CIÓ / EM MOVIMENTO</span>
+<span aria-hidden="true" class="play-circle"><svg viewbox="0 0 24 24"><path d="m9 6 10 6-10 6z"></path></svg></span>
+<span class="video-cover-bottom">APERTE O PLAY <span aria-hidden="true">↗</span></span>
+</button>
+<div aria-label="Vídeo principal em formato vertical" class="hero-inline-player" hidden="" id="hero-inline-player">
+<div class="hero-iframe-crop" id="hero-iframe-crop"></div>
+<button aria-label="Fechar vídeo principal" class="hero-close-player" id="hero-close-player" type="button">✕</button>
+</div>
+</div>
+<p class="hero-video-tip">ENQUADRAMENTO VERTICAL <span aria-hidden="true">/</span> <a href="https://www.youtube.com/watch?v=Nay-JKsupvg" rel="noopener noreferrer" target="_blank">VER VÍDEO INTEGRAL ↗</a></p>
+<div class="hero-image-foot"><span>O som tem rosto.</span><span>O palco tem voz.</span></div>
+<span aria-hidden="true" class="hero-ghost">C</span>
+</div>
+</div>
+<div aria-hidden="true" class="hero-corner">CIÓ / BALBINO<br/>EST. OURO BRANCO — MG</div>
+</section>
+<div aria-label="Rock, voz, palco, história, música ao vivo" class="marquee-band">
+<div aria-hidden="true" class="marquee-track">
+<div class="marquee-set"><span>ROCK</span><b>✳</b><span>VOZ</span><b>✳</b><span>PALCO</span><b>✳</b><span>HISTÓRIA</span><b>✳</b><span>MÚSICA AO VIVO</span><b>✳</b></div>
+<div class="marquee-set"><span>ROCK</span><b>✳</b><span>VOZ</span><b>✳</b><span>PALCO</span><b>✳</b><span>HISTÓRIA</span><b>✳</b><span>MÚSICA AO VIVO</span><b>✳</b></div>
+</div>
+</div>
+<!-- 02. MÚSICAS: três capítulos independentes, na mesma família visual -->
+<section aria-labelledby="music-heading" class="music-section section-space" id="musicas">
+<div class="container-wide">
+<div class="section-lead reveal"><div><p class="section-kicker"><span class="square"></span> 02 / DISCOGRAFIA</p><h2 id="music-heading">O SOM<br/><span>EM TRÊS</span> <i>CAPÍTULOS.</i></h2></div><p class="lead-aside">Singles, canções e duas leituras de um mesmo universo. A trilha sonora da história começa aqui.</p></div>
+<div class="music-grid">
+<article class="music-card playlist-card has-playlist reveal">
+<div class="card-head"><span>CAPÍTULO 01</span><span>PLAYLIST OFICIAL</span></div>
+<div class="playlist-content-heading"><span class="playlist-mini-label">SINGLES / SELEÇÃO DE CANÇÕES</span><h3>UMA VOZ.<br/><i>MUITAS HISTÓRIAS.</i></h3></div>
+<div class="playlist-embed" id="playlist-embed"><iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" height="352" loading="lazy" src="https://open.spotify.com/embed/playlist/2mIjDdqF05UR5wZkpZ9Y6H?utm_source=generator" title="Playlist Singles de Ció Balbino no Spotify" width="100%"></iframe></div>
+<div class="music-card-bottom"><p>Singles e canções reunidos numa playlist para ouvir sem sair daqui.</p><a class="spotify-link" href="https://open.spotify.com/playlist/2mIjDdqF05UR5wZkpZ9Y6H" rel="noopener noreferrer" target="_blank">Abrir playlist no Spotify <span aria-hidden="true">↗</span></a></div>
+</article>
+<article class="music-card ep-card reveal">
+<div class="card-head"><span>CAPÍTULO 02</span><span>EP / ESTÚDIO</span></div>
+<div class="ep-head"><p>O primeiro mergulho</p><h3>PONTO<br/>DE LUZ<span class="ep-period">.</span></h3></div>
+<iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" height="352" loading="lazy" src="https://open.spotify.com/embed/album/3RbzY0p5MQXGdUQaVhw57t?utm_source=generator" title="Ouça Ponto de Luz, EP de Ció Balbino, no Spotify" width="100%"></iframe>
+<a class="spotify-link" href="https://open.spotify.com/album/3RbzY0p5MQXGdUQaVhw57t" rel="noopener noreferrer" target="_blank">Abrir no Spotify <span aria-hidden="true">↗</span></a>
+</article>
+<article class="music-card ep-card ep-second reveal">
+<div class="card-head"><span>CAPÍTULO 03</span><span>EP / ACÚSTICO</span></div>
+<div class="ep-head"><p>Outra forma de sentir</p><h3>POCKET<br/>SESSION<span class="ep-period">.</span></h3></div>
+<iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" height="352" loading="lazy" src="https://open.spotify.com/embed/album/5psZdrWGd0XaZaSyCQwij0?utm_source=generator" title="Ouça Pocke Sessioncase: EP Ponto de Luz (Acústico) no Spotify" width="100%"></iframe>
+<a class="spotify-link" href="https://open.spotify.com/album/5psZdrWGd0XaZaSyCQwij0" rel="noopener noreferrer" target="_blank">Abrir no Spotify <span aria-hidden="true">↗</span></a>
+</article>
+</div>
+<p class="music-footnote">Reproduza aqui, sem sair do site. Os players são oficiais do Spotify.</p>
+</div>
+</section>
+<!-- 03. BIOGRAFIA + VIDEOTECA -->
+<section aria-labelledby="story-heading" class="story-section section-space" id="historia">
+<div class="container-wide story-grid">
+<div class="story-copy reveal"><p class="section-kicker"><span class="square"></span> 03 / A TRAJETÓRIA</p><h2 id="story-heading">10 ANOS<br/>DE PALCO.<br/><i>E HISTÓRIA.</i></h2><div class="story-rule"></div>
+<p class="story-highlight">Com dez anos de estrada na cena mineira, Ció Balbino traduz a energia do rock e a sensibilidade do pop rock em apresentações marcantes.</p>
+<p>À frente da banda <strong>Tutu Marambah</strong> e de seus projetos solo, o artista entrega uma performance versátil: do peso do rock n' roll ao aconchego do formato voz e violão.</p>
+<p>Sua trajetória reúne shows, festivais e produção autoral, incluindo um single viabilizado pela <strong>Lei Aldir Blanc</strong>. Com CNPJ regularizado e estrutura profissional, Ció constrói uma identidade própria e uma conexão imediata com o público em qualquer palco.</p>
+<a class="link-line story-link" href="#banda">Conheça a banda atual <span aria-hidden="true">↗</span></a>
+</div>
+<div class="videotheque reveal"><div class="videotheque-head"><div><span>O ARTISTA EM VÍDEO</span><h3>VEJA. OUÇA. <i>SINTA.</i></h3></div><span class="video-count">04 VÍDEOS</span></div>
+<div class="feature-video" id="feature-video">
+<button aria-label="Reproduzir vídeo selecionado" class="feature-video-button" id="feature-video-button" type="button">
+<img alt="Capa do vídeo selecionado" id="feature-video-image" src="https://i.ytimg.com/vi/apNPnAftig0/hqdefault.jpg"/>
+<span aria-hidden="true" class="feature-video-dark"></span><span aria-hidden="true" class="feature-play">▶</span><span class="feature-video-title" id="feature-video-title">ASTRONAUTA</span>
+</button>
+</div>
+<div aria-label="Escolha um vídeo de Ció Balbino" class="video-selector" role="group"><button aria-pressed="true" class="video-choice active" data-id="apNPnAftig0" data-name="Astronauta" type="button"><span>01</span><strong>Astronauta</strong><span aria-hidden="true">↗</span></button><button aria-pressed="false" class="video-choice" data-id="23jgqpVu_Jg" data-name="De onde eu vim" type="button"><span>02</span><strong>De onde eu vim</strong><span aria-hidden="true">↗</span></button><button aria-pressed="false" class="video-choice" data-id="hmB6ucCCJUc" data-name="Nada perdi" type="button"><span>03</span><strong>Nada perdi</strong><span aria-hidden="true">↗</span></button><button aria-pressed="false" class="video-choice" data-id="4QwOx12BmDg" data-name="Albatroz" type="button"><span>04</span><strong>Albatroz</strong><span aria-hidden="true">↗</span></button></div>
+<p class="video-note">Seleção de vídeos públicos de Ció Balbino. Escolha uma faixa para assistir.</p>
+</div>
+</div>
+</section>
+<!-- 04. BANDA ATUAL E CARROSSEL -->
+<section aria-labelledby="band-heading" class="band-section" id="banda"><div class="band-feature"><div class="band-feature-image"><img alt="Ció Balbino com a banda Tutu Marambah em fotografia promocional" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='assets/banda-mahaba.webp'" src="https://raw.githubusercontent.com/dellsoares/ciobalbino/42cf0e4974d51cce4f99f530626e180ca92a3c86/1%20-%20tutu.jpeg"/></div><div class="band-feature-content"><p class="section-kicker light"><span class="square"></span> 04 / O AGORA</p><h2 id="band-heading">UMA BANDA.<br/>UM SOM<br/><i>SEM FREIO.</i></h2><p>Com a <strong>Tutu Marambah</strong>, Ció leva ao palco um repertório de rock e pop rock marcado por energia, presença e conexão com o público. Em paralelo, mantém seus projetos solo e apresentações em voz e violão.</p><span class="band-small">TUTU MARAMBAH / POP ROCK / AO VIVO</span></div></div>
+<div class="band-gallery container-wide"><div class="gallery-heading"><div><span>ÁLBUM DE ESTRADA</span><h3>CIÓ <i>EM CENA.</i></h3></div><div class="carousel-controls"><button aria-label="Fotografia anterior" id="gallery-prev" type="button">←</button><button aria-label="Próxima fotografia" id="gallery-next" type="button">→</button></div></div>
+<div aria-label="Galeria de seis fotos de Ció Balbino e banda" class="gallery-track" id="gallery-track"><figure class="gallery-item"><img alt="Ció Balbino de costas para o público durante show" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='assets/palco-noite.webp'" src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio1.jpg"/><figcaption>01 / O palco visto por dentro</figcaption></figure><figure class="gallery-item"><img alt="Ció Balbino cantando diante de um público com luzes rosa" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='assets/cio-roxo.webp'" src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio2.jpg"/><figcaption>02 / Luzes acesas, show em movimento</figcaption></figure><figure class="gallery-item"><img alt="Ció Balbino tocando violão e cantando ao microfone" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='assets/cantando.webp'" src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio3.jpg"/><figcaption>03 / A força do voz e violão</figcaption></figure><figure class="gallery-item"><img alt="Ció Balbino cantando com microfone durante apresentação" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='assets/cio-roxo.webp'" src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio4.jpg"/><figcaption>04 / De frente para o palco</figcaption></figure><figure class="gallery-item"><img alt="Músicos no palco e plateia reunida para uma fotografia" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='assets/palco-crowd.webp'" src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio5.jpg"/><figcaption>05 / Palco e público, lado a lado</figcaption></figure><figure class="gallery-item"><img alt="Músicos e público reunidos em um evento de rock" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='assets/palco-crowd.webp'" src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio6.jpg"/><figcaption>06 / A estrada reúne pessoas</figcaption></figure></div>
+<p class="gallery-note">Seis registros de apresentações e encontros com o público. Deslize a galeria ou use as setas para explorar.</p>
+</div>
+</section>
+<!-- 05. TRECHOS REAIS DE SHOW + LINHA DO TEMPO DE APRESENTAÇÕES -->
+<section aria-labelledby="live-heading" class="live-section section-space" id="aovivo">
+<div class="container-wide">
+<div class="section-lead live-lead"><div><p class="section-kicker"><span class="square"></span> 05 / NO PALCO</p><h2 id="live-heading">O ROCK NÃO<br/>CABE NUM<br/><i>VÍDEO.</i></h2></div><p class="lead-aside">Quatro momentos em vídeo. Porque é no encontro entre palco e público que a música ganha sua verdadeira dimensão.</p></div>
+<div class="live-grid"><article class="live-card reveal" data-video-card="NmB6MWJaHL0">
+<div class="live-photo short-shell" id="short-1">
+<button aria-label="Reproduzir Short 1: A energia. dentro do site" class="short-play" data-live-title="A energia." data-live-video="NmB6MWJaHL0" type="button">
+<img alt="Miniatura do Short 1 de Ció Balbino" decoding="async" loading="lazy" src="https://i.ytimg.com/vi/NmB6MWJaHL0/hqdefault.jpg"/>
+<span aria-hidden="true" class="short-shade"></span><span class="live-index">01 / SHORT</span><span aria-hidden="true" class="live-play-icon">▶</span>
+<span class="short-play-caption">ASSISTIR NO SITE</span>
+</button>
+</div>
+<div class="live-caption"><h3>A ENERGIA.</h3><a aria-label="Abrir Short 1 no YouTube caso o player não funcione" href="https://www.youtube.com/shorts/NmB6MWJaHL0" rel="noopener noreferrer" target="_blank">ABRIR NO YOUTUBE ↗</a></div>
+</article><article class="live-card reveal" data-video-card="d_DBWETpuSM">
+<div class="live-photo short-shell" id="short-2">
+<button aria-label="Reproduzir Short 2: O encontro. dentro do site" class="short-play" data-live-title="O encontro." data-live-video="d_DBWETpuSM" type="button">
+<img alt="Miniatura do Short 2 de Ció Balbino" decoding="async" loading="lazy" src="https://i.ytimg.com/vi/d_DBWETpuSM/hqdefault.jpg"/>
+<span aria-hidden="true" class="short-shade"></span><span class="live-index">02 / SHORT</span><span aria-hidden="true" class="live-play-icon">▶</span>
+<span class="short-play-caption">ASSISTIR NO SITE</span>
+</button>
+</div>
+<div class="live-caption"><h3>O ENCONTRO.</h3><a aria-label="Abrir Short 2 no YouTube caso o player não funcione" href="https://www.youtube.com/shorts/d_DBWETpuSM" rel="noopener noreferrer" target="_blank">ABRIR NO YOUTUBE ↗</a></div>
+</article><article class="live-card reveal" data-video-card="4Acr3ZLBUcM">
+<div class="live-photo short-shell" id="short-3">
+<button aria-label="Reproduzir Short 3: A voz. dentro do site" class="short-play" data-live-title="A voz." data-live-video="4Acr3ZLBUcM" type="button">
+<img alt="Miniatura do Short 3 de Ció Balbino" decoding="async" loading="lazy" src="https://i.ytimg.com/vi/4Acr3ZLBUcM/hqdefault.jpg"/>
+<span aria-hidden="true" class="short-shade"></span><span class="live-index">03 / SHORT</span><span aria-hidden="true" class="live-play-icon">▶</span>
+<span class="short-play-caption">ASSISTIR NO SITE</span>
+</button>
+</div>
+<div class="live-caption"><h3>A VOZ.</h3><a aria-label="Abrir Short 3 no YouTube caso o player não funcione" href="https://www.youtube.com/shorts/4Acr3ZLBUcM" rel="noopener noreferrer" target="_blank">ABRIR NO YOUTUBE ↗</a></div>
+</article><article class="live-card reveal" data-video-card="0-2QeFGoD6s">
+<div class="live-photo short-shell" id="short-4">
+<button aria-label="Reproduzir Short 4: O palco. dentro do site" class="short-play" data-live-title="O palco." data-live-video="0-2QeFGoD6s" type="button">
+<img alt="Miniatura do Short 4 de Ció Balbino" decoding="async" loading="lazy" src="https://i.ytimg.com/vi/0-2QeFGoD6s/hqdefault.jpg"/>
+<span aria-hidden="true" class="short-shade"></span><span class="live-index">04 / SHORT</span><span aria-hidden="true" class="live-play-icon">▶</span>
+<span class="short-play-caption">ASSISTIR NO SITE</span>
+</button>
+</div>
+<div class="live-caption"><h3>O PALCO.</h3><a aria-label="Abrir Short 4 no YouTube caso o player não funcione" href="https://www.youtube.com/shorts/0-2QeFGoD6s" rel="noopener noreferrer" target="_blank">ABRIR NO YOUTUBE ↗</a></div>
+</article></div>
+<div class="live-bottom"><p>QUATRO REGISTROS REAIS / ASSISTA SEM SAIR DO SITE.</p><span>VIVA O AO VIVO <span aria-hidden="true">✳</span></span></div>
+<div aria-labelledby="tour-heading" class="tour-archive" id="shows">
+<div class="tour-head"><p class="section-kicker"><span class="square"></span> A ESTRADA / 2018–2026</p><h3 id="tour-heading">UMA DÉCADA<br/><i>DE PALCOS.</i></h3><p>Toque em um ano. A estrada se abre em festivais, encontros e shows marcantes.</p></div>
+<div class="timeline-interactive" data-years='{"2018": ["Festa de Santo Antônio"], "2020": ["Festival Cultural · Miguel Burnier"], "2022": ["Festival da Batata · Ouro Branco", "Festival Wine Gastro · Conselheiro Lafaiete"], "2023": ["Festival Estrada Real / Avelar Sports", "Feira de Comida de Boteco e Cerveja Artesanal · Itatiaia"], "2024": ["Inauguração do Mercado Central · Ouro Branco", "Show Casarão · Ouro Branco"], "2025": ["MotoFest · Congonhas", "Encontro de Motociclistas · Espírito Santo", "Festival Rock dos Guerreiros", "CarnaRock · Ouro Branco", "FACAP · Lobo Leite"], "2026": ["CarnaRock · Ouro Branco"]}' id="timeline-interactive">
+<div class="timeline-topline"><span>ARQUIVO AO VIVO / 01—07</span><span id="timeline-counter">2018 • 2026</span></div>
+<div aria-label="Anos com apresentações marcantes" class="timeline-years" role="tablist">
+<button aria-controls="timeline-panel" aria-selected="true" class="timeline-year-button is-active" data-year="2018" id="year-2018" role="tab" tabindex="0" type="button"><span class="year-dot"></span><span>2018</span></button><button aria-controls="timeline-panel" aria-selected="false" class="timeline-year-button" data-year="2020" id="year-2020" role="tab" tabindex="-1" type="button"><span class="year-dot"></span><span>2020</span></button><button aria-controls="timeline-panel" aria-selected="false" class="timeline-year-button" data-year="2022" id="year-2022" role="tab" tabindex="-1" type="button"><span class="year-dot"></span><span>2022</span></button><button aria-controls="timeline-panel" aria-selected="false" class="timeline-year-button" data-year="2023" id="year-2023" role="tab" tabindex="-1" type="button"><span class="year-dot"></span><span>2023</span></button><button aria-controls="timeline-panel" aria-selected="false" class="timeline-year-button" data-year="2024" id="year-2024" role="tab" tabindex="-1" type="button"><span class="year-dot"></span><span>2024</span></button><button aria-controls="timeline-panel" aria-selected="false" class="timeline-year-button" data-year="2025" id="year-2025" role="tab" tabindex="-1" type="button"><span class="year-dot"></span><span>2025</span></button><button aria-controls="timeline-panel" aria-selected="false" class="timeline-year-button" data-year="2026" id="year-2026" role="tab" tabindex="-1" type="button"><span class="year-dot"></span><span>2026</span></button>
+</div><div aria-labelledby="year-2018" class="timeline-panel" id="timeline-panel" role="tabpanel" tabindex="0">
+<div class="timeline-panel-year" id="timeline-panel-year">2018</div>
+<div class="timeline-panel-content"><span class="timeline-panel-kicker">SHOWS MARCANTES</span><h4 id="timeline-title">ONDE TUDO GANHA VOZ.</h4><ul id="timeline-events"><li><span class="timeline-mark">✳</span>Festa de Santo Antônio</li></ul></div>
+</div>
+<div class="timeline-controls"><span>ESCOLHA UM ANO OU ACOMPANHE A LINHA DO TEMPO</span><div><button aria-label="Ano anterior" id="timeline-prev" type="button">←</button><button aria-label="Próximo ano" id="timeline-next" type="button">→</button></div></div>
+</div>
+</div>
+</div>
+</section>
+<!-- 06. CONTATO -->
+<section aria-labelledby="contact-heading" class="contact-section" id="contratacao"><div aria-hidden="true" class="contact-glow"></div><div class="container-wide contact-grid"><div class="contact-top"><p class="section-kicker light"><span class="square"></span> 06 / CONTRATAÇÕES</p><h2 id="contact-heading">O PRÓXIMO<br/>PALCO PODE<br/><i>SER O SEU.</i></h2><p>Rock em banda, repertório pop rock ou formato voz e violão. Fale diretamente pelo WhatsApp e leve Ció Balbino para seu evento.</p><div class="contact-actions"><a class="btn btn-cream" href="https://wa.me/5531994828741?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20sobre%20a%20contrata%C3%A7%C3%A3o%20de%20um%20show%20do%20Ci%C3%B3%20Balbino." id="booking-whatsapp" rel="noopener noreferrer" target="_blank">Falar sobre um show <span aria-hidden="true">↗</span></a><span class="contact-phone">WHATSAPP · (31) 99482-8741</span></div></div><div class="contact-poster contact-photo-panel">
+<div class="contact-photo-frame">
+<img alt="Retrato de Ció Balbino com roupa vermelha e óculos escuros, sentado em fundo vermelho" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='assets/hero-cio.webp'" src="https://raw.githubusercontent.com/dellsoares/ciobalbino/8b803150dc10e948c656b7002e93fb43d176e7df/ciored.jpg"/>
+<span class="contact-photo-badge">CIÓ BALBINO / CONTRATAÇÕES</span>
+</div>
+<p class="contact-photo-caption">FAÇA <i>BARULHO.</i></p>
+</div></div></section>
+<!-- 07. REDES E PLATAFORMAS OFICIAIS -->
+<section aria-labelledby="social-heading" class="social-section section-space" id="redes">
+<div class="container-wide">
+<div class="social-section-top reveal">
+<div><p class="section-kicker"><span class="square"></span> 07 / CONEXÕES</p><h2 id="social-heading">SIGA O SOM.<br/><i>FICA POR PERTO.</i></h2></div>
+<p>O palco continua nas redes. Vídeos, bastidores, agenda e canções nas plataformas oficiais do Ció Balbino.</p>
+</div>
+<div class="social-grid">
+<a aria-label="Abrir YouTube oficial de Ció Balbino (nova aba)" class="social-card social-youtube" href="https://www.youtube.com/@Ciobalbino" rel="noopener noreferrer" target="_blank">
+<span class="social-card-top"><span class="social-icon"><svg aria-hidden="true" fill="none" height="27" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="27"><rect height="12.8" rx="4.3" width="19.2" x="2.4" y="5.6"></rect><path d="m10 8.9 5.8 3.1-5.8 3.1V8.9Z" fill="currentColor" stroke="none"></path></svg></span><span class="social-index">01 / 06</span></span>
+<span class="social-card-title">YouTube<span aria-hidden="true" class="social-arrow">↗</span></span>
+<span class="social-card-tag">VÍDEOS &amp; SHOWS</span>
+</a>
+<a aria-label="Abrir Instagram oficial de Ció Balbino (nova aba)" class="social-card social-instagram" href="https://www.instagram.com/ciobalbino_/" rel="noopener noreferrer" target="_blank">
+<span class="social-card-top"><span class="social-icon"><svg aria-hidden="true" fill="none" height="27" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="27"><rect height="17" rx="5" width="17" x="3.5" y="3.5"></rect><circle cx="12" cy="12" r="3.8"></circle><circle cx="17.6" cy="6.7" fill="currentColor" r=".9" stroke="none"></circle></svg></span><span class="social-index">02 / 06</span></span>
+<span class="social-card-title">Instagram<span aria-hidden="true" class="social-arrow">↗</span></span>
+<span class="social-card-tag">FOTOS &amp; BASTIDORES</span>
+</a>
+<a aria-label="Abrir Spotify oficial de Ció Balbino (nova aba)" class="social-card social-spotify" href="https://open.spotify.com/artist/0qLfLXr3c70X8A34epkyy7" rel="noopener noreferrer" target="_blank">
+<span class="social-card-top"><span class="social-icon"><svg aria-hidden="true" fill="none" height="27" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="27"><circle cx="12" cy="12" r="9.8"></circle><path d="M5.8 9.6c4.5-1.35 9.1-.95 13.4 1.4M6.9 13c4.1-1 8.2-.58 11.5 1.4M8.1 16.2c3.1-.7 6.1-.35 8.7 1.2"></path></svg></span><span class="social-index">03 / 06</span></span>
+<span class="social-card-title">Spotify<span aria-hidden="true" class="social-arrow">↗</span></span>
+<span class="social-card-tag">OUÇA AS MÚSICAS</span>
+</a>
+<a aria-label="Abrir Facebook oficial de Ció Balbino (nova aba)" class="social-card social-facebook" href="https://www.facebook.com/ciosongs/" rel="noopener noreferrer" target="_blank">
+<span class="social-card-top"><span class="social-icon"><svg aria-hidden="true" fill="none" height="27" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="27"><path d="M14.1 20.6v-7.5h2.6l.4-3.2h-3V8.1c0-.95.27-1.6 1.7-1.6h1.6V3.7c-.75-.12-1.73-.2-2.6-.2-2.8 0-4.5 1.7-4.5 4.7v1.7H7.9v3.2h2.4v7.5"></path></svg></span><span class="social-index">04 / 06</span></span>
+<span class="social-card-title">Facebook<span aria-hidden="true" class="social-arrow">↗</span></span>
+<span class="social-card-tag">NOTÍCIAS &amp; EVENTOS</span>
+</a>
+<a aria-label="Abrir Deezer oficial de Ció Balbino (nova aba)" class="social-card social-deezer" href="https://www.deezer.com/br/artist/14830775" rel="noopener noreferrer" target="_blank">
+<span class="social-card-top"><span class="social-icon"><svg aria-hidden="true" fill="none" height="27" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="27"><path d="M3 18.5h4M3 15.7h4M3 12.9h4M9 18.5h4M9 15.7h4M9 12.9h4M9 10.1h4M15 18.5h5M15 15.7h5M15 12.9h5M15 10.1h5M15 7.3h5M15 4.5h5"></path></svg></span><span class="social-index">05 / 06</span></span>
+<span class="social-card-title">Deezer<span aria-hidden="true" class="social-arrow">↗</span></span>
+<span class="social-card-tag">STREAMING</span>
+</a>
+<a aria-label="Abrir SoundCloud oficial de Ció Balbino (nova aba)" class="social-card social-soundcloud" href="https://soundcloud.com/cio-balbino" rel="noopener noreferrer" target="_blank">
+<span class="social-card-top"><span class="social-icon"><svg aria-hidden="true" fill="none" height="27" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="27"><path d="M2.5 14.8v3.4M4.8 12.3v5.9M7.1 10.9v7.3M9.4 9.8v8.4M11.7 9.9a4.9 4.9 0 0 1 9.25 1.5 3.35 3.35 0 0 1-.8 6.6h-8.45V9.9Z"></path></svg></span><span class="social-index">06 / 06</span></span>
+<span class="social-card-title">SoundCloud<span aria-hidden="true" class="social-arrow">↗</span></span>
+<span class="social-card-tag">MAIS FAIXAS</span>
+</a>
+</div>
+<div aria-hidden="true" class="social-closing"><span>CIÓ BALBINO / CANAIS OFICIAIS</span><span>ROCK EM TODAS AS FREQUÊNCIAS ✳</span></div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container-wide footer-inner">
+<div class="footer-main"><a class="footer-brand" href="#inicio"><img alt="Ció Balbino" height="61" src="assets/logo-cio-balbino.png" width="182"/></a><p>ROCK, AUTORALIDADE &amp; PRESENÇA.<br/>OURO BRANCO — MG</p></div>
+<nav aria-label="Navegação do rodapé" class="footer-links"><a href="#musicas">Músicas</a><a href="#historia">História</a><a href="#banda">Ció em cena</a><a href="#aovivo">Ao vivo</a><a href="#shows">Shows</a><a href="#contratacao">Contratar</a></nav>
+</div>
+<div class="container-wide footer-bottom"><span>© <span id="current-year">2026</span> CIÓ BALBINO. TODOS OS DIREITOS RESERVADOS.</span>
+<a aria-label="Criado por Wendell Soares. Conversar sobre serviços no WhatsApp, nova aba" href="https://wa.me/5531983073854?text=Venho%20do%20site%20do%20Ci%C3%B3%20e%20quero%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os." id="creator-credit" rel="noopener noreferrer" target="_blank">Criado por <strong>Wendell Soares.</strong> <span aria-hidden="true">↗</span></a>
+</div>
+</footer>
+<!-- WhatsApp flutuante: desaparece durante a rolagem, volta ao parar. -->
+<a aria-label="Conversar sobre a contratação de Ció Balbino pelo WhatsApp" class="whatsapp-float" href="https://wa.me/5531994828741?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20contrata%C3%A7%C3%A3o%20de%20um%20show%20do%20Ci%C3%B3%20Balbino." id="whatsapp-float" rel="noopener noreferrer" target="_blank" title="Contratar pelo WhatsApp"><svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.83 11.83 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0c3.181.001 6.167 1.24 8.413 3.488a11.814 11.814 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807a9.83 9.83 0 0 0 5.392 1.592c5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884 0 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg><span aria-hidden="true" class="whatsapp-tooltip">CONTRATAR SHOW</span></a>
+<!-- Modal reutilizado para os vídeos; carrega o YouTube apenas após o clique. -->
+<div aria-labelledby="modal-title" aria-modal="true" class="video-modal" hidden="" id="video-modal" role="dialog"><div class="video-modal-box"><div class="modal-head"><span id="modal-title">Ció Balbino / Vídeo</span><button aria-label="Fechar vídeo" id="close-modal" type="button">FECHAR ✕</button></div><div class="modal-frame" id="modal-frame"></div></div></div>
 
-  <!-- O logo original enviado está aplicado no cabeçalho vermelho. -->
-  <header class="site-header" id="topo">
-    <div class="header-inner container-wide">
-      <a class="brand-link" href="#inicio" aria-label="Ció Balbino, início">
-        <img src="assets/logo-cio-balbino.png" alt="Ció Balbino" width="216" height="72">
-      </a>
-      <nav class="desktop-nav" aria-label="Menu principal">
-        <a href="#musicas">Músicas</a><a href="#historia">História</a><a href="#banda">A banda</a><a href="#aovivo">Ao vivo</a><a href="#shows">Shows</a><a href="#redes">Redes</a>
-      </nav>
-      <a class="header-cta" href="#contratacao">Contratar show <span aria-hidden="true">↗</span></a>
-      <button class="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu" id="menu-toggle"><span></span><span></span><span></span></button>
-    </div>
-    <nav class="mobile-nav" id="mobile-nav" aria-label="Menu para celular" hidden>
-      <a href="#inicio">Início</a><a href="#musicas">Músicas</a><a href="#historia">História</a><a href="#banda">A banda</a><a href="#aovivo">Ao vivo</a><a href="#shows">Shows</a><a href="#redes">Redes</a><a href="#contratacao">Contratação</a>
-    </nav>
-  </header>
+<script id="site-script-final">'use strict';
+/* ================================================================
+ * CONFIGURAÇÕES QUE VOCÊ PODE ALTERAR SEM MEXER NO RESTO DO SITE
+ * ================================================================ */
+const SITE_CONFIG = {
+  // Playlist publicada na seção de músicas; URL também presente no HTML.
+  spotifyPlaylist: 'https://open.spotify.com/playlist/2mIjDdqF05UR5wZkpZ9Y6H?si=vgKpvegySnS_VXifX1J1XQ',
+  // Vídeo vertical de destaque do YouTube (ID):
+  heroVideo: 'Nay-JKsupvg',
+  bookingWhatsApp: '5531994828741',
+  liveClips: [
+    { video: 'NmB6MWJaHL0', title: 'A energia' },
+    { video: 'd_DBWETpuSM', title: 'O encontro' },
+    { video: '4Acr3ZLBUcM', title: 'A voz' },
+    { video: '0-2QeFGoD6s', title: 'O palco' }
+  ]
+};
 
-  <main id="conteudo">
-    <!-- 01. HERO -->
-    <section class="hero stage-bg" id="inicio" aria-labelledby="hero-title">
-      <div class="hero-signal" aria-hidden="true"></div>
-      <div class="hero-grid container-wide">
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span class="eyebrow-line"></span> Ció Balbino <span class="point">/</span> Rock & música autoral</p>
-          <h1 id="hero-title">ENERGIA<br>AUTÊNTICA<br><em>QUE CONECTA.</em></h1>
-          <div class="hero-intro"><span class="hero-intro-index">01 / 06</span><p>Dez anos de estrada, rock na veia e o público sempre no centro da história.</p></div>
-          <div class="hero-actions"><a class="btn btn-red" href="#musicas">Ouvir agora <span aria-hidden="true">↗</span></a><a class="link-line" href="#aovivo">Sentir o show <span aria-hidden="true">↗</span></a></div>
+const qs = s => document.querySelector(s);
+const qsa = s => [...document.querySelectorAll(s)];
+document.documentElement.classList.add('js');
+qs('#current-year').textContent = new Date().getFullYear();
 
-          <nav class="hero-social" aria-label="Acesso rápido às redes e músicas">
-            <span class="hero-social-label">ENCONTRE O CIÓ</span>
-            <a href="https://www.instagram.com/ciobalbino_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial (nova aba)">INSTAGRAM <span aria-hidden="true">↗</span></a>
-            <a href="https://www.youtube.com/@Ciobalbino" target="_blank" rel="noopener noreferrer" aria-label="YouTube oficial (nova aba)">YOUTUBE <span aria-hidden="true">↗</span></a>
-            <a href="https://open.spotify.com/artist/0qLfLXr3c70X8A34epkyy7" target="_blank" rel="noopener noreferrer" aria-label="Spotify oficial (nova aba)">SPOTIFY <span aria-hidden="true">↗</span></a>
-          </nav>
-          <div class="hero-location"><span class="signal-dot"></span> De Minas Gerais para os palcos que fazem a história continuar.</div>
-        </div>
-        <div class="hero-visual reveal">
-          <div class="hero-video-meta"><span>Em destaque</span><span>VÍDEO / VERSÃO VERTICAL</span></div>
-          <div class="hero-video-shell" id="hero-video-shell">
-            <button class="video-poster hero-video" type="button" id="hero-video-start" data-youtube="Nay-JKsupvg" aria-label="Reproduzir o vídeo principal de Ció Balbino em enquadramento vertical">
-              <img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio4.jpg" onerror="this.onerror=null;this.src='assets/hero-cio.webp'" alt="Ció Balbino cantando no palco" loading="eager" fetchpriority="high">
-              <span class="video-poster-shade" aria-hidden="true"></span>
-              <span class="video-cover-top" aria-hidden="true">CIÓ / EM MOVIMENTO</span>
-              <span class="play-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 10 6-10 6z"/></svg></span>
-              <span class="video-cover-bottom">APERTE O PLAY <span aria-hidden="true">↗</span></span>
-            </button>
-            <div class="hero-inline-player" id="hero-inline-player" hidden aria-label="Vídeo principal em formato vertical">
-              <div class="hero-iframe-crop" id="hero-iframe-crop"></div>
-              <button type="button" class="hero-close-player" id="hero-close-player" aria-label="Fechar vídeo principal">✕</button>
-            </div>
-          </div>
-          <p class="hero-video-tip">ENQUADRAMENTO VERTICAL <span aria-hidden="true">/</span> <a href="https://www.youtube.com/watch?v=Nay-JKsupvg" target="_blank" rel="noopener noreferrer">VER VÍDEO INTEGRAL ↗</a></p>
-          <div class="hero-image-foot"><span>O som tem rosto.</span><span>O palco tem voz.</span></div>
-          <span class="hero-ghost" aria-hidden="true">C</span>
-        </div>
-      </div>
-      <div class="hero-corner" aria-hidden="true">CIÓ / BALBINO<br>EST. OURO BRANCO — MG</div>
-    </section>
+// Menu responsivo.
+const menuToggle = qs('#menu-toggle');
+const mobileNav = qs('#mobile-nav');
+function closeMenu(){mobileNav.hidden=true;menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Abrir menu');}
+menuToggle.addEventListener('click',()=>{
+  mobileNav.hidden=!mobileNav.hidden;
+  const opened = !mobileNav.hidden;
+  menuToggle.setAttribute('aria-expanded',String(opened));
+  menuToggle.setAttribute('aria-label',opened?'Fechar menu':'Abrir menu');
+});
+qsa('#mobile-nav a').forEach(a=>a.addEventListener('click',closeMenu));
+window.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu();});
 
-    <div class="marquee-band" aria-label="Rock, voz, banda, palco, histórias">
-      <div class="marquee-inner" aria-hidden="true"> <span>ROCK</span><b>✳</b><span>VOZ</span><b>✳</b><span>PALCO</span><b>✳</b><span>HISTÓRIA</span><b>✳</b><span>ROCK</span><b>✳</b><span>VOZ</span><b>✳</b><span>PALCO</span><b>✳</b><span>HISTÓRIA</span><b>✳</b></div>
-    </div>
+// Indicador de avanço e aparecimento suave de blocos.
+let scrollQueued=false;
+function updateProgress(){
+  const max=document.documentElement.scrollHeight-innerHeight;
+  qs('#scroll-progress').style.width=(max>0?(scrollY/max)*100:0)+'%';scrollQueued=false;
+}
+window.addEventListener('scroll',()=>{if(!scrollQueued){requestAnimationFrame(updateProgress);scrollQueued=true;}},{passive:true});
+updateProgress();
+if('IntersectionObserver' in window){
+ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target);}}),{threshold:.06});
+ qsa('.reveal').forEach(el=>observer.observe(el));
+}else{qsa('.reveal').forEach(el=>el.classList.add('is-visible'));}
 
-    <!-- 02. MÚSICAS: três capítulos independentes, na mesma família visual -->
-    <section class="music-section section-space" id="musicas" aria-labelledby="music-heading">
-      <div class="container-wide">
-        <div class="section-lead reveal"><div><p class="section-kicker"><span class="square"></span> 02 / DISCOGRAFIA</p><h2 id="music-heading">O SOM<br><span>EM TRÊS</span> <i>CAPÍTULOS.</i></h2></div><p class="lead-aside">Singles, canções e duas leituras de um mesmo universo. A trilha sonora da história começa aqui.</p></div>
-        <div class="music-grid">
-          <article class="music-card playlist-card reveal">
-            <div class="card-head"><span>CAPÍTULO 01</span><span>PLAYLIST</span></div>
-            <div class="playlist-art" id="playlist-art"><span class="playlist-arc arc-1" aria-hidden="true"></span><span class="playlist-arc arc-2" aria-hidden="true"></span><span class="playlist-arc arc-3" aria-hidden="true"></span><div class="playlist-center"><span>CIÓ<br>BALBINO</span><small>SELEÇÃO DE CANÇÕES</small></div></div>
-            <div class="playlist-embed" id="playlist-embed" hidden></div>
-            <div class="music-card-bottom"><h3>Canções soltas.<br><i>Uma só voz.</i></h3><p>Uma seleção para reunir os singles e as músicas essenciais do Ció.</p><span class="pending-label" id="playlist-status">PLAYLIST EM PREPARAÇÃO <span aria-hidden="true">↗</span></span></div>
-          </article>
-          <article class="music-card ep-card reveal">
-            <div class="card-head"><span>CAPÍTULO 02</span><span>EP / ESTÚDIO</span></div>
-            <div class="ep-head"><p>O primeiro mergulho</p><h3>PONTO<br>DE LUZ<span class="ep-period">.</span></h3></div>
-            <iframe title="Ouça Ponto de Luz, EP de Ció Balbino, no Spotify" src="https://open.spotify.com/embed/album/3RbzY0p5MQXGdUQaVhw57t?utm_source=generator" width="100%" height="352" loading="lazy" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            <a class="spotify-link" href="https://open.spotify.com/album/3RbzY0p5MQXGdUQaVhw57t" target="_blank" rel="noopener noreferrer">Abrir no Spotify <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="music-card ep-card ep-second reveal">
-            <div class="card-head"><span>CAPÍTULO 03</span><span>EP / ACÚSTICO</span></div>
-            <div class="ep-head"><p>Outra forma de sentir</p><h3>POCKET<br>SESSION<span class="ep-period">.</span></h3></div>
-            <iframe title="Ouça Pocke Sessioncase: EP Ponto de Luz (Acústico) no Spotify" src="https://open.spotify.com/embed/album/5psZdrWGd0XaZaSyCQwij0?utm_source=generator" width="100%" height="352" loading="lazy" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            <a class="spotify-link" href="https://open.spotify.com/album/5psZdrWGd0XaZaSyCQwij0" target="_blank" rel="noopener noreferrer">Abrir no Spotify <span aria-hidden="true">↗</span></a>
-          </article>
-        </div>
-        <p class="music-footnote">Reproduza aqui, sem sair do site. Os players são oficiais do Spotify.</p>
-      </div>
-    </section>
+// A playlist oficial está incorporada diretamente no HTML. Não depende de JS.
 
-    <!-- 03. BIOGRAFIA + VIDEOTECA -->
-    <section class="story-section section-space" id="historia" aria-labelledby="story-heading">
-      <div class="container-wide story-grid">
-        <div class="story-copy reveal"><p class="section-kicker"><span class="square"></span> 03 / A TRAJETÓRIA</p><h2 id="story-heading">10 ANOS<br>DE PALCO.<br><i>E HISTÓRIA.</i></h2><div class="story-rule"></div>
-          <p class="story-highlight">Com dez anos de estrada na cena mineira, Ció Balbino traduz a energia do rock e a sensibilidade do pop rock em apresentações marcantes.</p>
-          <p>À frente da banda <strong>Tutu Marambah</strong> e de seus projetos solo, o artista entrega uma performance versátil: do peso do rock n' roll ao aconchego do formato voz e violão.</p>
-          <p>Sua trajetória reúne shows, festivais e produção autoral, incluindo um single viabilizado pela <strong>Lei Aldir Blanc</strong>. Com CNPJ regularizado e estrutura profissional, Ció constrói uma identidade própria e uma conexão imediata com o público em qualquer palco.</p>
-          <a class="link-line story-link" href="#banda">Conheça a banda atual <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="videotheque reveal"><div class="videotheque-head"><div><span>O ARTISTA EM VÍDEO</span><h3>VEJA. OUÇA. <i>SINTA.</i></h3></div><span class="video-count">04 VÍDEOS</span></div>
-          <div class="feature-video" id="feature-video">
-            <button class="feature-video-button" id="feature-video-button" type="button" aria-label="Reproduzir vídeo selecionado">
-              <img id="feature-video-image" src="https://i.ytimg.com/vi/apNPnAftig0/hqdefault.jpg" alt="Capa do vídeo selecionado">
-              <span class="feature-video-dark" aria-hidden="true"></span><span class="feature-play" aria-hidden="true">▶</span><span class="feature-video-title" id="feature-video-title">ASTRONAUTA</span>
-            </button>
-          </div>
-          <div class="video-selector" role="group" aria-label="Escolha um vídeo de Ció Balbino"><button class="video-choice active" type="button" data-id="apNPnAftig0" data-name="Astronauta" aria-pressed="true"><span>01</span><strong>Astronauta</strong><span aria-hidden="true">↗</span></button><button class="video-choice" type="button" data-id="23jgqpVu_Jg" data-name="De onde eu vim" aria-pressed="false"><span>02</span><strong>De onde eu vim</strong><span aria-hidden="true">↗</span></button><button class="video-choice" type="button" data-id="hmB6ucCCJUc" data-name="Nada perdi" aria-pressed="false"><span>03</span><strong>Nada perdi</strong><span aria-hidden="true">↗</span></button><button class="video-choice" type="button" data-id="4QwOx12BmDg" data-name="Albatroz" aria-pressed="false"><span>04</span><strong>Albatroz</strong><span aria-hidden="true">↗</span></button></div>
-          <p class="video-note">Seleção de vídeos públicos de Ció Balbino. Escolha uma faixa para assistir.</p>
-        </div>
-      </div>
-    </section>
+// Vídeos: modal acionado pelo usuário; YouTube não carrega no primeiro paint.
+const modal=qs('#video-modal');const modalFrame=qs('#modal-frame');const modalTitle=qs('#modal-title');
+const closeModalButton=qs('#close-modal');let beforeOpen=null;
+function cleanYoutubeId(input){const str=String(input||'');return /^[A-Za-z0-9_-]{11}$/.test(str)?str:null;}
+function openVideo(id,title,vertical=false){
+ id=cleanYoutubeId(id);if(!id)return;
+ beforeOpen=document.activeElement;
+ modalTitle.textContent=title||'Ció Balbino / Vídeo';
+ modal.hidden=false;modal.classList.toggle('is-portrait',vertical);document.body.classList.add('modal-open');
+ const iframe=document.createElement('iframe');
+ iframe.src=`https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0`;
+ iframe.title=title||'Vídeo de Ció Balbino';
+ iframe.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';iframe.allowFullscreen=true;
+ iframe.referrerPolicy='strict-origin-when-cross-origin';
+ modalFrame.replaceChildren(iframe);closeModalButton.focus();
+}
+function closeModal(){modal.hidden=true;modal.classList.remove('is-portrait');modalFrame.replaceChildren();document.body.classList.remove('modal-open');beforeOpen?.focus();}
+// O YouTube é 16:9, mas o conteúdo importante está no centro (story).
+// Não editamos nem baixamos o vídeo: recortamos somente as laterais via CSS.
+const heroStart = qs('#hero-video-start');
+const heroPlayer = qs('#hero-inline-player');
+const heroFrameCrop = qs('#hero-iframe-crop');
+heroStart.addEventListener('click',()=>{
+  heroStart.hidden=true;
+  heroPlayer.hidden=false;
+  const iframe=document.createElement('iframe');
+  iframe.src=`https://www.youtube-nocookie.com/embed/${SITE_CONFIG.heroVideo}?autoplay=1&rel=0&playsinline=1`;
+  iframe.title='Ció Balbino / Vídeo principal em enquadramento vertical';
+  iframe.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+  iframe.allowFullscreen=true;
+  iframe.referrerPolicy='strict-origin-when-cross-origin';
+  heroFrameCrop.replaceChildren(iframe);
+});
+qs('#hero-close-player').addEventListener('click',()=>{
+  heroPlayer.hidden=true;heroFrameCrop.replaceChildren();heroStart.hidden=false;heroStart.focus();
+});
+closeModalButton.addEventListener('click',closeModal);
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal();});
+window.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden)closeModal();});
 
-    <!-- 04. BANDA ATUAL E CARROSSEL -->
-    <section class="band-section" id="banda" aria-labelledby="band-heading"><div class="band-feature"><div class="band-feature-image"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/42cf0e4974d51cce4f99f530626e180ca92a3c86/1%20-%20tutu.jpeg" onerror="this.onerror=null;this.src='assets/banda-mahaba.webp'" alt="Ció Balbino com a banda Tutu Marambah em fotografia promocional" loading="lazy" decoding="async"></div><div class="band-feature-content"><p class="section-kicker light"><span class="square"></span> 04 / O AGORA</p><h2 id="band-heading">UMA BANDA.<br>UM SOM<br><i>SEM FREIO.</i></h2><p>Com a <strong>Tutu Marambah</strong>, Ció leva ao palco um repertório de rock e pop rock marcado por energia, presença e conexão com o público. Em paralelo, mantém seus projetos solo e apresentações em voz e violão.</p><span class="band-small">TUTU MARAMBAH / POP ROCK / AO VIVO</span></div></div>
-      <div class="band-gallery container-wide"><div class="gallery-heading"><div><span>ÁLBUM DE ESTRADA</span><h3>A BANDA <i>EM CENA.</i></h3></div><div class="carousel-controls"><button id="gallery-prev" type="button" aria-label="Fotografia anterior">←</button><button id="gallery-next" type="button" aria-label="Próxima fotografia">→</button></div></div>
-        <div class="gallery-track" id="gallery-track" aria-label="Galeria de seis fotos de Ció Balbino e banda"><figure class="gallery-item"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio1.jpg" onerror="this.onerror=null;this.src='assets/palco-noite.webp'" alt="Ció Balbino de costas para o público durante show" loading="lazy" decoding="async"><figcaption>01 / O palco visto por dentro</figcaption></figure><figure class="gallery-item"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio2.jpg" onerror="this.onerror=null;this.src='assets/cio-roxo.webp'" alt="Ció Balbino cantando diante de um público com luzes rosa" loading="lazy" decoding="async"><figcaption>02 / Luzes acesas, show em movimento</figcaption></figure><figure class="gallery-item"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio3.jpg" onerror="this.onerror=null;this.src='assets/cantando.webp'" alt="Ció Balbino tocando violão e cantando ao microfone" loading="lazy" decoding="async"><figcaption>03 / A força do voz e violão</figcaption></figure><figure class="gallery-item"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio4.jpg" onerror="this.onerror=null;this.src='assets/cio-roxo.webp'" alt="Ció Balbino cantando com microfone durante apresentação" loading="lazy" decoding="async"><figcaption>04 / De frente para o palco</figcaption></figure><figure class="gallery-item"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio5.jpg" onerror="this.onerror=null;this.src='assets/palco-crowd.webp'" alt="Músicos no palco e plateia reunida para uma fotografia" loading="lazy" decoding="async"><figcaption>05 / Palco e público, lado a lado</figcaption></figure><figure class="gallery-item"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio6.jpg" onerror="this.onerror=null;this.src='assets/palco-crowd.webp'" alt="Músicos e público reunidos em um evento de rock" loading="lazy" decoding="async"><figcaption>06 / A estrada reúne pessoas</figcaption></figure></div>
-        <p class="gallery-note">Seis registros de apresentações e encontros com o público. Deslize a galeria ou use as setas para explorar.</p>
-      </div>
-    </section>
+// Playlist editorial de videoclipes: a seleção atualiza a capa e reproduz sob demanda.
+let selectedVideoId='apNPnAftig0';let selectedVideoName='Astronauta';
+qsa('.video-choice').forEach(button=>button.addEventListener('click',()=>{
+ selectedVideoId=button.dataset.id;selectedVideoName=button.dataset.name;
+ qsa('.video-choice').forEach(b=>{const current=b===button;b.classList.toggle('active',current);b.setAttribute('aria-pressed',String(current));});
+ qs('#feature-video-image').src=`https://i.ytimg.com/vi/${selectedVideoId}/hqdefault.jpg`;
+ qs('#feature-video-image').alt=`Capa do vídeo ${selectedVideoName}`;
+ qs('#feature-video-title').textContent=selectedVideoName;
+ qs('#feature-video-button').setAttribute('aria-label',`Assistir ${selectedVideoName}`);
+}));
+qs('#feature-video-button').addEventListener('click',()=>openVideo(selectedVideoId,`Ció Balbino / ${selectedVideoName}`));
 
-    <!-- 05. TRECHOS REAIS DE SHOW + LINHA DO TEMPO DE APRESENTAÇÕES -->
-    <section class="live-section section-space" id="aovivo" aria-labelledby="live-heading">
-      <div class="container-wide">
-        <div class="section-lead live-lead"><div><p class="section-kicker"><span class="square"></span> 05 / NO PALCO</p><h2 id="live-heading">O ROCK<br>NÃO CABE<br><i>NUMA FOTO.</i></h2></div><p class="lead-aside">Quatro momentos em vídeo. Porque é no encontro entre palco e público que a música ganha sua verdadeira dimensão.</p></div>
-        <div class="live-grid">          <article class="live-card reveal"><div class="live-photo"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio1.jpg" onerror="this.onerror=null;this.src='assets/palco-noite.webp'" alt="Ció Balbino se apresentando diante de uma plateia" loading="lazy"><span class="live-index">01 / SHORT</span><button type="button" class="live-play-button" data-live-video="NmB6MWJaHL0" data-live-title="A ENERGIA" aria-label="Assistir vídeo curto de show: a energia"><span class="live-play-icon" aria-hidden="true">▶</span></button></div><div class="live-caption"><h3>A ENERGIA.</h3><p>ASSISTIR TRECHO DO SHOW ↗</p></div></article>
-          <article class="live-card reveal"><div class="live-photo"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio2.jpg" onerror="this.onerror=null;this.src='assets/cio-roxo.webp'" alt="Ció Balbino e plateia sob iluminação de show" loading="lazy"><span class="live-index">02 / SHORT</span><button type="button" class="live-play-button" data-live-video="d_DBWETpuSM" data-live-title="O ENCONTRO" aria-label="Assistir vídeo curto de show: o encontro"><span class="live-play-icon" aria-hidden="true">▶</span></button></div><div class="live-caption"><h3>O ENCONTRO.</h3><p>ASSISTIR TRECHO DO SHOW ↗</p></div></article>
-          <article class="live-card reveal"><div class="live-photo"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio4.jpg" onerror="this.onerror=null;this.src='assets/cio-roxo.webp'" alt="Ció Balbino cantando ao microfone" loading="lazy"><span class="live-index">03 / SHORT</span><button type="button" class="live-play-button" data-live-video="4Acr3ZLBUcM" data-live-title="A VOZ" aria-label="Assistir vídeo curto de show: a voz"><span class="live-play-icon" aria-hidden="true">▶</span></button></div><div class="live-caption"><h3>A VOZ.</h3><p>ASSISTIR TRECHO DO SHOW ↗</p></div></article>
-          <article class="live-card reveal"><div class="live-photo"><img src="https://raw.githubusercontent.com/dellsoares/ciobalbino/019835089353691b2024b7c5eda95682f0d6fe09/cio5.jpg" onerror="this.onerror=null;this.src='assets/palco-crowd.webp'" alt="Ció Balbino e banda diante do público" loading="lazy"><span class="live-index">04 / SHORT</span><button type="button" class="live-play-button" data-live-video="0-2QeFGoD6s" data-live-title="O PALCO" aria-label="Assistir vídeo curto de show: o palco"><span class="live-play-icon" aria-hidden="true">▶</span></button></div><div class="live-caption"><h3>O PALCO.</h3><p>ASSISTIR TRECHO DO SHOW ↗</p></div></article></div>
-        <div class="live-bottom"><p>QUATRO REGISTROS REAIS / ASSISTA SEM SAIR DO SITE.</p><span>VIVA O AO VIVO <span aria-hidden="true">✳</span></span></div>
-        <div class="tour-archive" id="shows" aria-labelledby="tour-heading">
-          <div class="tour-head"><p class="section-kicker"><span class="square"></span> A ESTRADA / 2018–2026</p><h3 id="tour-heading">PALCOS QUE<br><i>VIRARAM HISTÓRIA.</i></h3><p>Uma seleção de festivais, encontros e apresentações que fazem parte da caminhada do Ció.</p></div>
-          <ol class="tour-timeline"><li class="timeline-row"><span class="timeline-year">2026</span><div class="timeline-events"><span>CarnaRock · Ouro Branco</span></div></li>
-<li class="timeline-row"><span class="timeline-year">2025</span><div class="timeline-events"><span>MotoFest · Congonhas</span><span>Encontro de Motociclistas · Espírito Santo</span><span>Festival Rock dos Guerreiros</span><span>CarnaRock · Ouro Branco</span><span>FACAP · Lobo Leite</span></div></li>
-<li class="timeline-row"><span class="timeline-year">2024</span><div class="timeline-events"><span>Inauguração do Mercado Central · Ouro Branco</span><span>Show Casarão · Ouro Branco</span></div></li>
-<li class="timeline-row"><span class="timeline-year">2023</span><div class="timeline-events"><span>Festival Estrada Real / Avelar Sports</span><span>Feira de Comida de Boteco e Cerveja Artesanal · Itatiaia</span></div></li>
-<li class="timeline-row"><span class="timeline-year">2022</span><div class="timeline-events"><span>Festival da Batata · Ouro Branco</span><span>Festival Wine Gastro · Conselheiro Lafaiete</span></div></li>
-<li class="timeline-row"><span class="timeline-year">2020</span><div class="timeline-events"><span>Festival Cultural · Miguel Burnier</span></div></li>
-<li class="timeline-row"><span class="timeline-year">2018</span><div class="timeline-events"><span>Festa de Santo Antônio</span></div></li></ol>
-        </div>
-      </div>
-    </section>
+// Galeria horizontal com navegação (mouse, toque, teclado, botões).
+const track=qs('#gallery-track');
+function scrollGallery(direction){
+ const item=track.querySelector('.gallery-item');
+ const gap=parseFloat(getComputedStyle(track).gap)||18;
+ track.scrollBy({left:direction*(item.getBoundingClientRect().width+gap),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+}
+qs('#gallery-prev').addEventListener('click',()=>scrollGallery(-1));
+qs('#gallery-next').addEventListener('click',()=>scrollGallery(1));
 
-    <!-- 06. CONTATO -->
-    <section class="contact-section" id="contratacao" aria-labelledby="contact-heading"><div class="contact-glow" aria-hidden="true"></div><div class="container-wide contact-grid"><div class="contact-top"><p class="section-kicker light"><span class="square"></span> 06 / CONTRATAÇÕES</p><h2 id="contact-heading">O PRÓXIMO<br>PALCO PODE<br><i>SER O SEU.</i></h2><p>Rock em banda, repertório pop rock ou formato voz e violão. Fale diretamente pelo WhatsApp e leve Ció Balbino para seu evento.</p><div class="contact-actions"><a class="btn btn-cream" id="booking-whatsapp" href="https://wa.me/5531994828741?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20sobre%20a%20contrata%C3%A7%C3%A3o%20de%20um%20show%20do%20Ci%C3%B3%20Balbino." target="_blank" rel="noopener noreferrer">Falar sobre um show <span aria-hidden="true">↗</span></a><span class="contact-phone">WHATSAPP · (31) 99482-8741</span></div></div><div class="contact-poster"><div class="contact-poster-inner"><span class="poster-top">CIÓ BALBINO / AO VIVO</span><span class="poster-star">✳</span><span class="poster-title">FAÇA<br>BARULHO.</span><span class="poster-bottom">MAIS QUE UM SHOW. UM ACONTECIMENTO.</span></div></div></div></section>
 
-    <!-- 07. REDES E PLATAFORMAS OFICIAIS -->
-    <section class="social-section section-space" id="redes" aria-labelledby="social-heading">
-      <div class="container-wide">
-        <div class="social-section-top reveal">
-          <div><p class="section-kicker"><span class="square"></span> 07 / CONEXÕES</p><h2 id="social-heading">SIGA O SOM.<br><i>FICA POR PERTO.</i></h2></div>
-          <p>O palco continua nas redes. Vídeos, bastidores, agenda e canções nas plataformas oficiais do Ció Balbino.</p>
-        </div>
-        <div class="social-grid">
-          <a class="social-card social-youtube" href="https://www.youtube.com/@Ciobalbino" target="_blank" rel="noopener noreferrer" aria-label="Abrir YouTube oficial de Ció Balbino (nova aba)">
-          <span class="social-card-top"><span class="social-icon"><svg viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.4" y="5.6" width="19.2" height="12.8" rx="4.3"/><path d="m10 8.9 5.8 3.1-5.8 3.1V8.9Z" fill="currentColor" stroke="none"/></svg></span><span class="social-index">01 / 06</span></span>
-          <span class="social-card-title">YouTube<span class="social-arrow" aria-hidden="true">↗</span></span>
-          <span class="social-card-tag">VÍDEOS & SHOWS</span>
-        </a>
-          <a class="social-card social-instagram" href="https://www.instagram.com/ciobalbino_/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram oficial de Ció Balbino (nova aba)">
-          <span class="social-card-top"><span class="social-icon"><svg viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17.6" cy="6.7" r=".9" fill="currentColor" stroke="none"/></svg></span><span class="social-index">02 / 06</span></span>
-          <span class="social-card-title">Instagram<span class="social-arrow" aria-hidden="true">↗</span></span>
-          <span class="social-card-tag">FOTOS & BASTIDORES</span>
-        </a>
-          <a class="social-card social-spotify" href="https://open.spotify.com/artist/0qLfLXr3c70X8A34epkyy7" target="_blank" rel="noopener noreferrer" aria-label="Abrir Spotify oficial de Ció Balbino (nova aba)">
-          <span class="social-card-top"><span class="social-icon"><svg viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.8"/><path d="M5.8 9.6c4.5-1.35 9.1-.95 13.4 1.4M6.9 13c4.1-1 8.2-.58 11.5 1.4M8.1 16.2c3.1-.7 6.1-.35 8.7 1.2"/></svg></span><span class="social-index">03 / 06</span></span>
-          <span class="social-card-title">Spotify<span class="social-arrow" aria-hidden="true">↗</span></span>
-          <span class="social-card-tag">OUÇA AS MÚSICAS</span>
-        </a>
-          <a class="social-card social-facebook" href="https://www.facebook.com/ciosongs/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Facebook oficial de Ció Balbino (nova aba)">
-          <span class="social-card-top"><span class="social-icon"><svg viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.1 20.6v-7.5h2.6l.4-3.2h-3V8.1c0-.95.27-1.6 1.7-1.6h1.6V3.7c-.75-.12-1.73-.2-2.6-.2-2.8 0-4.5 1.7-4.5 4.7v1.7H7.9v3.2h2.4v7.5"/></svg></span><span class="social-index">04 / 06</span></span>
-          <span class="social-card-title">Facebook<span class="social-arrow" aria-hidden="true">↗</span></span>
-          <span class="social-card-tag">NOTÍCIAS & EVENTOS</span>
-        </a>
-          <a class="social-card social-deezer" href="https://www.deezer.com/br/artist/14830775" target="_blank" rel="noopener noreferrer" aria-label="Abrir Deezer oficial de Ció Balbino (nova aba)">
-          <span class="social-card-top"><span class="social-icon"><svg viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18.5h4M3 15.7h4M3 12.9h4M9 18.5h4M9 15.7h4M9 12.9h4M9 10.1h4M15 18.5h5M15 15.7h5M15 12.9h5M15 10.1h5M15 7.3h5M15 4.5h5"/></svg></span><span class="social-index">05 / 06</span></span>
-          <span class="social-card-title">Deezer<span class="social-arrow" aria-hidden="true">↗</span></span>
-          <span class="social-card-tag">STREAMING</span>
-        </a>
-          <a class="social-card social-soundcloud" href="https://soundcloud.com/cio-balbino" target="_blank" rel="noopener noreferrer" aria-label="Abrir SoundCloud oficial de Ció Balbino (nova aba)">
-          <span class="social-card-top"><span class="social-icon"><svg viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 14.8v3.4M4.8 12.3v5.9M7.1 10.9v7.3M9.4 9.8v8.4M11.7 9.9a4.9 4.9 0 0 1 9.25 1.5 3.35 3.35 0 0 1-.8 6.6h-8.45V9.9Z"/></svg></span><span class="social-index">06 / 06</span></span>
-          <span class="social-card-title">SoundCloud<span class="social-arrow" aria-hidden="true">↗</span></span>
-          <span class="social-card-tag">MAIS FAIXAS</span>
-        </a>
-        </div>
-        <div class="social-closing" aria-hidden="true"><span>CIÓ BALBINO / CANAIS OFICIAIS</span><span>ROCK EM TODAS AS FREQUÊNCIAS ✳</span></div>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer"><div class="container-wide footer-inner"><a class="footer-brand" href="#inicio"><img src="assets/logo-cio-balbino.png" alt="Ció Balbino" width="182" height="61"></a><p>ROCK, AUTORALIDADE & PRESENÇA.<br>OURO BRANCO — MG</p><div class="footer-links"><a href="#musicas">Ouvir</a><a href="#historia">História</a><a href="#aovivo">Ao vivo</a><a href="#shows">Shows marcantes</a><a href="#redes">Redes</a><a href="#contratacao">Contratar</a></div><span class="copyright">© <span id="current-year">2026</span> CIÓ BALBINO.</span></div></footer>
+// Reprodutores Shorts 9:16: ativados dentro do próprio cartão.
+const shortPosters=new Map(qsa('.short-shell').map(shell=>[shell,shell.querySelector('.short-play')]));
+qsa('[data-live-video]').forEach(button=>{
+  button.addEventListener('click',()=>{
+    const id=cleanYoutubeId(button.dataset.liveVideo);
+    if(!id) return;
+    const shell=button.closest('.short-shell');
+    if(!shell) return;
+    const iframe=document.createElement('iframe');
+    iframe.src=`https://www.youtube.com/embed/${encodeURIComponent(id)}?autoplay=1&playsinline=1&rel=0`;
+    iframe.title=`Short de Ció Balbino / ${button.dataset.liveTitle || 'Ao vivo'}`;
+    iframe.loading='eager';
+    iframe.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.allowFullscreen=true;
+    iframe.referrerPolicy='strict-origin-when-cross-origin';
+    iframe.setAttribute('aria-label','Vídeo do YouTube no cartão vertical');
+    // Só um vídeo em reprodução por vez, evita áudio simultâneo.
+    qsa('.short-shell iframe').forEach(old=>{
+      const oldCard=old.closest('.short-shell');
+      if(oldCard && oldCard !== shell){
+        const poster=shortPosters.get(oldCard);
+        if(poster) oldCard.replaceChildren(poster);
+      }
+    });
+    shell.replaceChildren(iframe);
+  });
+});
 
-  <!-- WhatsApp flutuante: desaparece durante a rolagem, volta ao parar. -->
-  <a class="whatsapp-float" id="whatsapp-float" href="https://wa.me/5531994828741" target="_blank" rel="noopener noreferrer" aria-label="Conversar sobre a contratação de Ció Balbino pelo WhatsApp" title="Contratar pelo WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.83 11.83 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0c3.181.001 6.167 1.24 8.413 3.488a11.814 11.814 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807a9.83 9.83 0 0 0 5.392 1.592c5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884 0 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg><span class="whatsapp-tooltip" aria-hidden="true">CONTRATAR SHOW</span></a>
+// Linha do tempo: interação por clique, setas e rotação suave enquanto visível.
+const timeline=qs('#timeline-interactive');
+const timelineYears=Object.keys(JSON.parse(timeline.dataset.years)).map(Number).sort((a,b)=>a-b);
+const showsByYear=JSON.parse(timeline.dataset.years);
+let activeTimelineIndex=0;
+let timelineTimer=null;
+let timelineInteracted=false;
+let timelineInView=false;
+const timelineButtons=qsa('.timeline-year-button');
+function showTimelineYear(index,manual=false){
+  activeTimelineIndex=(index+timelineYears.length)%timelineYears.length;
+  const year=timelineYears[activeTimelineIndex];
+  const events=showsByYear[year] || [];
+  timelineButtons.forEach(btn=>{
+    const active=Number(btn.dataset.year)===year;
+    btn.classList.toggle('is-active',active);
+    btn.setAttribute('aria-selected',String(active));
+    btn.tabIndex=active?0:-1;
+  });
+  qs('#timeline-panel-year').textContent=String(year);
+  qs('#timeline-panel').setAttribute('aria-labelledby','year-'+year);
+  qs('#timeline-events').replaceChildren(...events.map(name=>{
+    const li=document.createElement('li');
+    const star=document.createElement('span');star.className='timeline-mark';star.textContent='✳';
+    li.append(star,document.createTextNode(name));return li;
+  }));
+  const panel=qs('#timeline-panel');
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+    panel.style.animation='none';void panel.offsetWidth;panel.style.animation='';
+  }
+  qs('#timeline-counter').textContent=`${String(activeTimelineIndex+1).padStart(2,'0')} / 07 • ${year}`;
+  if(manual){timelineInteracted=true;stopTimelineAuto();}
+}
+function stopTimelineAuto(){if(timelineTimer){clearInterval(timelineTimer);timelineTimer=null;}}
+function startTimelineAuto(){
+  if(timelineTimer || timelineInteracted || !timelineInView || matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  timelineTimer=setInterval(()=>showTimelineYear(activeTimelineIndex+1),5800);
+}
+timelineButtons.forEach(btn=>{
+ btn.addEventListener('click',()=>showTimelineYear(timelineYears.indexOf(Number(btn.dataset.year)),true));
+ btn.addEventListener('keydown',e=>{
+   const i=timelineYears.indexOf(Number(btn.dataset.year));
+   if(e.key==='ArrowRight'||e.key==='ArrowLeft'){
+      e.preventDefault(); const next=(i+(e.key==='ArrowRight'?1:-1)+timelineYears.length)%timelineYears.length;
+      showTimelineYear(next,true);timelineButtons[next].focus();
+   }
+ });
+});
+qs('#timeline-prev').addEventListener('click',()=>showTimelineYear(activeTimelineIndex-1,true));
+qs('#timeline-next').addEventListener('click',()=>showTimelineYear(activeTimelineIndex+1,true));
+if('IntersectionObserver' in window){
+ const tObs=new IntersectionObserver(entries=>{
+   timelineInView=entries[0].isIntersecting;
+   if(timelineInView)startTimelineAuto();else stopTimelineAuto();
+ },{threshold:.28});
+ tObs.observe(timeline);
+}
+timeline.addEventListener('mouseenter',stopTimelineAuto);
+timeline.addEventListener('mouseleave',startTimelineAuto);
+timeline.addEventListener('focusin',stopTimelineAuto);
+timeline.addEventListener('focusout',()=>setTimeout(startTimelineAuto,0));
 
-  <!-- Modal reutilizado para os vídeos; carrega o YouTube apenas após o clique. -->
-  <div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden><div class="video-modal-box"><div class="modal-head"><span id="modal-title">Ció Balbino / Vídeo</span><button type="button" id="close-modal" aria-label="Fechar vídeo">FECHAR ✕</button></div><div class="modal-frame" id="modal-frame"></div></div></div>
-  <script src="script.js" defer></script>
-</body>
+// WhatsApp: replica a mecânica do site de referência (oculta durante o scroll).
+const whatsappBtn=qs('#whatsapp-float');
+let whatsappScrollTimer;
+window.addEventListener('scroll',()=>{
+ whatsappBtn.classList.add('is-scrolling');
+ clearTimeout(whatsappScrollTimer);
+ whatsappScrollTimer=setTimeout(()=>whatsappBtn.classList.remove('is-scrolling'),250);
+},{passive:true});
+
+// Contato: mantém a configuração em um único local.
+const whatsappText=encodeURIComponent('Olá, gostaria de saber sobre a contratação de um show do Ció Balbino.');
+qs('#booking-whatsapp').href=`https://wa.me/${SITE_CONFIG.bookingWhatsApp}?text=${whatsappText}`;
+whatsappBtn.href=`https://wa.me/${SITE_CONFIG.bookingWhatsApp}?text=${whatsappText}`;
+</script></body>
 </html>
