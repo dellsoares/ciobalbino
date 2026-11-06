@@ -346,7 +346,92 @@ body{background:#090809}
 .plain-white-star{color:#fff!important;font-family:Arial,sans-serif;font-style:normal}
 .whatsapp-float:not(.is-scrolling):not(.is-footer-visible):hover{transform:translateY(calc(-50% - 4px))!important}
 .whatsapp-float:not(.is-scrolling):not(.is-footer-visible){transform:translateY(-50%)}
-</style><meta content="https://raw.githubusercontent.com/dellsoares/ciobalbino/8b803150dc10e948c656b7002e93fb43d176e7df/ciored.jpg" property="og:image"/></head>
+</style><meta content="Ció Balbino" property="og:site_name"/><meta content="pt_BR" property="og:locale"/><meta content="https://raw.githubusercontent.com/dellsoares/ciobalbino/99a210ef95cf9f11c838e0c9d51c2d0703949bfe/ciothumb.png" property="og:image"/><meta content="image/png" property="og:image:type"/><meta content="1000" property="og:image:width"/><meta content="500" property="og:image:height"/><meta content="Ció Balbino no palco, em arte vermelha e preta" property="og:image:alt"/><meta content="summary_large_image" name="twitter:card"/><meta content="Ció Balbino | Energia autêntica que conecta" name="twitter:title"/><meta content="Canções, trajetória e a energia de Ció Balbino no palco." name="twitter:description"/><meta content="https://raw.githubusercontent.com/dellsoares/ciobalbino/99a210ef95cf9f11c838e0c9d51c2d0703949bfe/ciothumb.png" name="twitter:image"/>
+<style id="ciosongs-and-exit-styles">
+/* CióSongs TV: moldura 4:3 com área ativa rigorosamente 16:9. */
+.story-grid{grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:clamp(28px,4vw,64px);align-items:center}
+.ciosongs-videotheque{width:100%;min-width:0;color:#171012}
+.ciosongs-heading{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:0 0 8px}
+.ciosongs-heading>div>span,.ciosongs-total{font-size:10px;letter-spacing:.16em;font-weight:900;color:#9f162c}
+.ciosongs-heading h3{font-size:clamp(32px,3.2vw,43px);font-weight:900;letter-spacing:-.025em;line-height:.95;margin:8px 0 0}
+.ciosongs-heading h3 i{font-family:var(--serif);font-weight:400;color:#ae1830}
+.ciosongs-total{white-space:nowrap;font-size:9px}
+.ciosongs-tv-shell{position:relative;width:100%;max-width:760px;margin:0 auto;aspect-ratio:4/3;isolation:isolate}
+.ciosongs-screen{position:absolute;left:7.18232044%;top:23.20441989%;width:68.50828729%;aspect-ratio:16/9;overflow:hidden;border-radius:6.55% / 11.65%;z-index:1;background:#080709;color:#f7f1ec;font-family:var(--body);}
+.ciosongs-tv-frame{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;z-index:3;pointer-events:none;filter:drop-shadow(0 15px 20px rgba(20,5,7,.24))}
+.ciosongs-view{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;background:#080709;color:#f7f1ec}
+.ciosongs-view[hidden]{display:none!important}
+.ciosongs-intro{display:flex;align-items:center;justify-content:center;text-align:center;background:radial-gradient(ellipse at 50% 0%,#9e1026 0,#42101b 42%,#090809 83%)}
+.ciosongs-intro:before,.ciosongs-intro:after{content:"";position:absolute;left:8%;right:8%;height:1px;background:linear-gradient(90deg,transparent,#f4d9d4a8,transparent)}
+.ciosongs-intro:before{top:12%}.ciosongs-intro:after{bottom:12%}
+.ciosongs-intro-content{position:relative;z-index:1;display:flex;align-items:center;flex-direction:column;gap:clamp(3px,.8vw,9px);width:100%;padding:3% 5%}
+.ciosongs-signature{width:clamp(92px,21vw,210px);height:auto;max-height:28%;object-fit:contain;filter:drop-shadow(0 3px 10px #0008)}
+.ciosongs-wordmark{font-family:var(--display);font-size:clamp(19px,3.1vw,38px);font-weight:900;letter-spacing:.06em;line-height:.9;margin:0;color:#fff}
+.ciosongs-wordmark span{color:#ff5868}
+.ciosongs-tagline{font-family:var(--serif);font-style:italic;font-size:clamp(10px,1.35vw,17px);margin:2px 0 5px;color:#f8e8e5}
+.ciosongs-play-button{display:inline-flex;align-items:center;gap:10px;border:1px solid #ffb0b8;background:#b90f25;color:white;padding:clamp(6px,.8vw,11px) clamp(13px,2vw,24px);font-family:var(--display);font-size:clamp(9px,1.05vw,13px);font-weight:900;letter-spacing:.14em;box-shadow:0 5px 20px #0006;transition:transform .2s,background .2s}
+.ciosongs-play-button:hover{background:#e11f30;transform:translateY(-2px)}
+.ciosongs-play-button span{font-size:.8em}
+.ciosongs-screen-stamp{position:absolute;right:3.5%;bottom:3.5%;font-size:clamp(6px,.55vw,8px);letter-spacing:.16em;color:#ffffff7a}
+.ciosongs-channels,.ciosongs-playlist{display:flex;flex-direction:column;padding:4.2% 4.4% 3.4%;background:radial-gradient(ellipse at 50% 0%,#3b0c16 0,#0d0a0c 67%)}
+.ciosongs-screen-head{flex:0 0 auto;min-height:18%;display:flex;align-items:center;justify-content:space-between;gap:5px;border-bottom:1px solid #ffffff2a;padding:0 0 2.2%;font-size:clamp(7px,.9vw,11px);font-weight:900;letter-spacing:.1em;color:#fff}
+.ciosongs-back-button{flex:0 0 auto;border:1px solid #ffffff66;background:#ffffff0d;color:#fff;padding:clamp(4px,.55vw,7px) clamp(6px,.85vw,11px);font-size:clamp(6px,.72vw,9px);font-weight:900;letter-spacing:.08em;white-space:nowrap;transition:background .2s,border-color .2s}
+.ciosongs-back-button:hover{background:#b90f25;border-color:#f05a68}
+.ciosongs-live-dot{color:#ff6875;font-size:clamp(6px,.65vw,8px);white-space:nowrap}
+.ciosongs-channel-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2.2%;flex:1;min-height:0;align-items:center;padding:3% 0 1%}
+.ciosongs-channel-card{min-width:0;min-height:78%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(3px,.6vw,8px);padding:4% 2%;border:1px solid #ffffff3a;background:linear-gradient(155deg,#292125,#100d0f 75%);color:#fff;text-align:center;transition:transform .2s,border-color .2s,background .2s}
+.ciosongs-channel-card:hover,.ciosongs-channel-card:focus-visible{transform:translateY(-3px);border-color:#f34a5d;background:linear-gradient(155deg,#561321,#151012 75%)}
+.ciosongs-channel-icon{display:grid;place-items:center;width:clamp(22px,3.2vw,42px);height:clamp(22px,3.2vw,42px);color:#ff5668}
+.ciosongs-channel-icon svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ciosongs-channel-card strong{font-family:var(--display);font-size:clamp(7px,1.1vw,13px);font-weight:900;line-height:1.05;letter-spacing:.04em}
+.ciosongs-channel-card small{font-size:clamp(6px,.65vw,8px);font-weight:800;letter-spacing:.13em;color:#ff8791}
+.ciosongs-screen-foot{flex:0 0 auto;text-align:center;font-size:clamp(6px,.65vw,8px);font-weight:800;letter-spacing:.18em;color:#ffffff80;margin:1% 0 0}
+.ciosongs-playlist{padding-bottom:3%}
+.ciosongs-song-list{flex:1;min-height:0;overflow:auto;margin-top:2%;padding-right:1.2%;scrollbar-width:thin;scrollbar-color:#b90f25 #21191b}
+.ciosongs-song-list::-webkit-scrollbar{width:5px}.ciosongs-song-list::-webkit-scrollbar-track{background:#21191b}.ciosongs-song-list::-webkit-scrollbar-thumb{background:#b90f25;border-radius:9px}
+.ciosongs-song-row{display:grid;grid-template-columns:clamp(18px,2.5vw,30px) minmax(0,1fr) 15px;align-items:center;gap:6px;width:100%;min-height:clamp(24px,3.25vw,35px);padding:3px 5px;border:0;border-bottom:1px solid #ffffff1c;background:transparent;color:#f8f1ee;text-align:left;transition:background .18s}
+.ciosongs-song-row:hover,.ciosongs-song-row:focus-visible{background:#b90f25}
+.ciosongs-song-number{font-size:clamp(7px,.75vw,9px);font-weight:800;color:#ff7b88}
+.ciosongs-song-name{font-size:clamp(8px,1vw,12px);font-weight:700;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ciosongs-song-play{font-size:clamp(7px,.75vw,9px);color:#ff6474;text-align:right}
+.ciosongs-song-row:hover .ciosongs-song-number,.ciosongs-song-row:hover .ciosongs-song-play{color:#fff}
+.ciosongs-player-view{background:#000}
+.ciosongs-player-frame{position:absolute;inset:0;background:#000}
+.ciosongs-player-frame iframe{display:block;width:100%;height:100%;border:0}
+.ciosongs-player-overlay{position:absolute;z-index:2;top:2.5%;left:2.5%;right:2.5%;display:flex;align-items:center;justify-content:space-between;gap:7px;pointer-events:none}
+.ciosongs-player-overlay>*{pointer-events:auto}
+.ciosongs-player-overlay>span{max-width:48%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:5px 7px;background:#080709c9;color:#fff;font-size:clamp(6px,.7vw,9px);font-weight:800;letter-spacing:.08em}
+.ciosongs-caption{display:flex;justify-content:space-between;gap:10px;margin:5px 0 0;color:#6c5d5d;font-size:8px;font-weight:900;letter-spacing:.13em}
+.ciosongs-caption span:first-child{color:#a7192c}
+/* Download do release na área de contratação. */
+.contact-release-link{display:inline-flex;align-items:center;gap:11px;padding:9px 0;border-bottom:1px solid #ffffff80;color:#fff;text-decoration:none;transition:color .2s,border-color .2s}
+.contact-release-link:hover{color:#ffe4e4;border-color:#fff}
+.contact-release-link svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+.contact-release-link span{display:flex;flex-direction:column;gap:3px}
+.contact-release-link strong{font-size:12px;font-weight:900;letter-spacing:.04em}
+.contact-release-link small{font-size:8px;font-weight:800;letter-spacing:.13em;color:#f5c9ca}
+/* Convite de saída: modal curto, sem temporizador e com fechamento evidente. */
+.exit-follow-modal{position:fixed;inset:0;z-index:1200;display:grid;place-items:center;padding:22px}
+.exit-follow-modal[hidden]{display:none!important}
+.exit-follow-backdrop{position:absolute;inset:0;background:rgba(5,4,5,.84);backdrop-filter:blur(9px)}
+.exit-follow-card{position:relative;width:min(440px,100%);padding:clamp(30px,6vw,48px);background:radial-gradient(circle at 100% 0,#4b0d19 0,transparent 48%),#111011;border:1px solid #ffffff32;border-top:3px solid #c5162e;box-shadow:0 25px 80px #0009;color:#f5ede6;text-align:center;animation:exitCardIn .28s ease-out both}
+@keyframes exitCardIn{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+.exit-follow-close{position:absolute;top:10px;right:13px;width:34px;height:34px;border:1px solid #ffffff38;background:transparent;color:#fff;font-size:24px;line-height:1}
+.exit-follow-kicker{display:inline-flex;align-items:center;gap:8px;color:#f28a94;font-size:9px;font-weight:900;letter-spacing:.2em}
+.exit-follow-kicker span{width:6px;height:6px;border-radius:50%;background:#ef3348;box-shadow:0 0 10px #ef3348}
+.exit-follow-card h2{margin:18px 0 12px;font-family:var(--display);font-size:clamp(43px,9vw,62px);font-weight:900;line-height:.88;letter-spacing:-.02em}
+.exit-follow-card h2 i{font-family:var(--serif);font-weight:400;color:#f04b5d}
+.exit-follow-card p{max-width:310px;margin:0 auto 24px;color:#d5c9c7;font-size:14px;line-height:1.7}
+.exit-follow-cta{display:inline-flex;align-items:center;justify-content:center;gap:20px;min-width:205px;padding:14px 20px;background:#bd1028;border:1px solid #f16c7b;color:#fff;font-family:var(--display);font-size:13px;font-weight:900;letter-spacing:.14em;transition:background .2s,transform .2s}
+.exit-follow-cta:hover{background:#e11f30;transform:translateY(-2px)}
+.exit-follow-dismiss{display:block;margin:16px auto 0;padding:6px 10px;border:0;background:transparent;color:#a99d9b;font-size:11px;text-decoration:underline;text-underline-offset:3px}
+.exit-follow-dismiss:hover{color:#fff}
+body.exit-follow-open{overflow:hidden}
+@media(max-width:960px){.story-grid{grid-template-columns:1fr;gap:42px}.ciosongs-videotheque{max-width:760px;margin:0 auto}.ciosongs-tv-shell{max-width:700px}}
+@media(max-width:650px){.ciosongs-heading h3{font-size:clamp(29px,8vw,39px)}.ciosongs-total{font-size:7px}.ciosongs-tv-shell{width:100%;max-width:560px}.ciosongs-caption{font-size:7px}.ciosongs-screen-head{font-size:7px}.ciosongs-back-button{font-size:6px}.contact-actions{align-items:flex-start}.contact-release-link{margin-top:2px}.exit-follow-card{padding:34px 25px}}
+@media(prefers-reduced-motion:reduce){.exit-follow-card{animation:none}.ciosongs-play-button,.ciosongs-channel-card,.ciosongs-song-row,.exit-follow-cta{transition:none}}
+</style>
+</head>
 <body>
 <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 <div aria-hidden="true" class="site-progress"><span id="scroll-progress"></span></div>
@@ -448,15 +533,46 @@ body{background:#090809}
 <p>Sua trajetória reúne shows, festivais e produção autoral, incluindo um single viabilizado pela <strong>Lei Aldir Blanc</strong>. Com CNPJ regularizado e estrutura profissional, Ció constrói uma identidade própria e uma conexão imediata com o público em qualquer palco.</p>
 <a class="link-line story-link" href="#banda">Conheça a banda atual <span aria-hidden="true">↗</span></a>
 </div>
-<div class="videotheque reveal"><div class="videotheque-head"><div><span>O ARTISTA EM VÍDEO</span><h3>VEJA. OUÇA. <i>SINTA.</i></h3></div><span class="video-count">04 VÍDEOS</span></div>
-<div class="feature-video" id="feature-video">
-<button aria-label="Reproduzir vídeo selecionado" class="feature-video-button" id="feature-video-button" type="button">
-<img alt="Capa do vídeo selecionado" id="feature-video-image" src="https://i.ytimg.com/vi/apNPnAftig0/hqdefault.jpg"/>
-<span aria-hidden="true" class="feature-video-dark"></span><span aria-hidden="true" class="feature-play">▶</span><span class="feature-video-title" id="feature-video-title">ASTRONAUTA</span>
+<div class="ciosongs-videotheque reveal">
+<div class="ciosongs-heading"><div><span>O ARTISTA EM VÍDEO</span><h3>CIÓSONGS <i>TV.</i></h3></div><span class="ciosongs-total">03 CANAIS / 20 CLIPES</span></div>
+<div class="ciosongs-tv-shell" aria-label="Televisão CióSongs interativa">
+<div class="ciosongs-screen" id="ciosongs-screen">
+<section class="ciosongs-view ciosongs-intro" data-view="intro" aria-label="Tela inicial CióSongs">
+<div class="ciosongs-intro-content">
+<img class="ciosongs-signature" src="assets/assinatura-cio.png" alt="Ció Balbino"/>
+<p class="ciosongs-wordmark">CIÓ<span>SONGS</span></p>
+<p class="ciosongs-tagline">Música pra ver e sentir.</p>
+<button class="ciosongs-play-button" type="button" data-action="enter">DÊ O PLAY <span aria-hidden="true">▶</span></button>
+</div>
+<span class="ciosongs-screen-stamp">CANAL DIGITAL / 001</span>
+</section>
+<section class="ciosongs-view ciosongs-channels" data-view="channels" aria-label="Seleção de canais" hidden>
+<header class="ciosongs-screen-head"><button class="ciosongs-back-button" type="button" data-action="back-intro">← INÍCIO</button><span>ESCOLHA SEU CANAL</span><span class="ciosongs-live-dot">● NO AR</span></header>
+<div class="ciosongs-channel-grid">
+<button class="ciosongs-channel-card" type="button" data-channel="interprete" aria-label="Abrir O Intérprete, 9 clipes">
+<span class="ciosongs-channel-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="17" y="4" width="14" height="26" rx="7"/><path d="M11 22v2a13 13 0 0 0 26 0v-2M24 37v7m-8 0h16"/></svg></span><strong>O INTÉRPRETE</strong><small>09 CLIPES</small>
+</button>
+<button class="ciosongs-channel-card" type="button" data-channel="trovador" aria-label="Abrir O Trovador, 8 clipes">
+<span class="ciosongs-channel-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M30 7 41 4l3 11-11 3-3-11ZM30 7 14 23m14-9-9 9m-4 0a8 8 0 1 0 11 11l6-6a8 8 0 1 0-11-11Z"/><circle cx="19" cy="29" r="2"/></svg></span><strong>O TROVADOR</strong><small>08 CLIPES</small>
+</button>
+<button class="ciosongs-channel-card" type="button" data-channel="frontman" aria-label="Abrir O Frontman, 3 clipes">
+<span class="ciosongs-channel-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 7v9m-8 25h16M20 41l4-13 4 13M13 20a16 16 0 0 0 22 0M7 14a24 24 0 0 0 34 0M18 25l6-6 6 6"/><circle cx="24" cy="17" r="3"/></svg></span><strong>O FRONTMAN</strong><small>03 CLIPES</small>
 </button>
 </div>
-<div aria-label="Escolha um vídeo de Ció Balbino" class="video-selector" role="group"><button aria-pressed="true" class="video-choice active" data-id="apNPnAftig0" data-name="Astronauta" type="button"><span>01</span><strong>Astronauta</strong><span aria-hidden="true">↗</span></button><button aria-pressed="false" class="video-choice" data-id="23jgqpVu_Jg" data-name="De onde eu vim" type="button"><span>02</span><strong>De onde eu vim</strong><span aria-hidden="true">↗</span></button><button aria-pressed="false" class="video-choice" data-id="hmB6ucCCJUc" data-name="Nada perdi" type="button"><span>03</span><strong>Nada perdi</strong><span aria-hidden="true">↗</span></button><button aria-pressed="false" class="video-choice" data-id="4QwOx12BmDg" data-name="Albatroz" type="button"><span>04</span><strong>Albatroz</strong><span aria-hidden="true">↗</span></button></div>
-<p class="video-note">Seleção de vídeos públicos de Ció Balbino. Escolha uma faixa para assistir.</p>
+<p class="ciosongs-screen-foot">TRÊS FREQUÊNCIAS. UMA SÓ HISTÓRIA.</p>
+</section>
+<section class="ciosongs-view ciosongs-playlist" data-view="playlist" aria-label="Programação do canal" hidden>
+<header class="ciosongs-screen-head"><button class="ciosongs-back-button" type="button" data-action="back-channels">← CANAIS</button><span id="ciosongs-channel-name">PROGRAMAÇÃO</span><span class="ciosongs-live-dot">● NO AR</span></header>
+<div class="ciosongs-song-list" id="ciosongs-song-list" role="group" aria-label="Lista de videoclipes"></div>
+</section>
+<section class="ciosongs-view ciosongs-player-view" data-view="player" aria-label="Reprodução do videoclipe" hidden>
+<div class="ciosongs-player-frame" id="ciosongs-player-frame"></div>
+<div class="ciosongs-player-overlay"><button class="ciosongs-back-button" type="button" data-action="back-playlist">← PROGRAMAÇÃO</button><span id="ciosongs-playing-title">CIÓSONGS / NO AR</span></div>
+</section>
+</div>
+<img class="ciosongs-tv-frame" src="assets/tv-cio-frame.webp" alt="" aria-hidden="true"/>
+</div>
+<p class="ciosongs-caption"><span>CIÓSONGS / TV</span><span>ESCOLHA UM CANAL E APERTE O PLAY.</span></p>
 </div>
 </div>
 </section>
@@ -525,7 +641,7 @@ body{background:#090809}
 </div>
 </section>
 <!-- 06. CONTATO -->
-<section aria-labelledby="contact-heading" class="contact-section" id="contratacao"><div aria-hidden="true" class="contact-glow"></div><div class="container-wide contact-grid"><div class="contact-top"><p class="section-kicker light"><span class="square"></span> 06 / CONTRATAÇÕES</p><h2 id="contact-heading">O PRÓXIMO<br/>PALCO PODE<br/><i>SER O SEU.</i></h2><p>Rock em banda, repertório pop rock ou formato voz e violão. Fale diretamente pelo WhatsApp e leve Ció Balbino para seu evento.</p><div class="contact-actions"><a class="btn btn-cream" href="https://wa.me/5531994828741?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20sobre%20a%20contrata%C3%A7%C3%A3o%20de%20um%20show%20do%20Ci%C3%B3%20Balbino." id="booking-whatsapp" rel="noopener noreferrer" target="_blank">Falar sobre um show <span aria-hidden="true">↗</span></a><span class="contact-phone">WHATSAPP · (31) 99482-8741</span></div></div><div class="contact-poster contact-photo-panel">
+<section aria-labelledby="contact-heading" class="contact-section" id="contratacao"><div aria-hidden="true" class="contact-glow"></div><div class="container-wide contact-grid"><div class="contact-top"><p class="section-kicker light"><span class="square"></span> 06 / CONTRATAÇÕES</p><h2 id="contact-heading">O PRÓXIMO<br/>PALCO PODE<br/><i>SER O SEU.</i></h2><p>Rock em banda, repertório pop rock ou formato voz e violão. Fale diretamente pelo WhatsApp e leve Ció Balbino para seu evento.</p><div class="contact-actions"><a class="btn btn-cream" href="https://wa.me/5531994828741?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20sobre%20a%20contrata%C3%A7%C3%A3o%20de%20um%20show%20do%20Ci%C3%B3%20Balbino." id="booking-whatsapp" rel="noopener noreferrer" target="_blank">Falar sobre um show <span aria-hidden="true">↗</span></a><a class="contact-release-link" href="https://github.com/dellsoares/ciobalbino/raw/d15b128aec2e96647a1d078c6e14cbb60db1fee7/Cio_release.pdf?download=1" download="Cio_release.pdf" aria-label="Baixar release digital de Ció Balbino em PDF"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v3h16v-3"/></svg><span><strong>Baixar release digital</strong><small>APRESENTAÇÃO DO ARTISTA / PDF</small></span></a><span class="contact-phone">WHATSAPP · (31) 99482-8741</span></div></div><div class="contact-poster contact-photo-panel">
 <div class="contact-photo-frame">
 <img alt="Retrato de Ció Balbino com roupa vermelha e óculos escuros, sentado em fundo vermelho" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='assets/hero-cio.webp'" src="https://raw.githubusercontent.com/dellsoares/ciobalbino/8b803150dc10e948c656b7002e93fb43d176e7df/ciored.jpg"/>
 <span class="contact-photo-badge">CIÓ BALBINO / CONTRATAÇÕES</span>
@@ -586,6 +702,18 @@ body{background:#090809}
 </footer>
 <!-- WhatsApp flutuante: desaparece durante a rolagem, volta ao parar. -->
 <a aria-label="Conversar sobre a contratação de Ció Balbino pelo WhatsApp" class="whatsapp-float" href="https://wa.me/5531994828741?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20contrata%C3%A7%C3%A3o%20de%20um%20show%20do%20Ci%C3%B3%20Balbino." id="whatsapp-float" rel="noopener noreferrer" target="_blank" title="Contratar pelo WhatsApp"><svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.83 11.83 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0c3.181.001 6.167 1.24 8.413 3.488a11.814 11.814 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807a9.83 9.83 0 0 0 5.392 1.592c5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884 0 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg><span aria-hidden="true" class="whatsapp-tooltip">CONTRATAR SHOW</span></a>
+<!-- Convite discreto de saída: no máximo uma vez por dia por navegador. -->
+<div class="exit-follow-modal" id="exit-follow-modal" hidden aria-labelledby="exit-follow-title" aria-modal="true" role="dialog">
+<div class="exit-follow-backdrop" data-exit-close></div>
+<section class="exit-follow-card" role="document">
+<button class="exit-follow-close" type="button" data-exit-close aria-label="Fechar convite">×</button>
+<span class="exit-follow-kicker"><span></span> ANTES DE IR...</span>
+<h2 id="exit-follow-title">VALEU A <i>VISITA!</i></h2>
+<p>Que tal me seguir no YouTube e não perder nada?</p>
+<a class="exit-follow-cta" id="exit-follow-link" href="https://linktw.in/ulonwm" target="_blank" rel="noopener noreferrer">SÓ CLICAR AQUI <span aria-hidden="true">↗</span></a>
+<button class="exit-follow-dismiss" type="button" data-exit-close>Agora não, obrigado.</button>
+</section>
+</div>
 <!-- Modal reutilizado para os vídeos; carrega o YouTube apenas após o clique. -->
 <div aria-labelledby="modal-title" aria-modal="true" class="video-modal" hidden="" id="video-modal" role="dialog"><div class="video-modal-box"><div class="modal-head"><span id="modal-title">Ció Balbino / Vídeo</span><button aria-label="Fechar vídeo" id="close-modal" type="button">FECHAR ✕</button></div><div class="modal-frame" id="modal-frame"></div></div></div>
 
@@ -680,17 +808,128 @@ closeModalButton.addEventListener('click',closeModal);
 modal.addEventListener('click',e=>{if(e.target===modal)closeModal();});
 window.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden)closeModal();});
 
-// Playlist editorial de videoclipes: a seleção atualiza a capa e reproduz sob demanda.
-let selectedVideoId='apNPnAftig0';let selectedVideoName='Astronauta';
-qsa('.video-choice').forEach(button=>button.addEventListener('click',()=>{
- selectedVideoId=button.dataset.id;selectedVideoName=button.dataset.name;
- qsa('.video-choice').forEach(b=>{const current=b===button;b.classList.toggle('active',current);b.setAttribute('aria-pressed',String(current));});
- qs('#feature-video-image').src=`https://i.ytimg.com/vi/${selectedVideoId}/hqdefault.jpg`;
- qs('#feature-video-image').alt=`Capa do vídeo ${selectedVideoName}`;
- qs('#feature-video-title').textContent=selectedVideoName;
- qs('#feature-video-button').setAttribute('aria-label',`Assistir ${selectedVideoName}`);
-}));
-qs('#feature-video-button').addEventListener('click',()=>openVideo(selectedVideoId,`Ció Balbino / ${selectedVideoName}`));
+// A antiga playlist de quatro vídeos foi substituída pela CióSongs TV.
+
+// CióSongs TV: splash -> canais -> programação -> player, sempre com retorno.
+const CIOSONGS_CHANNELS = {
+  interprete: {
+    title: 'O INTÉRPRETE',
+    songs: [
+      { id: '0hFweM54saA', title: 'Last Kiss (Pearl Jam)' },
+      { id: 'n5wwOHdeSMQ', title: 'Tudo Mudar (Charlie Brown Jr.)' },
+      { id: 'GOv0gVJe4XU', title: 'My Sacrifice (Creed)' },
+      { id: 'vlOaBl4SetY', title: 'Meu Lugar (Onze e 20)' },
+      { id: 'G71M9OGaTjw', title: 'Sexed Up (Robbie Williams)' },
+      { id: '51Vfq6Zoi5Q', title: 'Sonífera Ilha (Titãs)' },
+      { id: 'UyVPPzRqPsI', title: 'Vapor Barato (O Rappa)' },
+      { id: '-iTSaSkDZug', title: 'Zombie (The Cranberries)' },
+      { id: 'eqMaDtle7Jo', title: 'Killing in the Name Of (RATM)' }
+    ]
+  },
+  trovador: {
+    title: 'O TROVADOR',
+    songs: [
+      { id: 'apNPnAftig0', title: 'Astronauta' },
+      { id: 'Nay-JKsupvg', title: 'Eu Não Vou Mudar' },
+      { id: '23jgqpVu_Jg', title: 'De Onde Eu Vim' },
+      { id: 'aaLBQvRtq1w', title: 'Eu Não Vou Mudar (Alternativa)' },
+      { id: 'hmB6ucCCJUc', title: 'Nada Perdi' },
+      { id: '4QwOx12BmDg', title: 'Albatroz' },
+      { id: 'gO1GcJCK_5s', title: 'O Canto do Inconfidente' },
+      { id: 'GxHiS8ZnjwY', title: 'Até o Final do Mundo' }
+    ]
+  },
+  frontman: {
+    title: 'O FRONTMAN',
+    songs: [
+      { id: 'GIbTWty2Rso', title: 'Tutu Marambah em Ibitipoca' },
+      { id: 'wqXDbmnjs5o', title: 'Tutu Marambah em Ponte Nova' },
+      { id: '6l1Sy5kV1cc', title: 'Tutu Marambah em Dores dos Campos' }
+    ]
+  }
+};
+const ciosongsScreen = qs('#ciosongs-screen');
+const ciosongsViews = qsa('#ciosongs-screen .ciosongs-view');
+const ciosongsSongList = qs('#ciosongs-song-list');
+const ciosongsPlayerFrame = qs('#ciosongs-player-frame');
+let ciosongsCurrentChannel = null;
+function showCioSongsView(name, focusSelector) {
+  ciosongsViews.forEach(view => { view.hidden = view.dataset.view !== name; });
+  if (focusSelector) qs(focusSelector)?.focus();
+}
+function stopCioSongsVideo() {
+  ciosongsPlayerFrame.replaceChildren();
+}
+function openCioSongsChannel(key) {
+  const channel = CIOSONGS_CHANNELS[key];
+  if (!channel) return;
+  ciosongsCurrentChannel = key;
+  qs('#ciosongs-channel-name').textContent = channel.title + ' / PROGRAMAÇÃO';
+  ciosongsSongList.replaceChildren();
+  channel.songs.forEach((song, index) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'ciosongs-song-row';
+    button.dataset.songIndex = String(index);
+    const number = document.createElement('span');
+    number.className = 'ciosongs-song-number';
+    number.textContent = String(index + 1).padStart(2, '0');
+    const name = document.createElement('span');
+    name.className = 'ciosongs-song-name';
+    name.textContent = song.title;
+    const play = document.createElement('span');
+    play.className = 'ciosongs-song-play';
+    play.setAttribute('aria-hidden', 'true');
+    play.textContent = '▶';
+    button.setAttribute('aria-label', 'Reproduzir ' + song.title);
+    button.append(number, name, play);
+    ciosongsSongList.append(button);
+  });
+  showCioSongsView('playlist', '#ciosongs-song-list button');
+}
+function playCioSongsTrack(song) {
+  if (!song || !cleanYoutubeId(song.id)) return;
+  const channel = CIOSONGS_CHANNELS[ciosongsCurrentChannel];
+  stopCioSongsVideo();
+  const iframe = document.createElement('iframe');
+  iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(song.id)}?autoplay=1&rel=0&playsinline=1`;
+  iframe.title = `${channel ? channel.title : 'CióSongs'} / ${song.title}`;
+  iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+  iframe.allowFullscreen = true;
+  iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+  iframe.loading = 'eager';
+  ciosongsPlayerFrame.append(iframe);
+  qs('#ciosongs-playing-title').textContent = song.title;
+  showCioSongsView('player', '[data-action="back-playlist"]');
+}
+if (ciosongsScreen) {
+  ciosongsScreen.addEventListener('click', event => {
+    const action = event.target.closest('[data-action]');
+    if (action) {
+      switch (action.dataset.action) {
+        case 'enter': showCioSongsView('channels', '[data-channel="interprete"]'); break;
+        case 'back-intro': showCioSongsView('intro', '[data-action="enter"]'); break;
+        case 'back-channels': stopCioSongsVideo(); showCioSongsView('channels', '[data-channel="interprete"]'); break;
+        case 'back-playlist': stopCioSongsVideo(); showCioSongsView('playlist', '#ciosongs-song-list button'); break;
+      }
+      return;
+    }
+    const channelButton = event.target.closest('[data-channel]');
+    if (channelButton) { openCioSongsChannel(channelButton.dataset.channel); return; }
+    const songButton = event.target.closest('[data-song-index]');
+    if (songButton && ciosongsCurrentChannel) {
+      const channel = CIOSONGS_CHANNELS[ciosongsCurrentChannel];
+      playCioSongsTrack(channel.songs[Number(songButton.dataset.songIndex)]);
+    }
+  });
+}
+window.addEventListener('keydown', event => {
+  if (event.key !== 'Escape' || !ciosongsScreen) return;
+  const activeView = ciosongsViews.find(view => !view.hidden)?.dataset.view;
+  if (activeView === 'player') { stopCioSongsVideo(); showCioSongsView('playlist', '#ciosongs-song-list button'); }
+  else if (activeView === 'playlist') showCioSongsView('channels', '[data-channel="interprete"]');
+  else if (activeView === 'channels') showCioSongsView('intro', '[data-action="enter"]');
+});
 
 // Galeria horizontal com navegação (mouse, toque, teclado, botões).
 const track=qs('#gallery-track');
@@ -806,5 +1045,74 @@ window.addEventListener('scroll',()=>{
 const whatsappText=encodeURIComponent('Olá, gostaria de saber sobre a contratação de um show do Ció Balbino.');
 qs('#booking-whatsapp').href=`https://wa.me/${SITE_CONFIG.bookingWhatsApp}?text=${whatsappText}`;
 whatsappBtn.href=`https://wa.me/${SITE_CONFIG.bookingWhatsApp}?text=${whatsappText}`;
+
+
+// Convite de saída: exit intent no desktop e botão Voltar no navegador.
+// A data é guardada localmente; o convite aparece no máximo uma vez por dia neste navegador.
+const exitFollowModal = qs('#exit-follow-modal');
+const exitFollowLink = qs('#exit-follow-link');
+const EXIT_FOLLOW_STORAGE_KEY = 'cio-balbino-exit-follow-date';
+let exitFollowShownThisPage = false;
+let exitFollowBackPending = false;
+let exitFollowLastHash = location.hash;
+function localDateKey() {
+  const now = new Date();
+  return `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+}
+function exitFollowAlreadyShownToday() {
+  try { return localStorage.getItem(EXIT_FOLLOW_STORAGE_KEY) === localDateKey(); }
+  catch (_) { return exitFollowShownThisPage; }
+}
+function markExitFollowShownToday() {
+  exitFollowShownThisPage = true;
+  try { localStorage.setItem(EXIT_FOLLOW_STORAGE_KEY, localDateKey()); } catch (_) {}
+}
+function openExitFollowPrompt(source) {
+  if (!exitFollowModal || exitFollowAlreadyShownToday() || !exitFollowModal.hidden) return false;
+  markExitFollowShownToday();
+  exitFollowBackPending = source === 'back';
+  exitFollowModal.hidden = false;
+  document.body.classList.add('exit-follow-open');
+  const closeButton = exitFollowModal.querySelector('.exit-follow-close');
+  closeButton?.focus();
+  return true;
+}
+function closeExitFollowPrompt() {
+  if (!exitFollowModal || exitFollowModal.hidden) return;
+  exitFollowModal.hidden = true;
+  document.body.classList.remove('exit-follow-open');
+  if (exitFollowBackPending) {
+    exitFollowBackPending = false;
+    history.back();
+  }
+}
+if (exitFollowModal) {
+  exitFollowModal.querySelectorAll('[data-exit-close]').forEach(button => button.addEventListener('click', closeExitFollowPrompt));
+  exitFollowLink.addEventListener('click', () => {
+    // O link abre em outra aba; o visitante continua com a página disponível.
+    exitFollowBackPending = false;
+    exitFollowModal.hidden = true;
+    document.body.classList.remove('exit-follow-open');
+  });
+  window.addEventListener('keydown', event => { if (event.key === 'Escape' && !exitFollowModal.hidden) closeExitFollowPrompt(); });
+  // Exit intent tradicional: o cursor abandona a janela pela borda superior.
+  document.addEventListener('mouseout', event => {
+    if (event.relatedTarget === null && event.clientY <= 0) openExitFollowPrompt('pointer');
+  });
+  // Guarda uma navegação de retorno para oferecer o convite em dispositivos móveis.
+  if (!exitFollowAlreadyShownToday()) {
+    try { history.pushState({ cioExitGuard: true }, '', location.href); } catch (_) {}
+    window.addEventListener('hashchange', () => { exitFollowLastHash = location.hash; });
+    window.addEventListener('popstate', () => {
+      const currentHash = location.hash;
+      // Voltar entre âncoras internas não conta como saída.
+      if (currentHash !== exitFollowLastHash) { exitFollowLastHash = currentHash; return; }
+      if (openExitFollowPrompt('back')) {
+        try { history.pushState({ cioExitGuard: true }, '', location.href); } catch (_) {}
+      }
+    });
+  }
+}
+
 </script></body>
 </html>
