@@ -5,19 +5,15 @@
 const SITE_CONFIG = {
   // Cole aqui o ID ou link completo da playlist que você está montando.
   // Exemplo: 'https://open.spotify.com/playlist/XXXXXXXXXXXX'
-  spotifyPlaylist: '',
+  spotifyPlaylist: 'https://open.spotify.com/playlist/2mIjDdqF05UR5wZkpZ9Y6H?si=vgKpvegySnS_VXifX1J1XQ',
   // Vídeo vertical de destaque do YouTube (ID):
-  heroVideo: 'eB-coJVHQRg',
-  // IMPORTANTE: este WhatsApp foi encontrado em página antiga do artista.
-  // Confirme com Ció antes de publicar o site final.
+  heroVideo: 'Nay-JKsupvg',
   bookingWhatsApp: '5531994828741',
-  bookingEmail: 'viniciobalbino10@hotmail.com',
-  // Quando chegarem vídeos de shows, coloque o link do YouTube aqui.
-  // Cada item ativa um dos três cards de 'Ao vivo'.
   liveClips: [
-    { video: '', title: 'O primeiro acorde.' },
-    { video: '', title: 'Quando a luz acende.' },
-    { video: '', title: 'Todo mundo canta.' }
+    { video: 'NmB6MWJaHL0', title: 'A energia' },
+    { video: 'd_DBWETpuSM', title: 'O encontro' },
+    { video: '4Acr3ZLBUcM', title: 'A voz' },
+    { video: '0-2QeFGoD6s', title: 'O palco' }
   ]
 };
 
@@ -75,11 +71,11 @@ if(playlistId){
 const modal=qs('#video-modal');const modalFrame=qs('#modal-frame');const modalTitle=qs('#modal-title');
 const closeModalButton=qs('#close-modal');let beforeOpen=null;
 function cleanYoutubeId(input){const str=String(input||'');return /^[A-Za-z0-9_-]{11}$/.test(str)?str:null;}
-function openVideo(id,title){
+function openVideo(id,title,vertical=false){
  id=cleanYoutubeId(id);if(!id)return;
  beforeOpen=document.activeElement;
  modalTitle.textContent=title||'Ció Balbino / Vídeo';
- modal.hidden=false;document.body.classList.add('modal-open');
+ modal.hidden=false;modal.classList.toggle('is-portrait',vertical);document.body.classList.add('modal-open');
  const iframe=document.createElement('iframe');
  iframe.src=`https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0`;
  iframe.title=title||'Vídeo de Ció Balbino';
@@ -87,9 +83,26 @@ function openVideo(id,title){
  iframe.referrerPolicy='strict-origin-when-cross-origin';
  modalFrame.replaceChildren(iframe);closeModalButton.focus();
 }
-function closeModal(){modal.hidden=true;modalFrame.replaceChildren();document.body.classList.remove('modal-open');beforeOpen?.focus();}
-qs('.hero-video').dataset.youtube=SITE_CONFIG.heroVideo;
-qsa('[data-youtube]').forEach(button=>button.addEventListener('click',()=>openVideo(button.dataset.youtube,button.dataset.title)));
+function closeModal(){modal.hidden=true;modal.classList.remove('is-portrait');modalFrame.replaceChildren();document.body.classList.remove('modal-open');beforeOpen?.focus();}
+// O YouTube é 16:9, mas o conteúdo importante está no centro (story).
+// Não editamos nem baixamos o vídeo: recortamos somente as laterais via CSS.
+const heroStart = qs('#hero-video-start');
+const heroPlayer = qs('#hero-inline-player');
+const heroFrameCrop = qs('#hero-iframe-crop');
+heroStart.addEventListener('click',()=>{
+  heroStart.hidden=true;
+  heroPlayer.hidden=false;
+  const iframe=document.createElement('iframe');
+  iframe.src=`https://www.youtube-nocookie.com/embed/${SITE_CONFIG.heroVideo}?autoplay=1&rel=0&playsinline=1`;
+  iframe.title='Ció Balbino / Vídeo principal em enquadramento vertical';
+  iframe.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+  iframe.allowFullscreen=true;
+  iframe.referrerPolicy='strict-origin-when-cross-origin';
+  heroFrameCrop.replaceChildren(iframe);
+});
+qs('#hero-close-player').addEventListener('click',()=>{
+  heroPlayer.hidden=true;heroFrameCrop.replaceChildren();heroStart.hidden=false;heroStart.focus();
+});
 closeModalButton.addEventListener('click',closeModal);
 modal.addEventListener('click',e=>{if(e.target===modal)closeModal();});
 window.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden)closeModal();});
@@ -117,29 +130,21 @@ qs('#gallery-prev').addEventListener('click',()=>scrollGallery(-1));
 qs('#gallery-next').addEventListener('click',()=>scrollGallery(1));
 
 
-// Ativa os cartões da seção de shows quando houver links reais.
-function extractYoutubeId(input){
- const str=String(input||'').trim();
- if(/^[A-Za-z0-9_-]{11}$/.test(str)) return str;
- const matched=str.match(/(?:youtube\.com\/(?:watch\?v=|shorts\/|embed\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/);
- return matched?matched[1]:null;
-}
-qsa('.live-card').forEach((card,index)=>{
- const clip=SITE_CONFIG.liveClips[index];
- const id=extractYoutubeId(clip?.video);
- if(!id)return;
- const photo=card.querySelector('.live-photo');
- const button=document.createElement('button');
- button.type='button';button.className='live-play-button';
- button.setAttribute('aria-label',`Assistir trecho de show: ${clip.title}`);
- const icon=document.createElement('span');icon.textContent='▶';icon.className='live-play-icon';
- button.append(icon);photo.append(button);
- button.addEventListener('click',()=>openVideo(id,`Ció Balbino / ${clip.title}`));
- card.querySelector('.live-caption p').textContent='ASSISTIR TRECHO DE SHOW ↗';
- if(clip.title)card.querySelector('.live-caption h3').textContent=clip.title;
+// Quatro Shorts: modais verticais, os vídeos só carregam depois do clique.
+qsa('[data-live-video]').forEach(button=>{
+ button.addEventListener('click',()=>openVideo(button.dataset.liveVideo,`Ció Balbino / ${button.dataset.liveTitle}`,true));
 });
+
+// WhatsApp: replica a mecânica do site de referência (oculta durante o scroll).
+const whatsappBtn=qs('#whatsapp-float');
+let whatsappScrollTimer;
+window.addEventListener('scroll',()=>{
+ whatsappBtn.classList.add('is-scrolling');
+ clearTimeout(whatsappScrollTimer);
+ whatsappScrollTimer=setTimeout(()=>whatsappBtn.classList.remove('is-scrolling'),250);
+},{passive:true});
 
 // Contato: mantém a configuração em um único local.
 const whatsappText=encodeURIComponent('Olá, gostaria de saber sobre a contratação de um show do Ció Balbino.');
 qs('#booking-whatsapp').href=`https://wa.me/${SITE_CONFIG.bookingWhatsApp}?text=${whatsappText}`;
-qs('.contact-email').href=`mailto:${SITE_CONFIG.bookingEmail}?subject=${encodeURIComponent('Contratação de show - Ció Balbino')}`;
+whatsappBtn.href=`https://wa.me/${SITE_CONFIG.bookingWhatsApp}?text=${whatsappText}`;
