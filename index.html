@@ -196,7 +196,7 @@ body{background:#090809}
 .marquee-band{height:60px;background:#ba0c25;overflow:hidden;display:flex;align-items:center}
 .marquee-track{display:flex;flex:0 0 auto;width:max-content;gap:0;animation:marquee-seamless 25s linear infinite;will-change:transform}
 .marquee-set{display:flex;flex:0 0 auto;gap:34px;align-items:center;padding-right:34px;white-space:nowrap;min-width:max-content;font-family:var(--display);font-weight:900;font-size:23px;letter-spacing:.11em}
-.marquee-set b{font-family:var(--serif);font-weight:400;font-size:22px}
+.marquee-set b{font-family:Arial,sans-serif;font-weight:400;font-size:18px;color:#fff}
 @keyframes marquee-seamless{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
 /* Keep gallery photography original 4:5 and fully visible. */
 .gallery-track{align-items:start}
@@ -244,7 +244,7 @@ body{background:#090809}
 .timeline-panel-content h4{font:800 clamp(29px,3.7vw,55px)/1 var(--display);margin:12px 0 20px;letter-spacing:.015em}
 .timeline-panel-content ul{list-style:none;padding:0;margin:0;display:grid;gap:11px}
 .timeline-panel-content li{font:500 14px/1.5 var(--body);display:flex;align-items:flex-start;gap:13px}
-.timeline-mark{flex:0 0 15px;color:#e72c46;font-size:12px;line-height:1.8}
+.timeline-mark{flex:0 0 15px;color:#fff;font:400 13px/1.8 Arial,sans-serif}
 .timeline-controls{border-top:1px solid #3e2930;margin-top:26px;padding-top:18px;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .timeline-controls>span{font:800 10px/1.6 var(--body);letter-spacing:.13em;color:#b9a4a6}
 .timeline-controls>div{display:flex;gap:8px;flex:0 0 auto}
@@ -258,7 +258,7 @@ body{background:#090809}
 .contact-photo-frame{position:relative;aspect-ratio:1/1;width:100%;border:1px solid #ffe8e96b;background:#8a1321;overflow:hidden;box-shadow:25px 25px 0 #36051070,0 30px 70px #20000d55}
 .contact-photo-frame img{height:100%;width:100%;object-fit:contain;object-position:center center;background:#741321}
 .contact-photo-frame:after{content:'';position:absolute;inset:73% 0 0;background:linear-gradient(0deg,#18060d83,transparent);pointer-events:none}
-.contact-photo-badge{position:absolute;left:20px;top:20px;z-index:2;border:1px solid #ffd2d4c4;background:#590315ad;padding:9px 12px;color:white;font-size:9px;letter-spacing:.15em;font-weight:900}
+.contact-photo-badge{position:absolute;left:20px;bottom:18px;top:auto;z-index:2;border:1px solid #ffd2d4c4;background:#590315e8;padding:9px 12px;color:white;font-size:9px;letter-spacing:.15em;font-weight:900;max-width:calc(100% - 40px)}
 .contact-photo-caption{margin:17px 0 0;font:900 clamp(53px,6vw,88px)/.85 var(--display);letter-spacing:-.005em;white-space:nowrap;color:#fff}
 .contact-photo-caption i{font-family:var(--serif);font-weight:400}
 .contact-top{min-width:0}
@@ -283,9 +283,9 @@ body{background:#090809}
 .footer-bottom>a:hover,.footer-bottom>a:focus-visible{color:#fff}
 .footer-bottom>a span{color:#e1384f}
 /* Fixed floating WhatsApp size independent of SVG inherited browser rules. */
-.whatsapp-float{position:fixed!important;right:22px!important;bottom:22px!important;z-index:490!important;width:60px!important;height:60px!important;min-width:60px;min-height:60px;display:flex!important;align-items:center!important;justify-content:center!important;border-radius:50%!important;background:#bb102a!important;border:1px solid #f5c3c9a3!important;box-shadow:0 12px 28px #0008!important;text-decoration:none!important;transition:opacity .23s,transform .23s;opacity:1}
+.whatsapp-float{position:fixed!important;right:22px!important;top:50%!important;bottom:auto!important;z-index:490!important;width:60px!important;height:60px!important;min-width:60px;min-height:60px;display:flex!important;align-items:center!important;justify-content:center!important;border-radius:50%!important;background:#bb102a!important;border:1px solid #f5c3c9a3!important;box-shadow:0 12px 28px #0008!important;text-decoration:none!important;transition:opacity .23s,transform .23s;opacity:1;transform:translateY(-50%)}
 .whatsapp-float svg{display:block!important;flex:0 0 29px!important;max-width:29px!important;max-height:29px!important;width:29px!important;height:29px!important;fill:currentColor}
-.whatsapp-float.is-scrolling{opacity:0!important;transform:translateY(28px)!important;pointer-events:none!important}
+.whatsapp-float.is-scrolling{opacity:0!important;transform:translate(18px,-50%)!important;pointer-events:none!important}
 .whatsapp-tooltip{font:800 10px var(--body);letter-spacing:.08em}
 @media(max-width:1080px){.contact-grid{grid-template-columns:1fr 1fr}.footer-inner{align-items:flex-start;flex-wrap:wrap}.footer-links{margin-left:0;justify-content:flex-start}.footer-main{width:100%}}
 @media(max-width:960px){.live-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.gallery-item{flex-basis:clamp(200px,45vw,300px)}.social-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.timeline-panel-year{font-size:clamp(88px,18vw,160px)}.contact-photo-caption{font-size:clamp(45px,5vw,70px)}}
@@ -327,7 +327,7 @@ body{background:#090809}
 .footer-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;gap:16px 8px}
 .footer-links a{font-size:9px;line-height:1.5}
 .footer-bottom{align-items:flex-start;flex-direction:column;gap:13px}
-.whatsapp-float{width:55px!important;height:55px!important;min-width:55px;min-height:55px;right:15px!important;bottom:15px!important}
+.whatsapp-float{width:55px!important;height:55px!important;min-width:55px;min-height:55px;right:15px!important;top:50%!important;bottom:auto!important}
 .whatsapp-float svg{width:26px!important;height:26px!important;flex-basis:26px!important}
 }
 @media(max-width:365px){.live-grid{gap:10px}.live-caption h3{font-size:23px}.timeline-year-button{font-size:11px}.footer-links{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -338,10 +338,14 @@ body{background:#090809}
 .contact-photo-panel{transform:none!important;box-shadow:none!important;border:0!important;padding:0!important;margin:0 auto!important;width:100%!important;max-width:480px!important}
 .contact-photo-caption{font-size:clamp(41px,4.25vw,62px)!important;line-height:1!important;white-space:normal!important;overflow-wrap:normal!important;word-break:normal!important;margin:18px 0 0!important;}
 .contact-photo-caption i{font-size:.9em}
-.whatsapp-float.is-footer-visible{opacity:0!important;transform:translateY(30px)!important;pointer-events:none!important}
+.whatsapp-float.is-footer-visible{opacity:0!important;transform:translate(18px,-50%)!important;pointer-events:none!important}
 .footer-bottom>a{margin-right:84px}
 @media(max-width:650px){.footer-bottom>a{margin-right:0}.social-soundcloud .social-card-title{font-size:35px}.contact-photo-panel{width:min(100%,380px)!important}.contact-photo-caption{font-size:clamp(38px,10vw,55px)!important}}
 @media(max-width:340px){.social-soundcloud .social-card-title{font-size:31px}}
+/* V6: estrelas monocromáticas e WhatsApp centralizado à direita. */
+.plain-white-star{color:#fff!important;font-family:Arial,sans-serif;font-style:normal}
+.whatsapp-float:not(.is-scrolling):not(.is-footer-visible):hover{transform:translateY(calc(-50% - 4px))!important}
+.whatsapp-float:not(.is-scrolling):not(.is-footer-visible){transform:translateY(-50%)}
 </style><meta content="https://raw.githubusercontent.com/dellsoares/ciobalbino/8b803150dc10e948c656b7002e93fb43d176e7df/ciored.jpg" property="og:image"/></head>
 <body>
 <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -404,8 +408,8 @@ body{background:#090809}
 </section>
 <div aria-label="Rock, voz, palco, história, música ao vivo" class="marquee-band">
 <div aria-hidden="true" class="marquee-track">
-<div class="marquee-set"><span>ROCK</span><b>✳</b><span>VOZ</span><b>✳</b><span>PALCO</span><b>✳</b><span>HISTÓRIA</span><b>✳</b><span>MÚSICA AO VIVO</span><b>✳</b></div>
-<div class="marquee-set"><span>ROCK</span><b>✳</b><span>VOZ</span><b>✳</b><span>PALCO</span><b>✳</b><span>HISTÓRIA</span><b>✳</b><span>MÚSICA AO VIVO</span><b>✳</b></div>
+<div class="marquee-set"><span>ROCK</span><b>★</b><span>VOZ</span><b>★</b><span>PALCO</span><b>★</b><span>HISTÓRIA</span><b>★</b><span>MÚSICA AO VIVO</span><b>★</b></div>
+<div class="marquee-set"><span>ROCK</span><b>★</b><span>VOZ</span><b>★</b><span>PALCO</span><b>★</b><span>HISTÓRIA</span><b>★</b><span>MÚSICA AO VIVO</span><b>★</b></div>
 </div>
 </div>
 <!-- 02. MÚSICAS: três capítulos independentes, na mesma família visual -->
@@ -504,7 +508,7 @@ body{background:#090809}
 </div>
 <div class="live-caption"><h3>O PALCO.</h3><a aria-label="Abrir Short 4 no YouTube caso o player não funcione" href="https://www.youtube.com/shorts/0-2QeFGoD6s" rel="noopener noreferrer" target="_blank">ABRIR NO YOUTUBE ↗</a></div>
 </article></div>
-<div class="live-bottom"><p>QUATRO REGISTROS REAIS / ASSISTA SEM SAIR DO SITE.</p><span>VIVA O AO VIVO <span aria-hidden="true">✳</span></span></div>
+<div class="live-bottom"><p>QUATRO REGISTROS REAIS / ASSISTA SEM SAIR DO SITE.</p><span>VIVA O AO VIVO <span aria-hidden="true" class="plain-white-star">★</span></span></div>
 <div aria-labelledby="tour-heading" class="tour-archive" id="shows">
 <div class="tour-head"><p class="section-kicker"><span class="square"></span> A ESTRADA / 2018–2026</p><h3 id="tour-heading">UMA DÉCADA<br/><i>DE PALCOS.</i></h3><p>Toque em um ano. A estrada se abre em festivais, encontros e shows marcantes.</p></div>
 <div class="timeline-interactive" data-years='{"2018": ["Festa de Santo Antônio"], "2020": ["Festival Cultural · Miguel Burnier"], "2022": ["Festival da Batata · Ouro Branco", "Festival Wine Gastro · Conselheiro Lafaiete"], "2023": ["Festival Estrada Real / Avelar Sports", "Feira de Comida de Boteco e Cerveja Artesanal · Itatiaia"], "2024": ["Inauguração do Mercado Central · Ouro Branco", "Show Casarão · Ouro Branco"], "2025": ["MotoFest · Congonhas", "Encontro de Motociclistas · Espírito Santo", "Festival Rock dos Guerreiros", "CarnaRock · Ouro Branco", "FACAP · Lobo Leite"], "2026": ["CarnaRock · Ouro Branco"]}' id="timeline-interactive">
@@ -513,7 +517,7 @@ body{background:#090809}
 <button aria-controls="timeline-panel" aria-selected="true" class="timeline-year-button is-active" data-year="2018" id="year-2018" role="tab" tabindex="0" type="button"><span class="year-dot"></span><span>2018</span></button><button aria-controls="timeline-panel" aria-selected="false" class="timeline-year-button" data-year="2020" id="year-2020" role="tab" tabindex="-1" type="button"><span class="year-dot"></span><span>2020</span></button><button aria-controls="timeline-panel" aria-selected="false" class="timeline-year-button" data-year="2022" id="year-2022" role="tab" tabindex="-1" type="button"><span class="year-dot"></span><span>2022</span></button><button aria-controls="timeline-panel" aria-selected="false" class="timeline-year-button" data-year="2023" id="year-2023" role="tab" tabindex="-1" type="button"><span class="year-dot"></span><span>2023</span></button><button aria-controls="timeline-panel" aria-selected="false" class="timeline-year-button" data-year="2024" id="year-2024" role="tab" tabindex="-1" type="button"><span class="year-dot"></span><span>2024</span></button><button aria-controls="timeline-panel" aria-selected="false" class="timeline-year-button" data-year="2025" id="year-2025" role="tab" tabindex="-1" type="button"><span class="year-dot"></span><span>2025</span></button><button aria-controls="timeline-panel" aria-selected="false" class="timeline-year-button" data-year="2026" id="year-2026" role="tab" tabindex="-1" type="button"><span class="year-dot"></span><span>2026</span></button>
 </div><div aria-labelledby="year-2018" class="timeline-panel" id="timeline-panel" role="tabpanel" tabindex="0">
 <div class="timeline-panel-year" id="timeline-panel-year">2018</div>
-<div class="timeline-panel-content"><span class="timeline-panel-kicker">SHOWS MARCANTES</span><h4 id="timeline-title">ONDE TUDO GANHA VOZ.</h4><ul id="timeline-events"><li><span class="timeline-mark">✳</span>Festa de Santo Antônio</li></ul></div>
+<div class="timeline-panel-content"><span class="timeline-panel-kicker">SHOWS MARCANTES</span><ul id="timeline-events"><li><span class="timeline-mark">★</span>Festa de Santo Antônio</li></ul></div>
 </div>
 <div class="timeline-controls"><span>ESCOLHA UM ANO OU ACOMPANHE A LINHA DO TEMPO</span><div><button aria-label="Ano anterior" id="timeline-prev" type="button">←</button><button aria-label="Próximo ano" id="timeline-next" type="button">→</button></div></div>
 </div>
@@ -567,7 +571,7 @@ body{background:#090809}
 <span class="social-card-tag">MAIS FAIXAS</span>
 </a>
 </div>
-<div aria-hidden="true" class="social-closing"><span>CIÓ BALBINO / CANAIS OFICIAIS</span><span>ROCK EM TODAS AS FREQUÊNCIAS ✳</span></div>
+<div aria-hidden="true" class="social-closing"><span>CIÓ BALBINO / CANAIS OFICIAIS</span><span>ROCK EM TODAS AS FREQUÊNCIAS <span class="plain-white-star">★</span></span></div>
 </div>
 </section>
 </main>
@@ -750,7 +754,7 @@ function showTimelineYear(index,manual=false){
   qs('#timeline-panel').setAttribute('aria-labelledby','year-'+year);
   qs('#timeline-events').replaceChildren(...events.map(name=>{
     const li=document.createElement('li');
-    const star=document.createElement('span');star.className='timeline-mark';star.textContent='✳';
+    const star=document.createElement('span');star.className='timeline-mark';star.textContent='★';
     li.append(star,document.createTextNode(name));return li;
   }));
   const panel=qs('#timeline-panel');
